@@ -1,0 +1,36 @@
+message("cmake run ToolsExternalProject.cmake~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+
+include(ExternalProject)
+find_package(Git REQUIRED)
+include(GNUInstallDirs)
+
+set(LLVM_BINDIR ${CMAKE_BINARY_DIR}/dipc-llvm)
+set(BOOST_SRCDIR ${CMAKE_BINARY_DIR}/thirdparty/Source/boost)
+set(TOOLS_CMAKE_ARGS)
+message("CMAKE_INSTALL_PREFIX  ${CMAKE_INSTALL_PREFIX}   ")
+list(APPEND TOOLS_CMAKE_ARGS
+  -DCMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}
+  -DCMAKE_BUILD_TYPE=Release
+  #-DCMAKE_BUILD_TYPE=Debug
+  -DVERSION_FULL=${VERSION_FULL}
+  -DLLVM_SRCDIR=${CMAKE_SOURCE_DIR}/dipc-llvm
+  -DLLVM_BINDIR=${LLVM_BINDIR}
+  -DLLVM_DIR=${LLVM_BINDIR}/lib/cmake/llvm
+  -DBOOST_ROOT=${BOOST_SRCDIR}
+  -DBoost_NO_SYSTEM_PATHS=ON)
+if (WIN32)
+  list(APPEND TOOLS_CMAKE_ARGS -DCMAKE_MAKE_PROGRAM=${CMAKE_MAKE_PROGRAM})
+endif()
+
+ExternalProject_Add(
+  DipcTools
+  CMAKE_ARGS ${TOOLS_CMAKE_ARGS}
+  SOURCE_DIR "${CMAKE_SOURCE_DIR}/tools"
+  BINARY_DIR "${CMAKE_BINARY_DIR}/tools"
+  UPDATE_COMMAND ""
+  PATCH_COMMAND ""
+  TEST_COMMAND ""
+  INSTALL_COMMAND ""
+  BUILD_ALWAYS 1
+  DEPENDS boost DipcLLVM
+  )

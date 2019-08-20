@@ -1,0 +1,84 @@
+# Defines builtins library
+
+
+# set(BEFORT_C_INCLUDE_PATH "$ENV{C_INCLUDE_PATH}")
+# set(BEFORT_CPLUS_INCLUDE_PATH "$ENV{CPLUS_INCLUDE_PATH}")
+message("BEFORT_C_INCLUDE_PATH before $ENV{C_INCLUDE_PATH}")
+message("BEFORT_CPLUS_INCLUDE_PATH  before $ENV{CPLUS_INCLUDE_PATH}")
+message("BEFORT_C_INCLUDE_PATH before2 ${C_INCLUDE_PATH}")
+message("BEFORT_CPLUS_INCLUDE_PATH  before2 ${CPLUS_INCLUDE_PATH}")
+#add_custom_command( TARGET export C_INCLUDE_PATH="" CPLUS_INCLUDE_PATH="" )
+# set($ENV{C_INCLUDE_PATH} "")
+# set($ENV{CPLUS_INCLUDE_PATH} "")
+
+message("C_INCLUDE_PATH before ${C_INCLUDE_PATH}")
+message("CPLUS_INCLUDE_PATH  before ${CPLUS_INCLUDE_PATH}")
+set(C_DEFINES, "-D__wasm__ -DQUAD_PRECISION")
+# set(CMAKE_CXX_FLAGS )
+# set(CMAKE_C_FLAGS )
+set( CMAKE_C_FLAGS " -Wall ${CMAKE_C_FLAGS} ${C_DEFINES} -stdlib=libc" )
+set( CMAKE_CXX_FLAGS " -Wall ${CMAKE_CXX_FLAGS} ${C_DEFINES} -stdlib=libc++")
+# set( CMAKE_CXX_FLAGS " -Wall   -O3  -O3 -Wall   -allow-sse -std=c++14")
+# set( CMAKE_C_FLAGS " -Wall   -O3  -O3 -Wall   -allow-sse")
+
+#set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I ${CMAKE_CURRENT_SOURCE_DIR}/../libc++/libcxx/include")
+#set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I ${CMAKE_CURRENT_SOURCE_DIR}/../libc/musl/include")
+set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I ${CMAKE_CURRENT_SOURCE_DIR}/../dipclib/include")
+#set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I ${CMAKE_CURRENT_SOURCE_DIR}/../boost/include ")  #-nostdinc
+
+
+#set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I /usr/include/sys")
+#set( CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -I /usr/include/sys")
+
+# set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I ${CMAKE_CURRENT_SOURCE_DIR}/../../dipc-llvm/tools/clang/include/clang/AST")
+# set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I ${CMAKE_CURRENT_SOURCE_DIR}/../../dipc-llvm/tools/clang/include")
+# set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I ${CMAKE_CURRENT_SOURCE_DIR}/../../dipc-llvm/include")
+# set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I ${BINARY_DIR}/dipc-llvm/include")
+# set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I /usr/include")
+# set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I ${BINARY_DIR}/dipc-llvm/include/llvm/Config")
+# set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I ${CMAKE_CURRENT_SOURCE_DIR}/../../dipc-llvm/tools/clang/include/clang/Basic/SourceLocation.h")
+# set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I ${BINARY_DIR}/dipc-llvm/tools/clang/include/clang/AST")
+
+#set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I ${CMAKE_CURRENT_SOURCE_DIR}/../../dipc-llvm/tools/clang/include/clang/AST")
+#set( CMAKE_CXX_FLAGS " -Wall ${CMAKE_CXX_FLAGS} ${C_DEFINES} -I ${CMAKE_CURRENT_SOURCE_DIR}/../libc++/libcxx/include -I ${CMAKE_CURRENT_SOURCE_DIR}/../libc/musl/include " )
+
+message("in rt the CMAKE_C_FLAGS is: ${CMAKE_C_FLAGS}")
+message("in rt the CMAKE_CXX_FLAGS is: ${CMAKE_CXX_FLAGS}")
+
+set ( builtins_sources
+   compiler_builtins.cpp
+   fixtfti.c
+   fixunstfti.c
+   fixsfti.c
+   fixdfti.c
+   fixunssfti.c
+   fixunsdfti.c
+   floattidf.c
+   floatuntidf.c
+)
+
+
+file ( GLOB builtins_headers "${CMAKE_CURRENT_SOURCE_DIR}*.h" )
+list( APPEND builtins_sources ${builtins_headers} )
+
+add_library ( rt STATIC ${builtins_sources} )
+# add_native_library ( native_rt STATIC ${builtins_sources} )
+# add_library( native_rt STATIC ${builtins_sources} )
+# target_compile_options( native_rt PUBLIC -fnative )
+
+target_include_directories( rt PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}"
+                                      "${CMAKE_CURRENT_SOURCE_DIR}/../native/softfloat/source/include" )
+#target_include_directories( native_rt PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}"
+#                                      "${CMAKE_CURRENT_SOURCE_DIR}/../native/softfloat/source/include" )
+
+
+message("the BINARY_DIR is: ${BINARY_DIR}")
+message("the CMAKE_COMMAND is: ${CMAKE_COMMAND}")
+add_custom_command( TARGET rt POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:rt> ${BINARY_DIR}/lib )
+#add_custom_command( TARGET native_rt POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:native_rt> ${BASE_BINARY_DIR}/lib )
+#add_custom_command( TARGET export C_INCLUDE_PATH="${BEFORT_C_INCLUDE_PATH}" CPLUS_INCLUDE_PATH="{BEFORT_CPLUS_INCLUDE_PATH}" )
+# set(ENV{C_INCLUDE_PATH} "${BEFORT_C_INCLUDE_PATH}")
+# set(ENV{CPLUS_INCLUDE_PATH} "${BEFORT_CPLUS_INCLUDE_PATH}")
+message("C_INCLUDE_PATH after ${C_INCLUDE_PATH}")
+message("CPLUS_INCLUDE_PATH  after ${CPLUS_INCLUDE_PATH}")
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR} DESTINATION ${BINARY_DIR}/include FILES_MATCHING PATTERN "compiler_builtins.hpp")

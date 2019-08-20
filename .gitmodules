@@ -1,0 +1,6 @@
+[submodule "dipc-llvm"]
+	path = dipc-llvm
+	url = git@github.com:dipperin/llvm.git
+[submodule "libraries/rapidjson"]
+	path = libraries/rapidjson
+	url = git@gitlab2018:luyun/rapidjson.git
