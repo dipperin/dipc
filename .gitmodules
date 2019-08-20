@@ -3,4 +3,4 @@
 	url = git@github.com:dipperin/llvm.git
 [submodule "libraries/rapidjson"]
 	path = libraries/rapidjson
-	url = git@gitlab2018:luyun/rapidjson.git
+	url = git@github.com:dipperin/rapidjson.git
