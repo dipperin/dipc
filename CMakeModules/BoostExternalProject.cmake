@@ -1,5 +1,3 @@
-message("cmake run BoostExternalProject.cmake~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-
 include(ExternalProject)
 include(GNUInstallDirs)
 

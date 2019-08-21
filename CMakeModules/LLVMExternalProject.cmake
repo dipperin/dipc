@@ -1,4 +1,3 @@
-message("cmake run LLVMExternalProject.cmake~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
 include(ExternalProject)
 find_package(Git REQUIRED)
@@ -22,10 +21,10 @@ if (WIN32)
     -DLLVM_ENABLE_ZLIB=OFF)
 endif()
 
-message("EXTRA_CMAKE_ARGS: ${EXTRA_CMAKE_ARGS}")
-message("CMAKE_SOURCE_DIR: ${CMAKE_SOURCE_DIR}")
-message("CMAKE_BINARY_DIR: ${CMAKE_BINARY_DIR}")
-message("CMAKE_MAKE_PROGRAM: ${CMAKE_MAKE_PROGRAM}")
+# message("EXTRA_CMAKE_ARGS: ${EXTRA_CMAKE_ARGS}")
+# message("CMAKE_SOURCE_DIR: ${CMAKE_SOURCE_DIR}")
+# message("CMAKE_BINARY_DIR: ${CMAKE_BINARY_DIR}")
+# message("CMAKE_MAKE_PROGRAM: ${CMAKE_MAKE_PROGRAM}")
 
 ExternalProject_Add(
   DipcLLVM

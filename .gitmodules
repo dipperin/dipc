@@ -1,6 +1,6 @@
-[submodule "dipc-llvm"]
-	path = dipc-llvm
-	url = git@github.com:dipperin/llvm.git
 [submodule "libraries/rapidjson"]
 	path = libraries/rapidjson
 	url = git@github.com:dipperin/rapidjson.git
+[submodule "dipc-llvm"]
+	path = dipc-llvm
+	url = git@github.com:dipperin/llvm.git

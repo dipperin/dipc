@@ -1,4 +1,3 @@
-message("cmake run ToolsExternalProject.cmake~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
 include(ExternalProject)
 find_package(Git REQUIRED)
@@ -7,7 +6,7 @@ include(GNUInstallDirs)
 set(LLVM_BINDIR ${CMAKE_BINARY_DIR}/dipc-llvm)
 set(BOOST_SRCDIR ${CMAKE_BINARY_DIR}/thirdparty/Source/boost)
 set(TOOLS_CMAKE_ARGS)
-message("CMAKE_INSTALL_PREFIX  ${CMAKE_INSTALL_PREFIX}   ")
+#message("CMAKE_INSTALL_PREFIX  ${CMAKE_INSTALL_PREFIX}   ")
 list(APPEND TOOLS_CMAKE_ARGS
   -DCMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}
   -DCMAKE_BUILD_TYPE=Release
