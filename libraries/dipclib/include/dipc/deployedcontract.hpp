@@ -56,8 +56,8 @@ namespace dipc {
          */
         template<typename... Args>
         inline std::string callString(const std::string &funcName, Args&&... args) const {
-            RLPStream stream(sizeof...(args) + 2);
-            txEncode(stream, kTxType, funcName, args...);
+            RLPStream stream(sizeof...(args) + 1);
+            txEncode(stream, funcName, args...);
             const bytes& rlpData = stream.out();
             char *data = ::dipcCallString(address_.data(), rlpData.data(), rlpData.size());
             return std::string(data);
@@ -73,8 +73,8 @@ namespace dipc {
          */
         template<typename... Args>
         inline std::string delegateCallString(const std::string &funcName, Args&&... args) const {
-            RLPStream stream(sizeof...(args) + 2);
-            txEncode(stream, kTxType, funcName, args...);
+            RLPStream stream(sizeof...(args) + 1);
+            txEncode(stream, funcName, args...);
             const bytes& rlpData = stream.out();
             char *data = ::dipcDelegateCallString(address_.data(), rlpData.data(), rlpData.size());
             return std::string(data);
@@ -90,8 +90,8 @@ namespace dipc {
          */
         template<typename... Args>
         inline int64_t callInt64(const std::string &funcName, Args&&... args) const {
-            RLPStream stream(sizeof...(args) + 2);
-            txEncode(stream, kTxType, funcName, args...);
+            RLPStream stream(sizeof...(args) + 1);
+            txEncode(stream, funcName, args...);
             const bytes& rlpData = stream.out();
             return ::dipcCallInt64(address_.data(), rlpData.data(), rlpData.size());
         }
@@ -106,8 +106,8 @@ namespace dipc {
          */
         template<typename... Args>
         inline int64_t delegateCallInt64(const std::string &funcName, Args&&... args) const {
-            RLPStream stream(sizeof...(args) + 2);
-            txEncode(stream, kTxType, funcName, args...);
+            RLPStream stream(sizeof...(args) + 1);
+            txEncode(stream, funcName, args...);
 
             const bytes& rlpData = stream.out();
             return ::dipcDelegateCallInt64(address_.data(), rlpData.data(), rlpData.size());
@@ -122,8 +122,8 @@ namespace dipc {
          */
         template<typename... Args>
         inline void call(const std::string &funcName, Args&&... args) const {
-            RLPStream stream(sizeof...(args) + 2);
-            txEncode(stream, kTxType, funcName, args...);
+            RLPStream stream(sizeof...(args) + 1);
+            txEncode(stream, funcName, args...);
 
             const bytes& rlpData = stream.out();
             ::dipcCall(address_.data(),rlpData.data(), rlpData.size());
@@ -138,8 +138,8 @@ namespace dipc {
          */
         template<typename... Args>
         inline void delegateCall(const std::string &funcName, Args&&... args) const {
-            RLPStream stream(sizeof...(args) + 2);
-            txEncode(stream, kTxType, funcName, args...);
+            RLPStream stream(sizeof...(args) + 1);
+            txEncode(stream, funcName, args...);
             const bytes& rlpData = stream.out();
             ::dipcDelegateCall(address_.data(), rlpData.data(), rlpData.size());
         }

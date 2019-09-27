@@ -1,0 +1,201 @@
+[
+    {
+        "name": "init",
+        "inputs": [
+            {
+                "name": "tokenName",
+                "type": "string"
+            },
+            {
+                "name": "sym",
+                "type": "string"
+            },
+            {
+                "name": "supply",
+                "type": "uint64"
+            }
+        ],
+        "outputs": [],
+        "constant": "false",
+        "payable": "false",
+        "type": "function"
+    },
+    {
+        "name": "callInit",
+        "inputs": [
+            {
+                "name": "contractAddr",
+                "type": "string"
+            },
+            {
+                "name": "tokenName",
+                "type": "string"
+            },
+            {
+                "name": "sym",
+                "type": "string"
+            },
+            {
+                "name": "supply",
+                "type": "uint64"
+            }
+        ],
+        "outputs": [],
+        "constant": "false",
+        "payable": "true",
+        "type": "function"
+    },
+    {
+        "name": "callTokenTransfer",
+        "inputs": [
+            {
+                "name": "contractAddr",
+                "type": "string"
+            },
+            {
+                "name": "to",
+                "type": "string"
+            },
+            {
+                "name": "value",
+                "type": "uint64"
+            }
+        ],
+        "outputs": [],
+        "constant": "false",
+        "payable": "true",
+        "type": "function"
+    },
+    {
+        "name": "delegateCallTokenTransfer",
+        "inputs": [
+            {
+                "name": "contractAddr",
+                "type": "string"
+            },
+            {
+                "name": "to",
+                "type": "string"
+            },
+            {
+                "name": "value",
+                "type": "uint64"
+            }
+        ],
+        "outputs": [],
+        "constant": "false",
+        "payable": "true",
+        "type": "function"
+    },
+    {
+        "name": "transfer",
+        "inputs": [
+            {
+                "name": "to",
+                "type": "string"
+            },
+            {
+                "name": "value",
+                "type": "uint64"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "constant": "false",
+        "payable": "true",
+        "type": "function"
+    },
+    {
+        "name": "callGetBalance",
+        "inputs": [
+            {
+                "name": "contractAddr",
+                "type": "string"
+            },
+            {
+                "name": "own",
+                "type": "string"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint64"
+            }
+        ],
+        "constant": "true",
+        "payable": "false",
+        "type": "function"
+    },
+    {
+        "name": "delegateCallGetBalance",
+        "inputs": [
+            {
+                "name": "contractAddr",
+                "type": "string"
+            },
+            {
+                "name": "own",
+                "type": "string"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint64"
+            }
+        ],
+        "constant": "true",
+        "payable": "false",
+        "type": "function"
+    },
+    {
+        "name": "getBalance",
+        "inputs": [
+            {
+                "name": "own",
+                "type": "string"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint64"
+            }
+        ],
+        "constant": "true",
+        "payable": "false",
+        "type": "function"
+    },
+    {
+        "name": "CallTransfer",
+        "inputs": [
+            {
+                "type": "string"
+            },
+            {
+                "type": "string"
+            },
+            {
+                "type": "uint64"
+            }
+        ],
+        "type": "event"
+    },
+    {
+        "name": "CallGetBalance",
+        "inputs": [
+            {
+                "type": "string"
+            },
+            {
+                "type": "uint64"
+            }
+        ],
+        "type": "event"
+    }
+]

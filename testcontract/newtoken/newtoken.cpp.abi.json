@@ -1,0 +1,43 @@
+[
+    {
+        "name": "init",
+        "inputs": [],
+        "outputs": [],
+        "constant": "false",
+        "payable": "false",
+        "type": "function"
+    },
+    {
+        "name": "hello",
+        "inputs": [
+            {
+                "name": "name",
+                "type": "string"
+            }
+        ],
+        "outputs": [],
+        "constant": "true",
+        "payable": "false",
+        "type": "function"
+    },
+    {
+        "name": "can_payable",
+        "inputs": [],
+        "outputs": [],
+        "constant": "false",
+        "payable": "true",
+        "type": "function"
+    },
+    {
+        "name": "payable",
+        "inputs": [
+            {
+                "type": "string"
+            },
+            {
+                "type": "uint64"
+            }
+        ],
+        "type": "event"
+    }
+]

@@ -1,0 +1,3365 @@
+2019-08-29_22:28:59.911835: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:940] dipc-abi  verbose  true
+
+2019-08-29_22:28:59.912770: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:941] dipc-abi argv  start ....
+
+2019-08-29_22:28:59.912782: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   /Users/konggan/workspace/chain/dipperin/dipc/democ/../build-n/bin/dipc-abigen
+2019-08-29_22:28:59.912788: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -extra-arg=-std=c++17
+2019-08-29_22:28:59.912795: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -extra-arg=--target=wasm32
+2019-08-29_22:28:59.912801: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -extra-arg=-w
+2019-08-29_22:28:59.912806: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/democ
+2019-08-29_22:28:59.912812: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/democ/../build-n/bin/../include/libcxx
+2019-08-29_22:28:59.912818: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/democ/../build-n/bin/../include/libc
+2019-08-29_22:28:59.912823: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/democ/../build-n/bin/../include/rt
+2019-08-29_22:28:59.912828: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/democ/../build-n/bin/../include/native/softfloat/include
+2019-08-29_22:28:59.912834: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/democ/../build-n/bin/../include
+2019-08-29_22:28:59.912840: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   token.cpp
+2019-08-29_22:28:59.912846: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -abigen_output=./token.cpp.abi.json
+2019-08-29_22:28:59.912851: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -exports_output=/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//token.cpp.exports
+2019-08-29_22:28:59.912856: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -abidef_output=
+2019-08-29_22:28:59.912862: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -log_path=./
+2019-08-29_22:28:59.912867: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -log_level=debug
+2019-08-29_22:28:59.912872: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -verbose
+2019-08-29_22:28:59.912877: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   --
+2019-08-29_22:28:59.912882: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -w
+2019-08-29_22:28:59.912888: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:945]   dipc-abi argv end 
+
+2019-08-29_22:28:59.912894: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:951] start run
+2019-08-29_22:28:59.912899: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:97] start create_find_macro_factory
+2019-08-29_22:29:00.750282: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:110] get macro:EXPORT
+2019-08-29_22:29:00.750709: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/dipc/democ/token.hpp
+
+2019-08-29_22:29:00.750730: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:EXPORT; long str :EXPORT; longstr :EXPORT void init(const char* tokenName,const char* symbol, uint64_t supply);
+    PAYABLE void transfer(const char* to, uint64_t value);
+    EXPORT void approve(const char* spender, uint64_t value);
+    EXPORT void transferFrom(const char* from, const char* to, uint64_t value);
+    CONSTANT uint64_t getBalance(const char* own);
+    CONSTANT uint64_t getApproveBalance(const char* from, const char* approved);
+    EXPORT bool burn(int128_t _value);
+
+    void stop(){
+        isOwner();
+        stopped = true;    
+    }
+    void start() {
+        isOwner();
+        stopped = false;
+    }
+    void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+2019-08-29_22:29:00.751153: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:110] get macro:PAYABLE
+2019-08-29_22:29:00.751166: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/dipc/democ/token.hpp
+
+2019-08-29_22:29:00.751174: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:PAYABLE; long str :PAYABLE; longstr :PAYABLE void transfer(const char* to, uint64_t value);
+    EXPORT void approve(const char* spender, uint64_t value);
+    EXPORT void transferFrom(const char* from, const char* to, uint64_t value);
+    CONSTANT uint64_t getBalance(const char* own);
+    CONSTANT uint64_t getApproveBalance(const char* from, const char* approved);
+    EXPORT bool burn(int128_t _value);
+
+    void stop(){
+        isOwner();
+        stopped = true;    
+    }
+    void start() {
+        isOwner();
+        stopped = false;
+    }
+    void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+2019-08-29_22:29:00.751214: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:110] get macro:EXPORT
+2019-08-29_22:29:00.751222: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/dipc/democ/token.hpp
+
+2019-08-29_22:29:00.751229: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:EXPORT; long str :EXPORT; longstr :EXPORT void approve(const char* spender, uint64_t value);
+    EXPORT void transferFrom(const char* from, const char* to, uint64_t value);
+    CONSTANT uint64_t getBalance(const char* own);
+    CONSTANT uint64_t getApproveBalance(const char* from, const char* approved);
+    EXPORT bool burn(int128_t _value);
+
+    void stop(){
+        isOwner();
+        stopped = true;    
+    }
+    void start() {
+        isOwner();
+        stopped = false;
+    }
+    void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+2019-08-29_22:29:00.751272: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:110] get macro:EXPORT
+2019-08-29_22:29:00.751281: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/dipc/democ/token.hpp
+
+2019-08-29_22:29:00.751288: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:EXPORT; long str :EXPORT; longstr :EXPORT void transferFrom(const char* from, const char* to, uint64_t value);
+    CONSTANT uint64_t getBalance(const char* own);
+    CONSTANT uint64_t getApproveBalance(const char* from, const char* approved);
+    EXPORT bool burn(int128_t _value);
+
+    void stop(){
+        isOwner();
+        stopped = true;    
+    }
+    void start() {
+        isOwner();
+        stopped = false;
+    }
+    void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+2019-08-29_22:29:00.751330: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:110] get macro:CONSTANT
+2019-08-29_22:29:00.751338: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/dipc/democ/token.hpp
+
+2019-08-29_22:29:00.751344: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:CONSTANT; long str :CONSTANT; longstr :CONSTANT uint64_t getBalance(const char* own);
+    CONSTANT uint64_t getApproveBalance(const char* from, const char* approved);
+    EXPORT bool burn(int128_t _value);
+
+    void stop(){
+        isOwner();
+        stopped = true;    
+    }
+    void start() {
+        isOwner();
+        stopped = false;
+    }
+    void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+2019-08-29_22:29:00.751376: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:110] get macro:CONSTANT
+2019-08-29_22:29:00.751384: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/dipc/democ/token.hpp
+
+2019-08-29_22:29:00.751391: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:CONSTANT; long str :CONSTANT; longstr :CONSTANT uint64_t getApproveBalance(const char* from, const char* approved);
+    EXPORT bool burn(int128_t _value);
+
+    void stop(){
+        isOwner();
+        stopped = true;    
+    }
+    void start() {
+        isOwner();
+        stopped = false;
+    }
+    void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+2019-08-29_22:29:00.751439: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:110] get macro:EXPORT
+2019-08-29_22:29:00.751447: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/dipc/democ/token.hpp
+
+2019-08-29_22:29:00.751454: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:EXPORT; long str :EXPORT; longstr :EXPORT bool burn(int128_t _value);
+
+    void stop(){
+        isOwner();
+        stopped = true;    
+    }
+    void start() {
+        isOwner();
+        stopped = false;
+    }
+    void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+2019-08-29_22:29:00.751512: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:104] get EVENT:DIPC_EVENT
+2019-08-29_22:29:00.751731: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:104] get EVENT:DIPC_EVENT
+2019-08-29_22:29:00.751919: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:104] get EVENT:DIPC_EVENT
+2019-08-29_22:29:00.752096: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:110] get macro:EXPORT
+2019-08-29_22:29:00.752107: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/dipc/democ/token.cpp
+
+2019-08-29_22:29:00.752115: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:EXPORT; long str :EXPORT; longstr :EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
+
+    Address callerAddr = caller();
+    std::string callerStr = callerAddr.toString();
+    *owner = callerStr;
+    *name = tokenName;
+    *symbol = sym;
+    *total_supply = supply;
+    (*balance)[owner.get()] = supply;
+    DIPC_EMIT_EVENT(Tranfer, "", &owner.get()[0], supply);
+}
+
+EXPORT void TestToken::approve(const char* spender, uint64_t value){
+    Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string callStr = callerAddr.toString();
+    approve(to, value);
+    bool result = (balance.get()[callStr] >= value);
+    DipcAssert(result);
+
+    std::string toStr = CharToAddress2Str(to);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+
+    (*balance)[callStr] = balance.get()[callStr] -  value;
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    DIPC_EMIT_EVENT(Tranfer, &(callStr[0]), to, value);
+}
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+
+EXPORT bool TestToken::burn(int128_t value){
+    Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}
+2019-08-29_22:29:00.752207: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:92] Export macrostr:EXPORT  contract:void  actions_str:init
+
+2019-08-29_22:29:00.752236: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:110] get macro:EXPORT
+2019-08-29_22:29:00.752245: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/dipc/democ/token.cpp
+
+2019-08-29_22:29:00.752252: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:EXPORT; long str :EXPORT; longstr :EXPORT void TestToken::approve(const char* spender, uint64_t value){
+    Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string callStr = callerAddr.toString();
+    approve(to, value);
+    bool result = (balance.get()[callStr] >= value);
+    DipcAssert(result);
+
+    std::string toStr = CharToAddress2Str(to);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+
+    (*balance)[callStr] = balance.get()[callStr] -  value;
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    DIPC_EMIT_EVENT(Tranfer, &(callStr[0]), to, value);
+}
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+
+EXPORT bool TestToken::burn(int128_t value){
+    Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}
+2019-08-29_22:29:00.752295: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:92] Export macrostr:EXPORT  contract:void  actions_str:approve
+
+2019-08-29_22:29:00.752320: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:110] get macro:PAYABLE
+2019-08-29_22:29:00.752328: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/dipc/democ/token.cpp
+
+2019-08-29_22:29:00.752335: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:PAYABLE; long str :PAYABLE; longstr :PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string callStr = callerAddr.toString();
+    approve(to, value);
+    bool result = (balance.get()[callStr] >= value);
+    DipcAssert(result);
+
+    std::string toStr = CharToAddress2Str(to);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+
+    (*balance)[callStr] = balance.get()[callStr] -  value;
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    DIPC_EMIT_EVENT(Tranfer, &(callStr[0]), to, value);
+}
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+
+EXPORT bool TestToken::burn(int128_t value){
+    Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}
+2019-08-29_22:29:00.752376: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:92] Export macrostr:PAYABLE  contract:void  actions_str:transfer
+
+2019-08-29_22:29:00.752465: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:110] get macro:EXPORT
+2019-08-29_22:29:00.752483: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/dipc/democ/token.cpp
+
+2019-08-29_22:29:00.752492: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:EXPORT; long str :EXPORT; longstr :EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+
+EXPORT bool TestToken::burn(int128_t value){
+    Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}
+2019-08-29_22:29:00.752567: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:92] Export macrostr:EXPORT  contract:void  actions_str:transferFrom
+
+2019-08-29_22:29:00.752615: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:110] get macro:EXPORT
+2019-08-29_22:29:00.752625: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/dipc/democ/token.cpp
+
+2019-08-29_22:29:00.752632: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:EXPORT; long str :EXPORT; longstr :EXPORT bool TestToken::burn(int128_t value){
+    Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}
+2019-08-29_22:29:00.752669: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:92] Export macrostr:EXPORT  contract:bool  actions_str:burn
+
+2019-08-29_22:29:00.752711: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:110] get macro:CONSTANT
+2019-08-29_22:29:00.752720: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/dipc/democ/token.cpp
+
+2019-08-29_22:29:00.752728: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:CONSTANT; long str :CONSTANT; longstr :CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}
+2019-08-29_22:29:00.752761: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:92] Export macrostr:CONSTANT  contract:uint64_t  actions_str:getBalance
+
+2019-08-29_22:29:00.752787: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:110] get macro:CONSTANT
+2019-08-29_22:29:00.752796: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/dipc/democ/token.cpp
+
+2019-08-29_22:29:00.752803: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:CONSTANT; long str :CONSTANT; longstr :CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}
+2019-08-29_22:29:00.752848: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:92] Export macrostr:CONSTANT  contract:uint64_t  actions_str:getApproveBalance
+
+2019-08-29_22:29:00.756565: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:960] result:0contract fullname:[TestToken]
+2019-08-29_22:29:02.396266: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:107] contract != Token
+2019-08-29_22:29:02.396293: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:109] decl name:[TestToken] contract:[TestToken]
+2019-08-29_22:29:02.396301: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:117] funcEntire : void init(const char* tokenName,const char* symbol, uint64_t supply; funcEnd : );
+    PAYABLE void transfer(const char* to, uint64_t value);
+    EXPORT void approve(const char* spender, uint64_t value);
+    EXPORT void transferFrom(const char* from, const char* to, uint64_t value);
+    CONSTANT uint64_t getBalance(const char* own);
+    CONSTANT uint64_t getApproveBalance(const char* from, const char* approved);
+    EXPORT bool burn(int128_t _value);
+
+    void stop(){
+        isOwner();
+        stopped = true;    
+    }
+    void start() {
+        isOwner();
+        stopped = false;
+    }
+    void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+2019-08-29_22:29:02.396315: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:122] method :init
+2019-08-29_22:29:02.396334: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:  realTypeName:void
+2019-08-29_22:29:02.396341: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:136] parame name:tokenName
+2019-08-29_22:29:02.396354: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:  realTypeName:const char *
+2019-08-29_22:29:02.396391: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:136] parame name:symbol
+2019-08-29_22:29:02.396404: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:  realTypeName:const char *
+2019-08-29_22:29:02.396429: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:136] parame name:supply
+2019-08-29_22:29:02.396435: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:25] xxx:uint64_t
+2019-08-29_22:29:02.396440: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:27] set typeName
+2019-08-29_22:29:02.396452: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:uint64_t  realTypeName:unsigned long long
+2019-08-29_22:29:02.396474: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:117] funcEntire : void transfer(const char* to, uint64_t value; funcEnd : );
+    EXPORT void approve(const char* spender, uint64_t value);
+    EXPORT void transferFrom(const char* from, const char* to, uint64_t value);
+    CONSTANT uint64_t getBalance(const char* own);
+    CONSTANT uint64_t getApproveBalance(const char* from, const char* approved);
+    EXPORT bool burn(int128_t _value);
+
+    void stop(){
+        isOwner();
+        stopped = true;    
+    }
+    void start() {
+        isOwner();
+        stopped = false;
+    }
+    void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+2019-08-29_22:29:02.396481: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:122] method :transfer
+2019-08-29_22:29:02.396490: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:  realTypeName:void
+2019-08-29_22:29:02.396496: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:136] parame name:to
+2019-08-29_22:29:02.396507: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:  realTypeName:const char *
+2019-08-29_22:29:02.396531: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:136] parame name:value
+2019-08-29_22:29:02.396536: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:25] xxx:uint64_t
+2019-08-29_22:29:02.396541: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:27] set typeName
+2019-08-29_22:29:02.396552: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:uint64_t  realTypeName:unsigned long long
+2019-08-29_22:29:02.396578: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:117] funcEntire : void approve(const char* spender, uint64_t value; funcEnd : );
+    EXPORT void transferFrom(const char* from, const char* to, uint64_t value);
+    CONSTANT uint64_t getBalance(const char* own);
+    CONSTANT uint64_t getApproveBalance(const char* from, const char* approved);
+    EXPORT bool burn(int128_t _value);
+
+    void stop(){
+        isOwner();
+        stopped = true;    
+    }
+    void start() {
+        isOwner();
+        stopped = false;
+    }
+    void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+2019-08-29_22:29:02.396585: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:122] method :approve
+2019-08-29_22:29:02.396594: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:  realTypeName:void
+2019-08-29_22:29:02.396600: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:136] parame name:spender
+2019-08-29_22:29:02.396611: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:  realTypeName:const char *
+2019-08-29_22:29:02.396635: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:136] parame name:value
+2019-08-29_22:29:02.396641: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:25] xxx:uint64_t
+2019-08-29_22:29:02.396645: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:27] set typeName
+2019-08-29_22:29:02.396656: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:uint64_t  realTypeName:unsigned long long
+2019-08-29_22:29:02.396678: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:117] funcEntire : void transferFrom(const char* from, const char* to, uint64_t value; funcEnd : );
+    CONSTANT uint64_t getBalance(const char* own);
+    CONSTANT uint64_t getApproveBalance(const char* from, const char* approved);
+    EXPORT bool burn(int128_t _value);
+
+    void stop(){
+        isOwner();
+        stopped = true;    
+    }
+    void start() {
+        isOwner();
+        stopped = false;
+    }
+    void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+2019-08-29_22:29:02.396684: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:122] method :transferFrom
+2019-08-29_22:29:02.396692: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:  realTypeName:void
+2019-08-29_22:29:02.396698: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:136] parame name:from
+2019-08-29_22:29:02.396709: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:  realTypeName:const char *
+2019-08-29_22:29:02.396737: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:136] parame name:to
+2019-08-29_22:29:02.396749: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:  realTypeName:const char *
+2019-08-29_22:29:02.396777: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:136] parame name:value
+2019-08-29_22:29:02.396783: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:25] xxx:uint64_t
+2019-08-29_22:29:02.396788: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:27] set typeName
+2019-08-29_22:29:02.396799: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:uint64_t  realTypeName:unsigned long long
+2019-08-29_22:29:02.396820: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:117] funcEntire : uint64_t getBalance(const char* own; funcEnd : );
+    CONSTANT uint64_t getApproveBalance(const char* from, const char* approved);
+    EXPORT bool burn(int128_t _value);
+
+    void stop(){
+        isOwner();
+        stopped = true;    
+    }
+    void start() {
+        isOwner();
+        stopped = false;
+    }
+    void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+2019-08-29_22:29:02.396826: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:122] method :getBalance
+2019-08-29_22:29:02.396831: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:25] xxx:uint64_t
+2019-08-29_22:29:02.396836: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:27] set typeName
+2019-08-29_22:29:02.396847: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:uint64_t  realTypeName:unsigned long long
+2019-08-29_22:29:02.396853: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:136] parame name:own
+2019-08-29_22:29:02.396864: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:  realTypeName:const char *
+2019-08-29_22:29:02.396889: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:117] funcEntire : uint64_t getApproveBalance(const char* from, const char* approved; funcEnd : );
+    EXPORT bool burn(int128_t _value);
+
+    void stop(){
+        isOwner();
+        stopped = true;    
+    }
+    void start() {
+        isOwner();
+        stopped = false;
+    }
+    void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+2019-08-29_22:29:02.396895: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:122] method :getApproveBalance
+2019-08-29_22:29:02.396900: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:25] xxx:uint64_t
+2019-08-29_22:29:02.396909: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:27] set typeName
+2019-08-29_22:29:02.396921: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:uint64_t  realTypeName:unsigned long long
+2019-08-29_22:29:02.396926: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:136] parame name:from
+2019-08-29_22:29:02.396937: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:  realTypeName:const char *
+2019-08-29_22:29:02.396962: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:136] parame name:approved
+2019-08-29_22:29:02.396973: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:  realTypeName:const char *
+2019-08-29_22:29:02.396997: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:117] funcEntire : bool burn(int128_t _value; funcEnd : );
+
+    void stop(){
+        isOwner();
+        stopped = true;    
+    }
+    void start() {
+        isOwner();
+        stopped = false;
+    }
+    void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+2019-08-29_22:29:02.397003: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:122] method :burn
+2019-08-29_22:29:02.397012: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:  realTypeName:_Bool
+2019-08-29_22:29:02.397018: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:136] parame name:_value
+2019-08-29_22:29:02.397023: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:25] xxx:int128_t
+2019-08-29_22:29:02.397028: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:27] set typeName
+2019-08-29_22:29:02.397037: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:int128_t  realTypeName:__int128
+2019-08-29_22:29:02.397057: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:117] funcEntire : void stop(){
+        isOwner();
+        stopped = true;    
+    ; funcEnd : }
+    void start() {
+        isOwner();
+        stopped = false;
+    }
+    void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+2019-08-29_22:29:02.397063: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:117] funcEntire : void start() {
+        isOwner();
+        stopped = false;
+    ; funcEnd : }
+    void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+2019-08-29_22:29:02.397073: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:117] funcEntire : void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    ; funcEnd : }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+2019-08-29_22:29:02.397080: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:117] funcEntire : inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    ; funcEnd : }
+};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+2019-08-29_22:29:02.397086: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:117] funcEntire : ; funcEnd : TestToken : public Contract {
+public: 
+    EXPORT void init(const char* tokenName,const char* symbol, uint64_t supply);
+    PAYABLE void transfer(const char* to, uint64_t value);
+    EXPORT void approve(const char* spender, uint64_t value);
+    EXPORT void transferFrom(const char* from, const char* to, uint64_t value);
+    CONSTANT uint64_t getBalance(const char* own);
+    CONSTANT uint64_t getApproveBalance(const char* from, const char* approved);
+    EXPORT bool burn(int128_t _value);
+
+    void stop(){
+        isOwner();
+        stopped = true;    
+    }
+    void start() {
+        isOwner();
+        stopped = false;
+    }
+    void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+2019-08-29_22:29:02.397092: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:117] funcEntire : ; funcEnd : TestToken : public Contract {
+public: 
+    EXPORT void init(const char* tokenName,const char* symbol, uint64_t supply);
+    PAYABLE void transfer(const char* to, uint64_t value);
+    EXPORT void approve(const char* spender, uint64_t value);
+    EXPORT void transferFrom(const char* from, const char* to, uint64_t value);
+    CONSTANT uint64_t getBalance(const char* own);
+    CONSTANT uint64_t getApproveBalance(const char* from, const char* approved);
+    EXPORT bool burn(int128_t _value);
+
+    void stop(){
+        isOwner();
+        stopped = true;    
+    }
+    void start() {
+        isOwner();
+        stopped = false;
+    }
+    void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+2019-08-29_22:29:02.397102: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:117] funcEntire : ; funcEnd : TestToken : public Contract {
+public: 
+    EXPORT void init(const char* tokenName,const char* symbol, uint64_t supply);
+    PAYABLE void transfer(const char* to, uint64_t value);
+    EXPORT void approve(const char* spender, uint64_t value);
+    EXPORT void transferFrom(const char* from, const char* to, uint64_t value);
+    CONSTANT uint64_t getBalance(const char* own);
+    CONSTANT uint64_t getApproveBalance(const char* from, const char* approved);
+    EXPORT bool burn(int128_t _value);
+
+    void stop(){
+        isOwner();
+        stopped = true;    
+    }
+    void start() {
+        isOwner();
+        stopped = false;
+    }
+    void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+2019-08-29_22:29:02.397108: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:117] funcEntire : ; funcEnd : TestToken : public Contract {
+public: 
+    EXPORT void init(const char* tokenName,const char* symbol, uint64_t supply);
+    PAYABLE void transfer(const char* to, uint64_t value);
+    EXPORT void approve(const char* spender, uint64_t value);
+    EXPORT void transferFrom(const char* from, const char* to, uint64_t value);
+    CONSTANT uint64_t getBalance(const char* own);
+    CONSTANT uint64_t getApproveBalance(const char* from, const char* approved);
+    EXPORT bool burn(int128_t _value);
+
+    void stop(){
+        isOwner();
+        stopped = true;    
+    }
+    void start() {
+        isOwner();
+        stopped = false;
+    }
+    void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+2019-08-29_22:29:02.397114: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:147] abis size:7
+2019-08-29_22:29:02.652409: <info> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:977] find method successfind abi size:7
+2019-08-29_22:29:02.652439: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:982] methodName:init args:(
+2019-08-29_22:29:02.652448: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:989] name:tokenName, typeName: realTypeName:const char *
+2019-08-29_22:29:02.652469: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:989] name:symbol, typeName: realTypeName:const char *
+2019-08-29_22:29:02.652478: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:989] name:supply, typeName:uint64_t realTypeName:unsigned long long
+2019-08-29_22:29:02.652485: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:993] )
+2019-08-29_22:29:02.652492: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:994] return typeName: realTypeName:void
+2019-08-29_22:29:02.652499: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:982] methodName:transfer args:(
+2019-08-29_22:29:02.652505: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:989] name:to, typeName: realTypeName:const char *
+2019-08-29_22:29:02.652512: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:989] name:value, typeName:uint64_t realTypeName:unsigned long long
+2019-08-29_22:29:02.652519: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:993] )
+2019-08-29_22:29:02.652525: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:994] return typeName: realTypeName:void
+2019-08-29_22:29:02.652532: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:982] methodName:approve args:(
+2019-08-29_22:29:02.652539: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:989] name:spender, typeName: realTypeName:const char *
+2019-08-29_22:29:02.652546: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:989] name:value, typeName:uint64_t realTypeName:unsigned long long
+2019-08-29_22:29:02.652552: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:993] )
+2019-08-29_22:29:02.652559: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:994] return typeName: realTypeName:void
+2019-08-29_22:29:02.652565: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:982] methodName:transferFrom args:(
+2019-08-29_22:29:02.652572: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:989] name:from, typeName: realTypeName:const char *
+2019-08-29_22:29:02.652578: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:989] name:to, typeName: realTypeName:const char *
+2019-08-29_22:29:02.652585: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:989] name:value, typeName:uint64_t realTypeName:unsigned long long
+2019-08-29_22:29:02.652591: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:993] )
+2019-08-29_22:29:02.652598: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:994] return typeName: realTypeName:void
+2019-08-29_22:29:02.652604: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:982] methodName:getBalance args:(
+2019-08-29_22:29:02.652611: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:989] name:own, typeName: realTypeName:const char *
+2019-08-29_22:29:02.652617: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:993] )
+2019-08-29_22:29:02.652624: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:994] return typeName:uint64_t realTypeName:unsigned long long
+2019-08-29_22:29:02.652630: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:982] methodName:getApproveBalance args:(
+2019-08-29_22:29:02.652637: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:989] name:from, typeName: realTypeName:const char *
+2019-08-29_22:29:02.652648: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:989] name:approved, typeName: realTypeName:const char *
+2019-08-29_22:29:02.652655: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:993] )
+2019-08-29_22:29:02.652662: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:994] return typeName:uint64_t realTypeName:unsigned long long
+2019-08-29_22:29:02.652668: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:982] methodName:burn args:(
+2019-08-29_22:29:02.652675: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:989] name:_value, typeName:int128_t realTypeName:__int128
+2019-08-29_22:29:02.652681: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:993] )
+2019-08-29_22:29:02.652688: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:994] return typeName: realTypeName:_Bool
+2019-08-29_22:29:02.652699: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:1007] start create abi json
+2019-08-29_22:29:02.652751: <error> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:631] random:[/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/980be9b437aeh06d443a] fileName:token.cpp.abi.json
+2019-08-29_22:29:02.652764: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:633] tmpFile:[/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/980be9b437aeh06d443a/token.cpp.abi.json]
+2019-08-29_22:29:02.653841: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:644] copy ::/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/980be9b437aeh06d443a/token.cpp.abi.json to ::./token.cpp.abi.json
+2019-08-29_22:29:02.654184: <error> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:665] random:[/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/980be9b437aeh06d443a] fileName:token.cpp.exports
+2019-08-29_22:29:02.654197: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:667] tmpFile:[/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/980be9b437aeh06d443a/token.cpp.exports]
+2019-08-29_22:29:02.654389: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:682] copy ::/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/980be9b437aeh06d443a/token.cpp.exports to ::/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//token.cpp.exports
+2019-08-29_22:29:02.654702: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:729] macrostr  =======::#include "token.hpp"
+
+EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
+
+    Address callerAddr = caller();
+    std::string callerStr = callerAddr.toString();
+    *owner = callerStr;
+    *name = tokenName;
+    *symbol = sym;
+    *total_supply = supply;
+    (*balance)[owner.get()] = supply;
+    DIPC_EMIT_EVENT(Tranfer, "", &owner.get()[0], supply);
+}
+
+EXPORT void TestToken::approve(const char* spender, uint64_t value){
+    Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string callStr = callerAddr.toString();
+    approve(to, value);
+    bool result = (balance.get()[callStr] >= value);
+    DipcAssert(result);
+
+    std::string toStr = CharToAddress2Str(to);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+
+    (*balance)[callStr] = balance.get()[callStr] -  value;
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    DIPC_EMIT_EVENT(Tranfer, &(callStr[0]), to, value);
+}
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+
+EXPORT bool TestToken::burn(int128_t value){
+    Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}
+
+2019-08-29_22:29:02.654771: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:730] headerStr  =======::
+
+2019-08-29_22:29:02.654808: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:733] removedComments  =======::#include "token.hpp"
+
+EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
+
+    Address callerAddr = caller();
+    std::string callerStr = callerAddr.toString();
+    *owner = callerStr;
+    *name = tokenName;
+    *symbol = sym;
+    *total_supply = supply;
+    (*balance)[owner.get()] = supply;
+    DIPC_EMIT_EVENT(Tranfer, "", &owner.get()[0], supply);
+}
+
+EXPORT void TestToken::approve(const char* spender, uint64_t value){
+    Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string callStr = callerAddr.toString();
+    approve(to, value);
+    bool result = (balance.get()[callStr] >= value);
+    DipcAssert(result);
+
+    std::string toStr = CharToAddress2Str(to);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+
+    (*balance)[callStr] = balance.get()[callStr] -  value;
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    DIPC_EMIT_EVENT(Tranfer, &(callStr[0]), to, value);
+}
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+
+EXPORT bool TestToken::burn(int128_t value){
+    Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}
+
+2019-08-29_22:29:02.654826: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:360] abis.ispayable :true
+
+2019-08-29_22:29:02.654843: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:376] finalContract  content =======   : 
+
+2019-08-29_22:29:02.655175: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:400] payable : PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    
+
+2019-08-29_22:29:02.655185: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:406] name : transfer
+
+2019-08-29_22:29:02.656014: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:468] after repalce payable func:PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string callStr = callerAddr.toString();
+approve_inline(to, value);
+    bool result = (balance.get()[callStr] >= value);
+    DipcAssert(result);
+
+    std::string toStr = CharToAddress2Str(to);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+
+    (*balance)[callStr] = balance.get()[callStr] -  value;
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    DIPC_EMIT_EVENT(Tranfer, &(callStr[0]), to, value);
+}
+
+2019-08-29_22:29:02.657465: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:521] search func : PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string callStr = callerAddr.toString();
+approve_inline(to, value);
+    bool result = (balance.get()[callStr] >= value);
+    DipcAssert(result);
+
+    std::string toStr = CharToAddress2Str(to);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+
+    (*balance)[callStr] = balance.get()[callStr] -  value;
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    DIPC_EMIT_EVENT(Tranfer, &(callStr[0]), to, value);
+}
+2019-08-29_22:29:02.658139: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:526] finalContract  final content =======   : #include "token.hpp"
+
+EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
+
+    Address callerAddr = caller();
+    std::string callerStr = callerAddr.toString();
+    *owner = callerStr;
+    *name = tokenName;
+    *symbol = sym;
+    *total_supply = supply;
+    (*balance)[owner.get()] = supply;
+    DIPC_EMIT_EVENT(Tranfer, "", &owner.get()[0], supply);
+}
+
+EXPORT void TestToken::approve(const char* spender, uint64_t value){
+    Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string callStr = callerAddr.toString();
+approve_inline(to, value);
+    bool result = (balance.get()[callStr] >= value);
+    DipcAssert(result);
+
+    std::string toStr = CharToAddress2Str(to);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+
+    (*balance)[callStr] = balance.get()[callStr] -  value;
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    DIPC_EMIT_EVENT(Tranfer, &(callStr[0]), to, value);
+}
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+
+EXPORT bool TestToken::burn(int128_t value){
+    Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}abis transfer
+
+2019-08-29_22:29:02.658159: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:360] abis.ispayable :false
+
+2019-08-29_22:29:02.658175: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:376] finalContract  content =======   : #include "token.hpp"
+
+EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
+
+    Address callerAddr = caller();
+    std::string callerStr = callerAddr.toString();
+    *owner = callerStr;
+    *name = tokenName;
+    *symbol = sym;
+    *total_supply = supply;
+    (*balance)[owner.get()] = supply;
+    DIPC_EMIT_EVENT(Tranfer, "", &owner.get()[0], supply);
+}
+
+EXPORT void TestToken::approve(const char* spender, uint64_t value){
+    Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string callStr = callerAddr.toString();
+approve_inline(to, value);
+    bool result = (balance.get()[callStr] >= value);
+    DipcAssert(result);
+
+    std::string toStr = CharToAddress2Str(to);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+
+    (*balance)[callStr] = balance.get()[callStr] -  value;
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    DIPC_EMIT_EVENT(Tranfer, &(callStr[0]), to, value);
+}
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+
+EXPORT bool TestToken::burn(int128_t value){
+    Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}
+
+2019-08-29_22:29:02.658285: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:400]  Export :
+
+EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
+
+    
+
+2019-08-29_22:29:02.658294: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:406] name : init
+
+2019-08-29_22:29:02.658303: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:515] calledFunc temp export: 
+
+EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
+
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string callerStr = callerAddr.toString();
+    *owner = callerStr;
+    *name = tokenName;
+    *symbol = sym;
+    *total_supply = supply;
+    (*balance)[owner.get()] = supply;
+    DIPC_EMIT_EVENT(Tranfer, "", &owner.get()[0], supply);
+}
+
+2019-08-29_22:29:02.658310: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:521] search func : 
+
+EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
+
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string callerStr = callerAddr.toString();
+    *owner = callerStr;
+    *name = tokenName;
+    *symbol = sym;
+    *total_supply = supply;
+    (*balance)[owner.get()] = supply;
+    DIPC_EMIT_EVENT(Tranfer, "", &owner.get()[0], supply);
+}
+2019-08-29_22:29:02.687579: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:526] finalContract  final content =======   : #include "token.hpp"
+
+EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
+
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string callerStr = callerAddr.toString();
+    *owner = callerStr;
+    *name = tokenName;
+    *symbol = sym;
+    *total_supply = supply;
+    (*balance)[owner.get()] = supply;
+    DIPC_EMIT_EVENT(Tranfer, "", &owner.get()[0], supply);
+}
+
+EXPORT void TestToken::approve(const char* spender, uint64_t value){
+    Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string callStr = callerAddr.toString();
+approve_inline(to, value);
+    bool result = (balance.get()[callStr] >= value);
+    DipcAssert(result);
+
+    std::string toStr = CharToAddress2Str(to);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+
+    (*balance)[callStr] = balance.get()[callStr] -  value;
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    DIPC_EMIT_EVENT(Tranfer, &(callStr[0]), to, value);
+}
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+
+EXPORT bool TestToken::burn(int128_t value){
+    Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}abis init
+
+2019-08-29_22:29:02.687603: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:360] abis.ispayable :false
+
+2019-08-29_22:29:02.687620: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:376] finalContract  content =======   : #include "token.hpp"
+
+EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
+
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string callerStr = callerAddr.toString();
+    *owner = callerStr;
+    *name = tokenName;
+    *symbol = sym;
+    *total_supply = supply;
+    (*balance)[owner.get()] = supply;
+    DIPC_EMIT_EVENT(Tranfer, "", &owner.get()[0], supply);
+}
+
+EXPORT void TestToken::approve(const char* spender, uint64_t value){
+    Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string callStr = callerAddr.toString();
+approve_inline(to, value);
+    bool result = (balance.get()[callStr] >= value);
+    DipcAssert(result);
+
+    std::string toStr = CharToAddress2Str(to);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+
+    (*balance)[callStr] = balance.get()[callStr] -  value;
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    DIPC_EMIT_EVENT(Tranfer, &(callStr[0]), to, value);
+}
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+
+EXPORT bool TestToken::burn(int128_t value){
+    Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}
+
+2019-08-29_22:29:02.691547: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:400]  Export :
+
+EXPORT void TestToken::approve(const char* spender, uint64_t value){
+    
+
+2019-08-29_22:29:02.691559: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:406] name : approve
+
+2019-08-29_22:29:02.691574: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:489] inlineTempDetail temp info : 
+ private: inline void approve_inline(const char* spender, uint64_t value)
+
+2019-08-29_22:29:02.691581: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:493] abis.returnType.realTypeName == _Bool : falsereturnType void abis.returnType.realTypeName  void  abis.returnType.TypeName  
+
+2019-08-29_22:29:02.691590: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:496] inlineTemp temp info : 
+  inline void TestToken::approve_inline(const char* spender, uint64_t value){
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+
+2019-08-29_22:29:02.691597: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:503] calledFunc temp : 
+  inline void TestToken::approve_inline(const char* spender, uint64_t value){
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+
+EXPORT void TestToken::approve(const char* spender, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+2019-08-29_22:29:02.691604: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:521] search func : 
+  inline void TestToken::approve_inline(const char* spender, uint64_t value){
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+
+EXPORT void TestToken::approve(const char* spender, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+2019-08-29_22:29:02.714075: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:526] finalContract  final content =======   : #include "token.hpp"
+
+EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
+
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string callerStr = callerAddr.toString();
+    *owner = callerStr;
+    *name = tokenName;
+    *symbol = sym;
+    *total_supply = supply;
+    (*balance)[owner.get()] = supply;
+    DIPC_EMIT_EVENT(Tranfer, "", &owner.get()[0], supply);
+}
+  inline void TestToken::approve_inline(const char* spender, uint64_t value){
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+
+EXPORT void TestToken::approve(const char* spender, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string callStr = callerAddr.toString();
+approve_inline(to, value);
+    bool result = (balance.get()[callStr] >= value);
+    DipcAssert(result);
+
+    std::string toStr = CharToAddress2Str(to);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+
+    (*balance)[callStr] = balance.get()[callStr] -  value;
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    DIPC_EMIT_EVENT(Tranfer, &(callStr[0]), to, value);
+}
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+
+EXPORT bool TestToken::burn(int128_t value){
+    Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}abis approve
+
+2019-08-29_22:29:02.714088: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:360] abis.ispayable :false
+
+2019-08-29_22:29:02.714103: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:376] finalContract  content =======   : #include "token.hpp"
+
+EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
+
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string callerStr = callerAddr.toString();
+    *owner = callerStr;
+    *name = tokenName;
+    *symbol = sym;
+    *total_supply = supply;
+    (*balance)[owner.get()] = supply;
+    DIPC_EMIT_EVENT(Tranfer, "", &owner.get()[0], supply);
+}
+  inline void TestToken::approve_inline(const char* spender, uint64_t value){
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+
+EXPORT void TestToken::approve(const char* spender, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string callStr = callerAddr.toString();
+approve_inline(to, value);
+    bool result = (balance.get()[callStr] >= value);
+    DipcAssert(result);
+
+    std::string toStr = CharToAddress2Str(to);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+
+    (*balance)[callStr] = balance.get()[callStr] -  value;
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    DIPC_EMIT_EVENT(Tranfer, &(callStr[0]), to, value);
+}
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+
+EXPORT bool TestToken::burn(int128_t value){
+    Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}
+
+2019-08-29_22:29:02.733177: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:400]  Export :
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    
+
+2019-08-29_22:29:02.733199: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:406] name : transferFrom
+
+2019-08-29_22:29:02.733212: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:515] calledFunc temp export: 
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+
+2019-08-29_22:29:02.733218: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:521] search func : 
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+2019-08-29_22:29:02.744069: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:526] finalContract  final content =======   : #include "token.hpp"
+
+EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
+
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string callerStr = callerAddr.toString();
+    *owner = callerStr;
+    *name = tokenName;
+    *symbol = sym;
+    *total_supply = supply;
+    (*balance)[owner.get()] = supply;
+    DIPC_EMIT_EVENT(Tranfer, "", &owner.get()[0], supply);
+}
+  inline void TestToken::approve_inline(const char* spender, uint64_t value){
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+
+EXPORT void TestToken::approve(const char* spender, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string callStr = callerAddr.toString();
+approve_inline(to, value);
+    bool result = (balance.get()[callStr] >= value);
+    DipcAssert(result);
+
+    std::string toStr = CharToAddress2Str(to);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+
+    (*balance)[callStr] = balance.get()[callStr] -  value;
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    DIPC_EMIT_EVENT(Tranfer, &(callStr[0]), to, value);
+}
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+
+EXPORT bool TestToken::burn(int128_t value){
+    Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}abis transferFrom
+
+2019-08-29_22:29:02.744099: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:360] abis.ispayable :false
+
+2019-08-29_22:29:02.744118: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:376] finalContract  content =======   : #include "token.hpp"
+
+EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
+
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string callerStr = callerAddr.toString();
+    *owner = callerStr;
+    *name = tokenName;
+    *symbol = sym;
+    *total_supply = supply;
+    (*balance)[owner.get()] = supply;
+    DIPC_EMIT_EVENT(Tranfer, "", &owner.get()[0], supply);
+}
+  inline void TestToken::approve_inline(const char* spender, uint64_t value){
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+
+EXPORT void TestToken::approve(const char* spender, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string callStr = callerAddr.toString();
+approve_inline(to, value);
+    bool result = (balance.get()[callStr] >= value);
+    DipcAssert(result);
+
+    std::string toStr = CharToAddress2Str(to);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+
+    (*balance)[callStr] = balance.get()[callStr] -  value;
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    DIPC_EMIT_EVENT(Tranfer, &(callStr[0]), to, value);
+}
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+
+EXPORT bool TestToken::burn(int128_t value){
+    Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}
+
+2019-08-29_22:29:02.774282: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:400]  Export :
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    
+
+2019-08-29_22:29:02.774307: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:406] name : getBalance
+
+2019-08-29_22:29:02.774318: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:515] calledFunc temp export: 
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+2019-08-29_22:29:02.774326: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:521] search func : 
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+2019-08-29_22:29:02.777452: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:526] finalContract  final content =======   : #include "token.hpp"
+
+EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
+
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string callerStr = callerAddr.toString();
+    *owner = callerStr;
+    *name = tokenName;
+    *symbol = sym;
+    *total_supply = supply;
+    (*balance)[owner.get()] = supply;
+    DIPC_EMIT_EVENT(Tranfer, "", &owner.get()[0], supply);
+}
+  inline void TestToken::approve_inline(const char* spender, uint64_t value){
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+
+EXPORT void TestToken::approve(const char* spender, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string callStr = callerAddr.toString();
+approve_inline(to, value);
+    bool result = (balance.get()[callStr] >= value);
+    DipcAssert(result);
+
+    std::string toStr = CharToAddress2Str(to);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+
+    (*balance)[callStr] = balance.get()[callStr] -  value;
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    DIPC_EMIT_EVENT(Tranfer, &(callStr[0]), to, value);
+}
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+
+EXPORT bool TestToken::burn(int128_t value){
+    Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}abis getBalance
+
+2019-08-29_22:29:02.777463: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:360] abis.ispayable :false
+
+2019-08-29_22:29:02.777479: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:376] finalContract  content =======   : #include "token.hpp"
+
+EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
+
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string callerStr = callerAddr.toString();
+    *owner = callerStr;
+    *name = tokenName;
+    *symbol = sym;
+    *total_supply = supply;
+    (*balance)[owner.get()] = supply;
+    DIPC_EMIT_EVENT(Tranfer, "", &owner.get()[0], supply);
+}
+  inline void TestToken::approve_inline(const char* spender, uint64_t value){
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+
+EXPORT void TestToken::approve(const char* spender, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string callStr = callerAddr.toString();
+approve_inline(to, value);
+    bool result = (balance.get()[callStr] >= value);
+    DipcAssert(result);
+
+    std::string toStr = CharToAddress2Str(to);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+
+    (*balance)[callStr] = balance.get()[callStr] -  value;
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    DIPC_EMIT_EVENT(Tranfer, &(callStr[0]), to, value);
+}
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+
+EXPORT bool TestToken::burn(int128_t value){
+    Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}
+
+2019-08-29_22:29:02.808885: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:400]  Export :
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    
+
+2019-08-29_22:29:02.808899: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:406] name : getApproveBalance
+
+2019-08-29_22:29:02.808910: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:515] calledFunc temp export: 
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}
+
+2019-08-29_22:29:02.808917: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:521] search func : 
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}
+2019-08-29_22:29:02.808925: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:526] finalContract  final content =======   : #include "token.hpp"
+
+EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
+
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string callerStr = callerAddr.toString();
+    *owner = callerStr;
+    *name = tokenName;
+    *symbol = sym;
+    *total_supply = supply;
+    (*balance)[owner.get()] = supply;
+    DIPC_EMIT_EVENT(Tranfer, "", &owner.get()[0], supply);
+}
+  inline void TestToken::approve_inline(const char* spender, uint64_t value){
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+
+EXPORT void TestToken::approve(const char* spender, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string callStr = callerAddr.toString();
+approve_inline(to, value);
+    bool result = (balance.get()[callStr] >= value);
+    DipcAssert(result);
+
+    std::string toStr = CharToAddress2Str(to);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+
+    (*balance)[callStr] = balance.get()[callStr] -  value;
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    DIPC_EMIT_EVENT(Tranfer, &(callStr[0]), to, value);
+}
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+
+EXPORT bool TestToken::burn(int128_t value){
+    Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}abis getApproveBalance
+
+2019-08-29_22:29:02.808934: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:360] abis.ispayable :false
+
+2019-08-29_22:29:02.808949: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:376] finalContract  content =======   : #include "token.hpp"
+
+EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
+
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string callerStr = callerAddr.toString();
+    *owner = callerStr;
+    *name = tokenName;
+    *symbol = sym;
+    *total_supply = supply;
+    (*balance)[owner.get()] = supply;
+    DIPC_EMIT_EVENT(Tranfer, "", &owner.get()[0], supply);
+}
+  inline void TestToken::approve_inline(const char* spender, uint64_t value){
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+
+EXPORT void TestToken::approve(const char* spender, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string callStr = callerAddr.toString();
+approve_inline(to, value);
+    bool result = (balance.get()[callStr] >= value);
+    DipcAssert(result);
+
+    std::string toStr = CharToAddress2Str(to);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+
+    (*balance)[callStr] = balance.get()[callStr] -  value;
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    DIPC_EMIT_EVENT(Tranfer, &(callStr[0]), to, value);
+}
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+
+EXPORT bool TestToken::burn(int128_t value){
+    Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}
+
+2019-08-29_22:29:02.834147: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:400]  Export :
+
+EXPORT bool TestToken::burn(int128_t value){
+    
+
+2019-08-29_22:29:02.834166: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:406] name : burn
+
+2019-08-29_22:29:02.834178: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:515] calledFunc temp export: 
+
+EXPORT bool TestToken::burn(int128_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+2019-08-29_22:29:02.834187: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:521] search func : 
+
+EXPORT bool TestToken::burn(int128_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+2019-08-29_22:29:02.840227: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:526] finalContract  final content =======   : #include "token.hpp"
+
+EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
+
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string callerStr = callerAddr.toString();
+    *owner = callerStr;
+    *name = tokenName;
+    *symbol = sym;
+    *total_supply = supply;
+    (*balance)[owner.get()] = supply;
+    DIPC_EMIT_EVENT(Tranfer, "", &owner.get()[0], supply);
+}
+  inline void TestToken::approve_inline(const char* spender, uint64_t value){
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+
+EXPORT void TestToken::approve(const char* spender, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string callStr = callerAddr.toString();
+approve_inline(to, value);
+    bool result = (balance.get()[callStr] >= value);
+    DipcAssert(result);
+
+    std::string toStr = CharToAddress2Str(to);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+
+    (*balance)[callStr] = balance.get()[callStr] -  value;
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    DIPC_EMIT_EVENT(Tranfer, &(callStr[0]), to, value);
+}
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+
+EXPORT bool TestToken::burn(int128_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}abis burn
+
+2019-08-29_22:29:02.840325: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:735] removedComments end  =======::#include "token.hpp"
+
+EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
+
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string callerStr = callerAddr.toString();
+    *owner = callerStr;
+    *name = tokenName;
+    *symbol = sym;
+    *total_supply = supply;
+    (*balance)[owner.get()] = supply;
+    DIPC_EMIT_EVENT(Tranfer, "", &owner.get()[0], supply);
+}
+  inline void TestToken::approve_inline(const char* spender, uint64_t value){
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+
+EXPORT void TestToken::approve(const char* spender, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string callStr = callerAddr.toString();
+approve_inline(to, value);
+    bool result = (balance.get()[callStr] >= value);
+    DipcAssert(result);
+
+    std::string toStr = CharToAddress2Str(to);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+
+    (*balance)[callStr] = balance.get()[callStr] -  value;
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    DIPC_EMIT_EVENT(Tranfer, &(callStr[0]), to, value);
+}
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+
+EXPORT bool TestToken::burn(int128_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}
+
+2019-08-29_22:29:02.840336: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:739] str ============
+2019-08-29_22:29:02.840342: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:740] str ============class\s*TestToken\s*\{
+2019-08-29_22:29:02.841418: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:745] findClass end  =======::
+
+2019-08-29_22:29:02.841444: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:748] claSma end  =======::
+
+2019-08-29_22:29:02.842857: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:761] hppPath  :  token.hpp
+2019-08-29_22:29:02.842924: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:765] hppOutPath  :  /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//tokentemp.hpp
+2019-08-29_22:29:02.842962: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:773] abaabaab ======== : 
+2019-08-29_22:29:02.842970: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:774] contractName ======== : TestToken
+2019-08-29_22:29:02.842977: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:776] randomDir ======== : /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/980be9b437aeh06d443a
+2019-08-29_22:29:02.842989: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:777] hppOutPath ======== : /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//tokentemp.hpp
+2019-08-29_22:29:02.842995: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:779] fu ======== : 
+ private: inline void approve_inline(const char* spender, uint64_t value)
+2019-08-29_22:29:02.843006: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:537] InsertFuncToHeaderFile start....
+
+2019-08-29_22:29:02.843021: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:543] InsertFuncToHeaderFile new ....
+
+2019-08-29_22:29:02.843130: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:545] InsertFuncToHeaderFile result ....true
+
+2019-08-29_22:29:02.843138: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:552] claSma[0].str()  :    class TestToken : public Contract {
+
+2019-08-29_22:29:02.843146: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:554] pos2  :    223
+
+2019-08-29_22:29:02.843158: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:586] tempText   :  #pragma once
+#include <dipc/dipc.hpp>
+#include <string>
+
+using namespace dipc;
+
+char tmp[7] = "supply";
+char bal[8] = "balance";
+char na[5] = "dipc";
+char allow[10] = "allowance";
+char ow[4] = "own";
+char sy[7] = "symbol";
+class TestToken : public Contract {
+public: 
+    EXPORT void init(const char* tokenName,const char* symbol, uint64_t supply);
+    PAYABLE void transfer(const char* to, uint64_t value);
+    EXPORT void approve(const char* spender, uint64_t value);
+    EXPORT void transferFrom(const char* from, const char* to, uint64_t value);
+    CONSTANT uint64_t getBalance(const char* own);
+    CONSTANT uint64_t getApproveBalance(const char* from, const char* approved);
+    EXPORT bool burn(int128_t _value);
+
+    void stop(){
+        isOwner();
+        stopped = true;    
+    }
+    void start() {
+        isOwner();
+        stopped = false;
+    }
+    void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+
+
+2019-08-29_22:29:02.843166: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:590] calledFuncDetail  cfd : 
+ private: inline void approve_inline(const char* spender, uint64_t value)
+
+2019-08-29_22:29:02.843435: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:602] tempText  end :  #pragma once
+#include <dipc/dipc.hpp>
+#include <string>
+
+using namespace dipc;
+
+char tmp[7] = "supply";
+char bal[8] = "balance";
+char na[5] = "dipc";
+char allow[10] = "allowance";
+char ow[4] = "own";
+char sy[7] = "symbol";
+class TestToken : public Contract {
+public: 
+    EXPORT void init(const char* tokenName,const char* symbol, uint64_t supply);
+    PAYABLE void transfer(const char* to, uint64_t value);
+    EXPORT void approve(const char* spender, uint64_t value);
+    EXPORT void transferFrom(const char* from, const char* to, uint64_t value);
+    CONSTANT uint64_t getBalance(const char* own);
+    CONSTANT uint64_t getApproveBalance(const char* from, const char* approved);
+    EXPORT bool burn(int128_t _value);
+
+    void stop(){
+        isOwner();
+        stopped = true;    
+    }
+    void start() {
+        isOwner();
+        stopped = false;
+    }
+    void setName(const char* _name){
+        isOwner();
+        *name = _name;
+    }
+
+private: 
+    String<na> name ;
+    String<sy> symbol;
+    uint8_t decimals = 6;
+    Map<bal, std::string, uint64_t >  balance;
+    Map<allow, std::string, uint64_t> allowance;
+    Uint64<tmp> total_supply;
+    bool stopped = false;
+    String<ow> owner;
+    
+    inline void isOwner(){
+        Address callerAddr = caller();
+        std::string callerStr = callerAddr.toString();
+        DipcAssert(owner.get() == callerStr);
+    }
+
+ 
+ private: inline void approve_inline(const char* spender, uint64_t value);};
+DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Approval, const char*, const char*, uint64_t);
+DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
+
+
+2019-08-29_22:29:02.844429: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:786] headerStr removedComments  ======== : #include "tokentemp.hpp"
+
+EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
+
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string callerStr = callerAddr.toString();
+    *owner = callerStr;
+    *name = tokenName;
+    *symbol = sym;
+    *total_supply = supply;
+    (*balance)[owner.get()] = supply;
+    DIPC_EMIT_EVENT(Tranfer, "", &owner.get()[0], supply);
+}
+  inline void TestToken::approve_inline(const char* spender, uint64_t value){
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+
+EXPORT void TestToken::approve(const char* spender, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string spenderStr = CharToAddress2Str(spender);
+   
+    uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
+    (*allowance)[callerAddr.toString()+spenderStr] = total;
+    DIPC_EMIT_EVENT(Approval, &(callerAddr.toString()[0]), spender, value);
+}
+
+PAYABLE void TestToken::transfer(const char* to, uint64_t value){
+    Address callerAddr = caller();
+    std::string callStr = callerAddr.toString();
+approve_inline(to, value);
+    bool result = (balance.get()[callStr] >= value);
+    DipcAssert(result);
+
+    std::string toStr = CharToAddress2Str(to);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+
+    (*balance)[callStr] = balance.get()[callStr] -  value;
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    DIPC_EMIT_EVENT(Tranfer, &(callStr[0]), to, value);
+}
+
+
+
+EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    std::string fromStr = CharToAddress2Str(from);
+    std::string toStr = CharToAddress2Str(to);
+
+    DipcAssert(balance.get()[fromStr] >= value);
+    DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
+    DipcAssert(allowance.get()[fromStr+callerAddr.toString()] >= value);
+
+    (*balance)[toStr] = balance.get()[toStr] + value;
+    (*balance)[fromStr] = balance.get()[fromStr] - value;
+    (*allowance)[fromStr +callerAddr.toString()] = allowance.get()[fromStr+callerAddr.toString()] - value; 
+    DIPC_EMIT_EVENT(Tranfer, from, to, value);
+}
+
+EXPORT bool TestToken::burn(int128_t value){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
+
+CONSTANT uint64_t TestToken::getBalance(const char* own){
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string ownerStr = CharToAddress2Str(own);
+    uint64_t ba =  balance.get()[ownerStr];
+    burn(ba);
+    DIPC_EMIT_EVENT(GetBalance, "", own, ba);
+    return ba;
+}
+
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}
+
+2019-08-29_22:29:02.844665: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:825] swap src::token.cpp tmp::/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/980be9b437aeh06d443a/token.cpp
+2019-08-29_22:29:02.844678: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:829] std::string(res.c_str()) + "/" + abidef_filename      /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//token.cpp
+

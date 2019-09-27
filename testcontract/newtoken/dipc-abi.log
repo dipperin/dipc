@@ -1,0 +1,480 @@
+2019-08-21_10:39:40.284041: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:940] dipc-abi  verbose  true
+
+2019-08-21_10:39:40.284465: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:941] dipc-abi argv  start ....
+
+2019-08-21_10:39:40.284476: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   /Users/konggan/workspace/chain/dipperin/dipc/testcontract/newtoken/../../build-n/bin/dipc-abigen
+2019-08-21_10:39:40.284483: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -extra-arg=-std=c++17
+2019-08-21_10:39:40.284489: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -extra-arg=--target=wasm32
+2019-08-21_10:39:40.284494: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -extra-arg=-w
+2019-08-21_10:39:40.284500: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/newtoken
+2019-08-21_10:39:40.284506: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/newtoken/../../build-n/bin/../include/libcxx
+2019-08-21_10:39:40.284512: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/newtoken/../../build-n/bin/../include/libc
+2019-08-21_10:39:40.284517: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/newtoken/../../build-n/bin/../include/rt
+2019-08-21_10:39:40.284523: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/newtoken/../../build-n/bin/../include/native/softfloat/include
+2019-08-21_10:39:40.284529: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/newtoken/../../build-n/bin/../include
+2019-08-21_10:39:40.284534: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   newtoken.cpp
+2019-08-21_10:39:40.284545: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -abigen_output=./newtoken.cpp.abi.json
+2019-08-21_10:39:40.284551: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -exports_output=/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//newtoken.cpp.exports
+2019-08-21_10:39:40.284557: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -abidef_output=
+2019-08-21_10:39:40.284562: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -log_path=./
+2019-08-21_10:39:40.284568: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -log_level=debug
+2019-08-21_10:39:40.284573: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -verbose
+2019-08-21_10:39:40.284578: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   --
+2019-08-21_10:39:40.284584: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:943]   -w
+2019-08-21_10:39:40.284590: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:945]   dipc-abi argv end 
+
+2019-08-21_10:39:40.284595: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:951] start run
+2019-08-21_10:39:40.284601: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:97] start create_find_macro_factory
+2019-08-21_10:39:40.625374: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:110] get macro:EXPORT
+2019-08-21_10:39:40.625423: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/dipc/testcontract/newtoken/newtoken.hpp
+
+2019-08-21_10:39:40.625431: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:EXPORT; long str :EXPORT; longstr :EXPORT void init();
+
+ CONSTANT void hello(const std::string name);
+ PAYABLE void can_payable();
+ private:
+ String<tokenName> tn;
+};
+DIPC_EVENT(payable, std::string, uint64_t);
+2019-08-21_10:39:40.625486: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:110] get macro:CONSTANT
+2019-08-21_10:39:40.625493: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/dipc/testcontract/newtoken/newtoken.hpp
+
+2019-08-21_10:39:40.625498: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:CONSTANT; long str :CONSTANT; longstr :CONSTANT void hello(const std::string name);
+ PAYABLE void can_payable();
+ private:
+ String<tokenName> tn;
+};
+DIPC_EVENT(payable, std::string, uint64_t);
+2019-08-21_10:39:40.625532: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:110] get macro:PAYABLE
+2019-08-21_10:39:40.625539: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/dipc/testcontract/newtoken/newtoken.hpp
+
+2019-08-21_10:39:40.625544: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:PAYABLE; long str :PAYABLE; longstr :PAYABLE void can_payable();
+ private:
+ String<tokenName> tn;
+};
+DIPC_EVENT(payable, std::string, uint64_t);
+2019-08-21_10:39:40.625565: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:104] get EVENT:DIPC_EVENT
+2019-08-21_10:39:40.625676: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:110] get macro:EXPORT
+2019-08-21_10:39:40.625684: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/dipc/testcontract/newtoken/newtoken.cpp
+
+2019-08-21_10:39:40.625689: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:EXPORT; long str :EXPORT; longstr :EXPORT void newtoken::init() {
+  *tn = "newtoken";
+}
+
+CONSTANT void newtoken::hello(const std::string name) {
+  println("hello", name);
+}
+
+PAYABLE void newtoken::can_payable() {
+  println("you can use PAYABLE identifier to transfer CSK");
+  DIPC_EMIT_EVENT(payable, "this is payable function", 64);
+}
+
+
+2019-08-21_10:39:40.625708: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:92] Export macrostr:EXPORT  contract:void  actions_str:init
+
+2019-08-21_10:39:40.625718: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:110] get macro:CONSTANT
+2019-08-21_10:39:40.625724: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/dipc/testcontract/newtoken/newtoken.cpp
+
+2019-08-21_10:39:40.625729: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:CONSTANT; long str :CONSTANT; longstr :CONSTANT void newtoken::hello(const std::string name) {
+  println("hello", name);
+}
+
+PAYABLE void newtoken::can_payable() {
+  println("you can use PAYABLE identifier to transfer CSK");
+  DIPC_EMIT_EVENT(payable, "this is payable function", 64);
+}
+
+
+2019-08-21_10:39:40.625753: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:92] Export macrostr:CONSTANT  contract:void  actions_str:hello
+
+2019-08-21_10:39:40.625763: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:110] get macro:PAYABLE
+2019-08-21_10:39:40.625769: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/dipc/testcontract/newtoken/newtoken.cpp
+
+2019-08-21_10:39:40.625778: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:PAYABLE; long str :PAYABLE; longstr :PAYABLE void newtoken::can_payable() {
+  println("you can use PAYABLE identifier to transfer CSK");
+  DIPC_EMIT_EVENT(payable, "this is payable function", 64);
+}
+
+
+2019-08-21_10:39:40.625798: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiMacro.cpp:92] Export macrostr:PAYABLE  contract:void  actions_str:can_payable
+
+2019-08-21_10:39:40.630116: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:960] result:0contract fullname:[newtoken]
+2019-08-21_10:39:42.091599: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:107] contract != Token
+2019-08-21_10:39:42.091626: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:109] decl name:[newtoken] contract:[newtoken]
+2019-08-21_10:39:42.091634: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:117] funcEntire : void init(; funcEnd : );
+
+ CONSTANT void hello(const std::string name);
+ PAYABLE void can_payable();
+ private:
+ String<tokenName> tn;
+};
+DIPC_EVENT(payable, std::string, uint64_t);
+2019-08-21_10:39:42.091642: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:122] method :init
+2019-08-21_10:39:42.091662: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:  realTypeName:void
+2019-08-21_10:39:42.091669: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:117] funcEntire : void hello(const std::string name; funcEnd : );
+ PAYABLE void can_payable();
+ private:
+ String<tokenName> tn;
+};
+DIPC_EVENT(payable, std::string, uint64_t);
+2019-08-21_10:39:42.091676: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:122] method :hello
+2019-08-21_10:39:42.091685: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:  realTypeName:void
+2019-08-21_10:39:42.091691: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:136] parame name:name
+2019-08-21_10:39:42.091706: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:  realTypeName:const std::string
+2019-08-21_10:39:42.091768: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:117] funcEntire : void can_payable(; funcEnd : );
+ private:
+ String<tokenName> tn;
+};
+DIPC_EVENT(payable, std::string, uint64_t);
+2019-08-21_10:39:42.091775: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:122] method :can_payable
+2019-08-21_10:39:42.091785: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:46] typeName:  realTypeName:void
+2019-08-21_10:39:42.091791: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:117] funcEntire : ; funcEnd : newtoken : public Contract {
+ public: 
+ EXPORT void init();
+
+ CONSTANT void hello(const std::string name);
+ PAYABLE void can_payable();
+ private:
+ String<tokenName> tn;
+};
+DIPC_EVENT(payable, std::string, uint64_t);
+2019-08-21_10:39:42.091797: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:117] funcEntire : ; funcEnd : newtoken : public Contract {
+ public: 
+ EXPORT void init();
+
+ CONSTANT void hello(const std::string name);
+ PAYABLE void can_payable();
+ private:
+ String<tokenName> tn;
+};
+DIPC_EVENT(payable, std::string, uint64_t);
+2019-08-21_10:39:42.091803: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:117] funcEntire : ; funcEnd : newtoken : public Contract {
+ public: 
+ EXPORT void init();
+
+ CONSTANT void hello(const std::string name);
+ PAYABLE void can_payable();
+ private:
+ String<tokenName> tn;
+};
+DIPC_EVENT(payable, std::string, uint64_t);
+2019-08-21_10:39:42.091809: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:117] funcEntire : ; funcEnd : newtoken : public Contract {
+ public: 
+ EXPORT void init();
+
+ CONSTANT void hello(const std::string name);
+ PAYABLE void can_payable();
+ private:
+ String<tokenName> tn;
+};
+DIPC_EVENT(payable, std::string, uint64_t);
+2019-08-21_10:39:42.091822: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/abi/AbiGenerator.cpp:147] abis size:3
+2019-08-21_10:39:42.279393: <info> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:977] find method successfind abi size:3
+2019-08-21_10:39:42.279414: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:982] methodName:init args:(
+2019-08-21_10:39:42.279421: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:993] )
+2019-08-21_10:39:42.279427: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:994] return typeName: realTypeName:void
+2019-08-21_10:39:42.279433: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:982] methodName:hello args:(
+2019-08-21_10:39:42.279439: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:989] name:name, typeName: realTypeName:const std::string
+2019-08-21_10:39:42.279445: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:993] )
+2019-08-21_10:39:42.279450: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:994] return typeName: realTypeName:void
+2019-08-21_10:39:42.279456: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:982] methodName:can_payable args:(
+2019-08-21_10:39:42.279461: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:993] )
+2019-08-21_10:39:42.279467: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:994] return typeName: realTypeName:void
+2019-08-21_10:39:42.279852: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:1007] start create abi json
+2019-08-21_10:39:42.280263: <error> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:631] random:[/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/f90388gfg1deh312038g] fileName:newtoken.cpp.abi.json
+2019-08-21_10:39:42.280279: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:633] tmpFile:[/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/f90388gfg1deh312038g/newtoken.cpp.abi.json]
+2019-08-21_10:39:42.280929: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:644] copy ::/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/f90388gfg1deh312038g/newtoken.cpp.abi.json to ::./newtoken.cpp.abi.json
+2019-08-21_10:39:42.281198: <error> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:665] random:[/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/f90388gfg1deh312038g] fileName:newtoken.cpp.exports
+2019-08-21_10:39:42.281211: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:667] tmpFile:[/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/f90388gfg1deh312038g/newtoken.cpp.exports]
+2019-08-21_10:39:42.281474: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:682] copy ::/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/f90388gfg1deh312038g/newtoken.cpp.exports to ::/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//newtoken.cpp.exports
+2019-08-21_10:39:42.281752: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:729] macrostr  =======::#include "newtoken.hpp"
+
+EXPORT void newtoken::init() {
+  *tn = "newtoken";
+}
+
+CONSTANT void newtoken::hello(const std::string name) {
+  println("hello", name);
+}
+
+PAYABLE void newtoken::can_payable() {
+  println("you can use PAYABLE identifier to transfer CSK");
+  DIPC_EMIT_EVENT(payable, "this is payable function", 64);
+}
+
+
+
+2019-08-21_10:39:42.281763: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:730] headerStr  =======::
+
+2019-08-21_10:39:42.281773: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:733] removedComments  =======::#include "newtoken.hpp"
+
+EXPORT void newtoken::init() {
+  *tn = "newtoken";
+}
+
+CONSTANT void newtoken::hello(const std::string name) {
+  println("hello", name);
+}
+
+PAYABLE void newtoken::can_payable() {
+  println("you can use PAYABLE identifier to transfer CSK");
+  DIPC_EMIT_EVENT(payable, "this is payable function", 64);
+}
+
+
+
+2019-08-21_10:39:42.282160: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:360] abis.ispayable :true
+
+2019-08-21_10:39:42.282193: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:376] finalContract  content =======   : 
+
+2019-08-21_10:39:42.282278: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:400] payable : PAYABLE void newtoken::can_payable() {
+  
+
+2019-08-21_10:39:42.282286: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:406] name : can_payable
+
+2019-08-21_10:39:42.282474: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:521] search func : PAYABLE void newtoken::can_payable() {
+  println("you can use PAYABLE identifier to transfer CSK");
+  DIPC_EMIT_EVENT(payable, "this is payable function", 64);
+}
+2019-08-21_10:39:42.282482: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:526] finalContract  final content =======   : #include "newtoken.hpp"
+
+EXPORT void newtoken::init() {
+  *tn = "newtoken";
+}
+
+CONSTANT void newtoken::hello(const std::string name) {
+  println("hello", name);
+}
+
+PAYABLE void newtoken::can_payable() {
+  println("you can use PAYABLE identifier to transfer CSK");
+  DIPC_EMIT_EVENT(payable, "this is payable function", 64);
+}
+
+abis can_payable
+
+2019-08-21_10:39:42.282491: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:360] abis.ispayable :false
+
+2019-08-21_10:39:42.282505: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:376] finalContract  content =======   : #include "newtoken.hpp"
+
+EXPORT void newtoken::init() {
+  *tn = "newtoken";
+}
+
+CONSTANT void newtoken::hello(const std::string name) {
+  println("hello", name);
+}
+
+PAYABLE void newtoken::can_payable() {
+  println("you can use PAYABLE identifier to transfer CSK");
+  DIPC_EMIT_EVENT(payable, "this is payable function", 64);
+}
+
+
+
+2019-08-21_10:39:42.282600: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:400]  Export :
+
+EXPORT void newtoken::init() {
+  
+
+2019-08-21_10:39:42.282607: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:406] name : init
+
+2019-08-21_10:39:42.282615: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:515] calledFunc temp export: 
+
+EXPORT void newtoken::init() {
+  u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+*tn = "newtoken";
+}
+
+2019-08-21_10:39:42.282621: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:521] search func : 
+
+EXPORT void newtoken::init() {
+  u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+*tn = "newtoken";
+}
+2019-08-21_10:39:42.284523: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:526] finalContract  final content =======   : #include "newtoken.hpp"
+
+EXPORT void newtoken::init() {
+  u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+*tn = "newtoken";
+}
+
+CONSTANT void newtoken::hello(const std::string name) {
+  println("hello", name);
+}
+
+PAYABLE void newtoken::can_payable() {
+  println("you can use PAYABLE identifier to transfer CSK");
+  DIPC_EMIT_EVENT(payable, "this is payable function", 64);
+}
+
+abis init
+
+2019-08-21_10:39:42.284531: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:360] abis.ispayable :false
+
+2019-08-21_10:39:42.284543: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:376] finalContract  content =======   : #include "newtoken.hpp"
+
+EXPORT void newtoken::init() {
+  u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+*tn = "newtoken";
+}
+
+CONSTANT void newtoken::hello(const std::string name) {
+  println("hello", name);
+}
+
+PAYABLE void newtoken::can_payable() {
+  println("you can use PAYABLE identifier to transfer CSK");
+  DIPC_EMIT_EVENT(payable, "this is payable function", 64);
+}
+
+
+
+2019-08-21_10:39:42.285190: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:400]  Export :
+
+CONSTANT void newtoken::hello(const std::string name) {
+  
+
+2019-08-21_10:39:42.285198: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:406] name : hello
+
+2019-08-21_10:39:42.285206: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:515] calledFunc temp export: 
+
+CONSTANT void newtoken::hello(const std::string name) {
+  u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+println("hello", name);
+}
+
+2019-08-21_10:39:42.285212: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:521] search func : 
+
+CONSTANT void newtoken::hello(const std::string name) {
+  u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+println("hello", name);
+}
+2019-08-21_10:39:42.286483: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:526] finalContract  final content =======   : #include "newtoken.hpp"
+
+EXPORT void newtoken::init() {
+  u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+*tn = "newtoken";
+}
+
+CONSTANT void newtoken::hello(const std::string name) {
+  u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+println("hello", name);
+}
+
+PAYABLE void newtoken::can_payable() {
+  println("you can use PAYABLE identifier to transfer CSK");
+  DIPC_EMIT_EVENT(payable, "this is payable function", 64);
+}
+
+abis hello
+
+2019-08-21_10:39:42.286494: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:735] removedComments end  =======::#include "newtoken.hpp"
+
+EXPORT void newtoken::init() {
+  u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+*tn = "newtoken";
+}
+
+CONSTANT void newtoken::hello(const std::string name) {
+  u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+println("hello", name);
+}
+
+PAYABLE void newtoken::can_payable() {
+  println("you can use PAYABLE identifier to transfer CSK");
+  DIPC_EMIT_EVENT(payable, "this is payable function", 64);
+}
+
+
+
+2019-08-21_10:39:42.286500: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:739] str ============
+2019-08-21_10:39:42.286506: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:740] str ============class\s*newtoken\s*\{
+2019-08-21_10:39:42.286518: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:745] findClass end  =======::
+
+2019-08-21_10:39:42.286524: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:748] claSma end  =======::
+
+2019-08-21_10:39:42.287088: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:761] hppPath  :  newtoken.hpp
+2019-08-21_10:39:42.287144: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:765] hppOutPath  :  /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//newtokentemp.hpp
+2019-08-21_10:39:42.287165: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:773] abaabaab ======== : 
+2019-08-21_10:39:42.287172: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:774] contractName ======== : newtoken
+2019-08-21_10:39:42.287178: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:776] randomDir ======== : /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/f90388gfg1deh312038g
+2019-08-21_10:39:42.287187: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:777] hppOutPath ======== : /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//newtokentemp.hpp
+2019-08-21_10:39:42.287199: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:537] InsertFuncToHeaderFile start....
+
+2019-08-21_10:39:42.287212: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:543] InsertFuncToHeaderFile new ....
+
+2019-08-21_10:39:42.287260: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:545] InsertFuncToHeaderFile result ....true
+
+2019-08-21_10:39:42.287267: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:552] claSma[0].str()  :    class newtoken : public Contract {
+
+2019-08-21_10:39:42.287273: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:554] pos2  :    90
+
+2019-08-21_10:39:42.287282: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:586] tempText   :  #pragma once
+#include <dipc/dipc.hpp>
+using namespace dipc;
+
+
+char tokenName[] = "token";
+class newtoken : public Contract {
+ public: 
+ EXPORT void init();
+
+ CONSTANT void hello(const std::string name);
+ PAYABLE void can_payable();
+ private:
+ String<tokenName> tn;
+
+
+2019-08-21_10:39:42.287452: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:602] tempText  end :  #pragma once
+#include <dipc/dipc.hpp>
+using namespace dipc;
+
+
+char tokenName[] = "token";
+class newtoken : public Contract {
+ public: 
+ EXPORT void init();
+
+ CONSTANT void hello(const std::string name);
+ PAYABLE void can_payable();
+ private:
+ String<tokenName> tn;
+};
+DIPC_EVENT(payable, std::string, uint64_t);
+
+2019-08-21_10:39:42.287585: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:786] headerStr removedComments  ======== : #include "newtokentemp.hpp"
+
+EXPORT void newtoken::init() {
+  u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+*tn = "newtoken";
+}
+
+CONSTANT void newtoken::hello(const std::string name) {
+  u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+println("hello", name);
+}
+
+PAYABLE void newtoken::can_payable() {
+  println("you can use PAYABLE identifier to transfer CSK");
+  DIPC_EMIT_EVENT(payable, "this is payable function", 64);
+}
+
+
+
+2019-08-21_10:39:42.287795: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:825] swap src::newtoken.cpp tmp::/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/f90388gfg1deh312038g/newtoken.cpp
+2019-08-21_10:39:42.287805: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-abigen.cpp:829] std::string(res.c_str()) + "/" + abidef_filename      /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//newtoken.cpp
+

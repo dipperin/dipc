@@ -1,0 +1,76 @@
+[
+    {
+        "name": "init",
+        "inputs": [],
+        "outputs": [],
+        "constant": "false",
+        "payable": "false",
+        "type": "function"
+    },
+    {
+        "name": "setStart",
+        "inputs": [
+            {
+                "name": "_start",
+                "type": "uint64"
+            }
+        ],
+        "outputs": [],
+        "constant": "false",
+        "payable": "false",
+        "type": "function"
+    },
+    {
+        "name": "setFibonacci",
+        "inputs": [
+            {
+                "name": "n",
+                "type": "uint64"
+            }
+        ],
+        "outputs": [],
+        "constant": "false",
+        "payable": "false",
+        "type": "function"
+    },
+    {
+        "name": "fibonacci",
+        "inputs": [
+            {
+                "name": "n",
+                "type": "uint64"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint64"
+            }
+        ],
+        "constant": "true",
+        "payable": "false",
+        "type": "function"
+    },
+    {
+        "name": "getCalculatedFiNumber",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint64"
+            }
+        ],
+        "constant": "true",
+        "payable": "false",
+        "type": "function"
+    },
+    {
+        "name": "Number",
+        "inputs": [
+            {
+                "type": "uint64"
+            }
+        ],
+        "type": "event"
+    }
+]

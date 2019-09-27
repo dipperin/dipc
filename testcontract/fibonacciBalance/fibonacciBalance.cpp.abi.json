@@ -1,0 +1,70 @@
+[
+    {
+        "name": "init",
+        "inputs": [],
+        "outputs": [],
+        "constant": "false",
+        "payable": "false",
+        "type": "function"
+    },
+    {
+        "name": "setStart",
+        "inputs": [
+            {
+                "name": "_start",
+                "type": "uint64"
+            }
+        ],
+        "outputs": [],
+        "constant": "false",
+        "payable": "false",
+        "type": "function"
+    },
+    {
+        "name": "callSetFibonacci",
+        "inputs": [
+            {
+                "name": "contractAddr",
+                "type": "string"
+            },
+            {
+                "name": "count",
+                "type": "uint64"
+            }
+        ],
+        "outputs": [],
+        "constant": "false",
+        "payable": "false",
+        "type": "function"
+    },
+    {
+        "name": "delegateCallSetFibonacci",
+        "inputs": [
+            {
+                "name": "contractAddr",
+                "type": "string"
+            },
+            {
+                "name": "count",
+                "type": "uint64"
+            }
+        ],
+        "outputs": [],
+        "constant": "false",
+        "payable": "false",
+        "type": "function"
+    },
+    {
+        "name": "getCalculatedFiNumber",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint64"
+            }
+        ],
+        "constant": "true",
+        "payable": "false",
+        "type": "function"
+    }
+]

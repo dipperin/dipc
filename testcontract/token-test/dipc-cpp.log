@@ -1,0 +1,98 @@
+2019-08-29_21:37:17.719007: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:53] the dipc-abigen opts is:
+
+2019-08-29_21:37:17.719607: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:56] -extra-arg=-std=c++17
+
+2019-08-29_21:37:17.719623: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:56] -extra-arg=--target=wasm32
+
+2019-08-29_21:37:17.719634: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:56] -extra-arg=-w
+
+2019-08-29_21:37:17.719643: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:56] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test
+
+2019-08-29_21:37:17.719653: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:56] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/../include/libcxx
+
+2019-08-29_21:37:17.719663: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:56] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/../include/libc
+
+2019-08-29_21:37:17.719673: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:56] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/../include/rt
+
+2019-08-29_21:37:17.719682: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:56] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/../include/native/softfloat/include
+
+2019-08-29_21:37:17.719692: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:56] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/../include
+
+2019-08-29_21:37:17.719702: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:56] token.cpp
+
+2019-08-29_21:37:17.719712: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:56] -abigen_output=./token.cpp.abi.json
+
+2019-08-29_21:37:17.719722: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:56] -exports_output=/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//token.cpp.exports
+
+2019-08-29_21:37:17.719746: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:56] -abidef_output=
+
+2019-08-29_21:37:17.719793: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:56] -log_path=./
+
+2019-08-29_21:37:17.719806: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:56] -log_level=debug
+
+2019-08-29_21:37:17.719816: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:56] -verbose
+
+2019-08-29_21:37:17.719824: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:56] --
+
+2019-08-29_21:37:17.719832: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:56] -w
+
+2019-08-29_21:37:17.719923: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/cpp/../include/dipc/utils.hpp:39] /Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/dipc-abigen -extra-arg=-std=c++17 -extra-arg=--target=wasm32 -extra-arg=-w -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/../include/libcxx -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/../include/libc -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/../include/rt -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/../include/native/softfloat/include -extra-arg=-I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/../include token.cpp -abigen_output=./token.cpp.abi.json -exports_output=/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//token.cpp.exports -abidef_output= -log_path=./ -log_level=debug -verbose -- -w 
+
+2019-08-29_21:37:21.279100: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:89] clang  new_opts start  
+
+2019-08-29_21:37:21.279124: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] -o /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//token.cpp.o     
+2019-08-29_21:37:21.279131: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//token.cpp     
+2019-08-29_21:37:21.279138: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] -std=c++17     
+2019-08-29_21:37:21.279143: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] -emit-llvm     
+2019-08-29_21:37:21.279149: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] -O3     
+2019-08-29_21:37:21.279155: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] --target=wasm32     
+2019-08-29_21:37:21.279160: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] -ffreestanding     
+2019-08-29_21:37:21.279166: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] -nostdlib     
+2019-08-29_21:37:21.279171: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] -fno-builtin     
+2019-08-29_21:37:21.279177: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] -fno-threadsafe-statics     
+2019-08-29_21:37:21.279182: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] -fno-exceptions     
+2019-08-29_21:37:21.279188: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] -fno-rtti     
+2019-08-29_21:37:21.279193: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] -fmodules-ts     
+2019-08-29_21:37:21.279198: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] -DBOOST_DISABLE_ASSERTS     
+2019-08-29_21:37:21.279204: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] -DBOOST_EXCEPTION_DISABLE     
+2019-08-29_21:37:21.279209: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] -DRAPIDJSON_64BIT=1     
+2019-08-29_21:37:21.279214: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] -I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test     
+2019-08-29_21:37:21.279220: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] -I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/../include/libcxx     
+2019-08-29_21:37:21.279225: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] -I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/../include/libc     
+2019-08-29_21:37:21.279231: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] -I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/../include/rt     
+2019-08-29_21:37:21.279236: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] -I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/../include/native/softfloat/include     
+2019-08-29_21:37:21.279242: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] -I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/../include     
+2019-08-29_21:37:21.279247: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] --sysroot=/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/../     
+2019-08-29_21:37:21.279254: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:91] -c     
+2019-08-29_21:37:21.279264: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:93] 
+
+2019-08-29_21:37:21.279319: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/cpp/../include/dipc/utils.hpp:39] /Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/clang-7 -o /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//token.cpp.o /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//token.cpp -std=c++17 -emit-llvm -O3 --target=wasm32 -ffreestanding -nostdlib -fno-builtin -fno-threadsafe-statics -fno-exceptions -fno-rtti -fmodules-ts -DBOOST_DISABLE_ASSERTS -DBOOST_EXCEPTION_DISABLE -DRAPIDJSON_64BIT=1 -I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test -I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/../include/libcxx -I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/../include/libc -I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/../include/rt -I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/../include/native/softfloat/include -I/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/../include --sysroot=/Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/../ -c 
+
+2019-08-29_21:37:24.210906: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:126]   exports_filename  /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//token.cpp.exports
+
+2019-08-29_21:37:24.210932: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:127]   abi_filename  ./token.cpp.abi.json
+
+2019-08-29_21:37:24.210939: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:128]   abidef_output  
+
+2019-08-29_21:37:24.210945: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:129]   output_filename  token.wasm
+
+2019-08-29_21:37:24.210951: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:130] exports_filename   /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//token.cpp.exports
+
+2019-08-29_21:37:24.210956: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:131] ld  new_opts start  
+
+2019-08-29_21:37:24.210961: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:133]  /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//token.cpp.o      
+2019-08-29_21:37:24.210967: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:133] -o token.wasm     
+2019-08-29_21:37:24.210972: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:133]  --export init      
+2019-08-29_21:37:24.210977: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:133]  --export transfer      
+2019-08-29_21:37:24.210983: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:133]  --export approve      
+2019-08-29_21:37:24.210988: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:133]  --export transferFrom      
+2019-08-29_21:37:24.210993: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:133]  --export getBalance      
+2019-08-29_21:37:24.210998: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:133]  --export getApproveBalance      
+2019-08-29_21:37:24.211003: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:133]  --export burn      
+2019-08-29_21:37:24.211008: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:133]  -log_path=./     
+2019-08-29_21:37:24.211013: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:133]  -log_level=debug     
+2019-08-29_21:37:24.211018: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:133]  -verbose     
+2019-08-29_21:37:24.211028: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/build-n/tools/dipc-cpp.cpp:135] 
+
+2019-08-29_21:37:24.211067: <debug> [/Users/konggan/workspace/chain/dipperin/dipc/tools/cpp/../include/dipc/utils.hpp:39] /Users/konggan/workspace/chain/dipperin/dipc/testcontract/token-test/../../build-n/bin/dipc-ld  /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//token.cpp.o  -o token.wasm  --export init   --export transfer   --export approve   --export transferFrom   --export getBalance   --export getApproveBalance   --export burn   -log_path=./  -log_level=debug  -verbose 
+

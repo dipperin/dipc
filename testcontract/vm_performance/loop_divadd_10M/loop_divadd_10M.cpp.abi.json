@@ -1,0 +1,21 @@
+[
+    {
+        "name": "init",
+        "inputs": [],
+        "outputs": [],
+        "constant": "false",
+        "type": "function"
+    },
+    {
+        "name": "loop_divadd_10M_test",
+        "inputs": [],
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint32"
+            }
+        ],
+        "constant": "false",
+        "type": "function"
+    }
+]
