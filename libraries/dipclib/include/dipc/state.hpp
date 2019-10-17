@@ -21,9 +21,9 @@ extern "C" {
     void address(uint8_t hash[22]);
     //void address2(uint8_t hash[47]);
     void sha3(const uint8_t *src, size_t srcLen, uint8_t *dest, size_t destLen);
-    
     int64_t getCallerNonce();
 	int64_t callTransfer(const uint8_t* to, size_t toLen, uint8_t amount[32]);
+
 }
 
 namespace dipc {
@@ -38,6 +38,7 @@ namespace dipc {
         ::blockHash(number, hash);
         return h256(hash, sizeof(hash));
     }
+    
 
     /**
      * @brief Current block miner’s address

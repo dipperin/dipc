@@ -52,6 +52,43 @@ macro(add_tool name)
 endmacro()
 
 
+function(add_testc na0me)
+  
+endfunction()
+
+function(add_tests name)
+set(LLVM_LINK_COMPONENTS support)
+include_directories(include)
+
+#add_executable(${name} ${CMAKE_BINARY_DIR}/${name}.cpp ${CMAKE_CURRENT_SOURCE_DIR}/../common/Log.cpp ${CMAKE_CURRENT_SOURCE_DIR}/../common/StringUtil.cpp)
+add_executable(${name} ${CMAKE_BINARY_DIR}/${name}.cpp)
+set_property(TARGET ${name} PROPERTY CXX_STANDARD 14)
+target_include_directories(${name} PUBLIC ${CMAKE_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/../include ${CMAKE_SOURCE_DIR}/dipc_llvm/tools/clang/include ${LLVM_INCLUDE_DIR})
+target_link_libraries(${name}
+  ${CMAKE_BINARY_DIR}/common/libcommon.a
+
+  LLVMipo
+  LLVMScalarOpts
+  LLVMInstCombine
+  LLVMTransformUtils
+  LLVMAnalysis
+  LLVMTarget
+  LLVMOption
+  LLVMMCParser
+  LLVMMC
+  LLVMObject
+  LLVMBitReader
+  LLVMCore
+  LLVMSupport
+  LLVMDemangle
+
+  ${Boost_LIBRARIES}
+  )
+
+add_custom_command(TARGET ${name} POST_BUILD COMMAND ${CMAKE_COMMAND} -E make_directory ${CMAKE_BINARY_DIR}/bin)
+add_custom_command(TARGET ${name} POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:${name}> ${CMAKE_BINARY_DIR}/bin/$<TARGET_FILE_NAME:${name}>)
+endfunction()
+
 
 add_subdirectory(common)
 add_subdirectory(cpp)

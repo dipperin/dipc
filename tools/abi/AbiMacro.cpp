@@ -72,25 +72,60 @@ namespace dipc{
         regex r(regexStr);
         //regex r(R"(EXPORT\s+(.+?)\s+(.*\())");
         longstr = findAndGetBeforeFirst(longstr, ")");
-        smatch smatch;
-        auto res = regex_search(longstr, smatch, r);
+        smatch stch;
+        auto res = regex_search(longstr, stch, r);
 
         //act.contractDef.fullName = smatch[1].str();
         //act.contractDef.name = removeNamespace(smatch[1].str());
         //string action = smatch[2].str();
-        string action = getName(smatch[2].str());
+        string action = getName(stch[2].str());
+        LOGDEBUG << "smatch[2].str : "  << stch[2].str()  <<  "; action : " << action << endl;
         string name = findAndGetBeforeFirst(action, "::");
         if(name != ""){
             act.contractDef.name = name;
             act.contractDef.fullName = name;
+        } else if(file_name.str().find(".cpp") != file_name.str().npos){
+            std::ifstream srcStream(file_name.str());
+            if (!srcStream.is_open())
+            {
+                throw Exception() << ErrStr("src is not open:") << ErrStr(strerror(errno));
+            }
+
+            std::string macrostr((std::istreambuf_iterator<char>(srcStream)),
+                                std::istreambuf_iterator<char>());
+            regexStr = R"(class\s+(.+?)\s+:)";
+            regex reg(regexStr);
+            LOGDEBUG << "regexStr  new : " << regexStr << endl;
+            smatch sa;
+            if (regex_search(macrostr, sa, reg)){
+                  LOGDEBUG << "sma[1].str : "  << sa[1].str() << "  sma[2].str : " << sa[2].str() << endl;
+                  std::string s = sa[1].str();
+                  trim(s);
+                  if(s != ""){
+                     act.contractDef.name = s;
+                     act.contractDef.fullName = s;
+                  }
+                  
+            } else {
+                srcStream.close();
+                return;
+            }
+            srcStream.close();
+           
         } else {
             return;
         }
-        action = findAndGetAfterFirst(action, "::");
+        
+        if (action.find("::") == action.npos){
+            trim(action);
+        }else{
+            action = findAndGetAfterFirst(action, "::");
+        }
+        
         //trim(action);
         act.actions.push_back(action);
         LOGDEBUG << "Export macrostr:" << macrostr
-            << "  contract:" << smatch[1].str()
+            << "  contract:" << stch[1].str()
             << "  actions_str:" << action 
             << endl;
     }

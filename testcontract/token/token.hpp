@@ -17,8 +17,8 @@ public:
     EXPORT void approve(const char* spender, uint64_t value);
     EXPORT void transferFrom(const char* from, const char* to, uint64_t value);
     PAYABLE uint64_t getBalance(const char* own);
-    CONSTANT uint64_t getApproveBalance(const char* from, const char* approved);
-    EXPORT bool burn(int128_t _value);
+    //CONSTANT uint64_t getApproveBalance(const char* from, const char* approved);
+    //EXPORT bool burn(int128_t _value);
 
     void stop(){
         isOwner();

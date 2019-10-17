@@ -10,9 +10,13 @@
 #include <boost/multiprecision/cpp_int.hpp>
 #include "vector_ref.h"
 
+
 extern "C" {
     void disable_free();
+    void hexStringSame(const uint8_t *src,  size_t srcLen, const uint8_t *dest, size_t destLen);
 }
+
+
 
 namespace dipc {
     /**
@@ -56,6 +60,8 @@ namespace dipc {
     using bytesRef = vector_ref<byte>;
     using bytesConstRef = vector_ref<byte const>;
 
+
+    //  暂时注释掉
     /**
      * @brief Convert hex character to decimal integer.
      * @param _i A hex character.
@@ -78,13 +84,14 @@ namespace dipc {
      */
     inline bytes fromHex(std::string const& _s)
     {
-        unsigned s = (_s.size() >= 2 && _s[0] == '0' && _s[1] == 'x') ? 2 : 0;
+        unsigned s = (_s.size() >= 2 && _s[0] == '0' && (_s[1] == 'x' || _s[1] == 'X')) ? 2 : 0;
         std::vector<uint8_t> ret;
         ret.reserve((_s.size() - s + 1) / 2);
 
         if (_s.size() % 2)
         {
-            int h = fromHexChar(_s[s++]);
+            auto bs = _s[s++];
+            int h = fromHexChar(bs);
             if (h != -1)
                 ret.push_back(h);
             else
@@ -94,6 +101,8 @@ namespace dipc {
         {
             int h = fromHexChar(_s[i]);
             int l = fromHexChar(_s[i + 1]);
+            //printf("h : %x  _s[i] : %x   l : %x   _s[i+1] : %x byte : %x \n ", h, _s[i], _s[i+1], l, (byte)(h * 16 + l));
+            //printf("h : %X  _s[i] : %x   l : %x   _s[i+1] : %x  byte : %x   number  : %u\n", h, _s[i], _s[i+1], l, (byte)(h * 16 + l), (h * 16 + l));
             if (h != -1 && l != -1)
                 ret.push_back((byte)(h * 16 + l));
             else
@@ -112,6 +121,15 @@ namespace dipc {
         return bytes((byte const*)_b.data(), (byte const*)(_b.data() + _b.size()));
     }
 
+       /**
+       
+     */
+    inline std::string hexStringSameWithVM(std::string const& _s){
+        std::string s(_s.size(), '0');
+        hexStringSame((const byte*)_s.data(), _s.size(), (const byte*)s[0], s.size());
+        return s;
+    }
+
 
     /**
      * @brief Convert a series of bytes to the corresponding hex string.
@@ -127,15 +145,19 @@ namespace dipc {
 
         static char const* hexdigits = "0123456789abcdef";
         size_t off = _prefix.size();
+        //  std::distance  :  Calculates the number of elements between first and last.
         std::string hex(std::distance(_it, _end)*2 + off, '0');
         hex.replace(0, off, _prefix);
         for (; _it != _end; _it++)
         {
+
             hex[off++] = hexdigits[(*_it >> 4) & 0x0f];
             hex[off++] = hexdigits[*_it & 0x0f];
         }
-        return hex;
+        return   hexStringSameWithVM(hex);
     }
+
+
 
     /**
      * @brief Convert a series of bytes to the corresponding hex string.
@@ -145,7 +167,7 @@ namespace dipc {
      */
     template <class T>
     inline std::string toHex(T const& _data) {
-        return toHex(_data.begin(), _data.end(), "");
+        return toHex(_data.begin(), _data.end(), "0x");
     }
 
     /**

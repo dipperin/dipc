@@ -100,6 +100,7 @@ namespace dipc {
     void ABIGenerator::handleTagDeclDefinition(TagDecl* tagDecl) {
         clang::ASTContext* astContext = &tagDecl->getASTContext();
         const auto& sm = compilerInstance->getSourceManager();
+        //sm.getFileManager().getFile().
         if (tagDecl->getName().str() == contract) {
             if (contract == "Token"){
                 LOGDEBUG << "contract == Token";
@@ -124,9 +125,15 @@ namespace dipc {
                 abi.methodName = method->getNameAsString();
                 if (method->isConst() || method->isDipcConstant()){
                     abi.isConst = true;
+                    abi.isPayable = false;
+                    abi.modifier = "CONSTANT";
                 } else if (method->isDipcPayable()){
                     abi.isPayable = true;
-                } 
+                    abi.modifier = "PAYABLE";
+                } else if (method->isDipcExport()){
+                    abi.isPayable = false;
+                    abi.modifier = "EXPORT";
+                }
                 clang::QualType returnType = method->getReturnType();
                 getRealName(returnType, astContext, abi.returnType.typeName, abi.returnType.realTypeName);
 

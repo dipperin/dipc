@@ -343,191 +343,249 @@ std::string RemoveCommentAndStatistics(const std::string &code_text, FileStatist
   return builder;
 }
 
-std::string GetAndInsertSpecial(const std::string &code_text, const ABIDef &abidef, vector<std::string>& calledFuncDetail, const string &contractName)
+std::string GetAndInsertBeCalled(const std::string &code_text, const ABIDef &abidef, vector<std::string>& calledFuncDetail, const string &contractName)
 {
-  ABIDef abidefTemp = abidef;
-  std::string codetext = code_text;
+
   std::string finalContract;
-  vector<std::string> payableFunc;
-  vector<std::string> calledFunc;
+  try{ 
 
-  //regex rSearch(R"(PAYABLE\s*(.+?)\s*(.+?)\s*(\(.*\)\s*\{)\s*)");
-  regex rSearch("");
-  sort(abidefTemp.abis.begin(), abidefTemp.abis.end(), [&](const ABI &a1, const ABI &a2) -> bool { return a1.isPayable ? true : false; });
+    ABIDef abidefTemp = abidef;
+    std::string codetext = code_text;
+    vector<std::string> payableFunc;
+    vector<std::string> calledFunc;
 
-  for (auto abis : abidefTemp.abis)
-  {
-    LOGDEBUG << "abis.ispayable :" << abis.isPayable << std::endl;
-    size_t pos1 = 0;
-    size_t pos2 = std::string::npos;
-    auto isPayable = abis.isPayable;
-    if (!isPayable)
-    {
-      regex rExport(R"(\s*(.+?))" + abis.methodName + R"(\s*(\(.*\)\s*\{)\s*)");
-      rSearch = rExport;
-    }else {
-      regex rPay(R"(PAYABLE\s*(.+?)\s*)" + abis.methodName +  R"(\s*(\(.*\)\s*\{)\s*)");
-      rSearch = rPay;
-    }
-    if (finalContract != "")
-    {
-      codetext = finalContract;
-    }
-    LOGDEBUG << "finalContract  content =======   : " << finalContract << std::endl;
+    //regex rSearch(R"(PAYABLE\s*(.+?)\s*(.+?)\s*(\(.*\)\s*\{)\s*)");
+    regex rSearch("");
+    sort(abidefTemp.abis.begin(), abidefTemp.abis.end(), [&](const ABI &a1, const ABI &a2) -> bool { return a1.isPayable ? true : false; });
+    // for(auto abis : abidefTemp.abis) {
+    //   LOGDEBUG << "GetAndInsertBeCalled abis " << "  methodName  " << abis.methodName << "  isPayable " << abis.isPayable  << "  modifier " <<  abis.modifier << std::endl;
+    // }
+    
 
-    while (true)
+    for (auto abis : abidefTemp.abis)
     {
-      smatch smt;
-      std::string searchContext = codetext.substr(pos1);
-      if (!regex_search(searchContext, smt, rSearch))
+      LOGDEBUG << "abis.ispayable :" << abis.isPayable << std::endl;
+      size_t pos1 = 0;
+      size_t pos2 = std::string::npos;
+      auto isPayable = abis.isPayable;
+      if (!isPayable)
       {
-        // "search" method not found directly returns codetext
-        if (finalContract == "")
+        regex rExport(R"(\s*(.+?))" + abis.methodName + R"(\s*(\(.*\)\s*\{)\s*)");
+        rSearch = rExport;
+      }else {
+        regex rPay(R"(PAYABLE\s*(.+?)\s*)" + abis.methodName +  R"(\s*(\(.*\)\s*\{)\s*)");
+        rSearch = rPay;
+      }
+
+      // ????????????????
+      if (finalContract != "")
+      {
+        codetext = finalContract;
+      }
+      //LOGDEBUG << "finalContract  content =======   : " << finalContract <<  " codetext  "  << codetext << std::endl;
+
+      while (true)
+      {
+        smatch smt;
+        LOGDEBUG << "finalContract  this height  " << finalContract  << " codetext height " << codetext << endl;          
+
+        std::string searchContext = codetext.substr(pos1);
+        LOGDEBUG << "searchContext  " << searchContext << endl;          
+
+        // ??????????????????abi
+        if (!regex_search(searchContext, smt, rSearch))
         {
-          finalContract = codetext;
+          // "search" method not found directly returns codetext
+          if (finalContract == "")
+          {
+            finalContract = codetext;
+            LOGDEBUG << "finalContract  newn  new new " << finalContract << endl;
+            
+            break;
+          }  // 
+          else if (finalContract != codetext)
+          {
+            LOGDEBUG << "finalContract  this new  " << finalContract  << " codetext new " << codetext << endl;          
+            finalContract += codetext.substr(pos1, codetext.size());
+            codetext = finalContract;
+            break;
+          }
           break;
         }
-        else if (finalContract != codetext)
+        std::string search = smt[0].str();
+        std::string out = isPayable ? "payable : " : " Export :";
+        LOGDEBUG << "log out out "  <<  out << search << endl;
+        //LOGDEBUG << "smt[1].str()" << smt[1].str() << endl;
+        //LOGDEBUG << "smt[2].str()" << smt[2].str() << endl;
+        std::string action = getName(smt[0].str());
+        //LOGDEBUG << out << action << endl;
+        std::string name = findAndGetAfterFirst(action, "::");
+        LOGDEBUG << "name : " << name << "   pos1  "  << pos1 << endl;
+
+
+        pos2 = codetext.find(search, pos1);
+        if (pos2 == std::string::npos)
         {
           finalContract += codetext.substr(pos1, codetext.size());
           codetext = finalContract;
+          //LOGDEBUG << "codetext =======   : " << codetext << std::endl;
           break;
         }
-        break;
-      }
-      std::string search = smt[0].str();
-      std::string out = isPayable ? "payable : " : " Export :";
-      LOGDEBUG << out << search << endl;
-      //LOGDEBUG << "smt[1].str()" << smt[1].str() << endl;
-      //LOGDEBUG << "smt[2].str()" << smt[2].str() << endl;
-      std::string action = getName(smt[0].str());
-      //LOGDEBUG << out << action << endl;
-      std::string name = findAndGetAfterFirst(action, "::");
-      LOGDEBUG << "name : " << name << endl;
+        pos1 = pos2;
+        LOGDEBUG << "pos2  " << pos2  << "   pos1  "  << pos1 << endl;
 
-      pos2 = codetext.find(search, pos1);
-      if (pos2 == std::string::npos)
-      {
-        finalContract += codetext.substr(pos1, codetext.size());
-        codetext = finalContract;
-        //LOGDEBUG << "codetext =======   : " << codetext << std::endl;
-        break;
-      }
-      pos1 = pos2;
-      //pos1 = pos2 + payable.length();
+        //pos1 = pos2 + payable.length();
 
-      int cnt = 0;
-      bool flg = false;
-      for (size_t i = pos1; i < codetext.length(); i++)
-      {
-        char c = codetext[i];
+        // ????????
+        int cnt = 0;
+        bool flg = false;
+        for (size_t i = pos1; i < codetext.length(); i++)
+        {
+          char c = codetext[i];
 
-        switch (c)
-        {
-        case '{':
-          if (cnt == 0)
-            flg = true;
-          cnt++;
-          break;
-        case '}':
-          cnt--;
-          break;
-        default:
-          break;
-        }
-        if (flg && cnt == 0)
-        {
-          pos2 = i + 1;
-          break;
-        }
-      }
-      // get the content before the searched method
-      // if(finalContract == ""){
-      //     finalContract = codetext.substr(0, pos1);
-      // }
-      finalContract = codetext.substr(0, pos1);
-      std::string s = codetext.substr(pos1, pos2 - pos1);
-      if (isPayable)
-      {
-        for (auto abi : abidefTemp.abis)
-        {
-          regex funcFind(R"(\s*)" + abi.methodName + R"(\s*\()");
-          if (!abi.isPayable)
+          switch (c)
           {
-            smatch sma;
-            if (regex_search(s, sma, funcFind))
+          case '{':
+            if (cnt == 0)
+              flg = true;
+            cnt++;
+            break;
+          case '}':
+            cnt--;
+            break;
+          default:
+            break;
+          }
+          if (flg && cnt == 0)
+          {
+            pos2 = i + 1;
+            break;
+          }
+        }
+
+        LOGDEBUG << "pos2 after " << pos2  << "   pos1  "  << pos1 << endl;
+
+        // get the content before the searched method
+        // if(finalContract == ""){
+        //     finalContract = codetext.substr(0, pos1);
+        // }
+        //LOGDEBUG << "codetext  before "  << codetext  << std::endl;
+
+        finalContract = codetext.substr(0, pos1);
+        LOGDEBUG << "finalContract  first "  << finalContract  << std::endl;
+        LOGDEBUG << "codetext  first "  << codetext  << std::endl;
+        // s ???????
+        std::string s = codetext.substr(pos1, pos2 - pos1);
+        LOGDEBUG << "s  first "  << s  << std::endl;
+
+        // ???payable??????????????payable?????????????????${funcName}_inline
+        if (isPayable)
+        {
+          for (auto abi : abidefTemp.abis)
+          {
+            regex funcFind(R"(\s*)" + abi.methodName + R"(\s*\()");
+            
+            if (!abi.isPayable)
             {
-              //LOGDEBUG << "sma[0].str:" << sma[0].str() << endl;
-              //LOGDEBUG << "s content : " << s << endl;
-              calledFunc.push_back(abi.methodName);
-              sort(calledFunc.begin(), calledFunc.end());
-              calledFunc.erase(unique(calledFunc.begin(), calledFunc.end()), calledFunc.end());
-              // Let the payable call the export method instead of calling the generated inline method.
-              s = regex_replace(s, funcFind, "\n" + abi.methodName + "_inline(");
-              //LOGDEBUG << "find method name called:" << abi.methodName << endl;
-              LOGDEBUG << "after repalce payable func:" << s << endl;
+              smatch sma;
+              if (regex_search(s, sma, funcFind))
+              {
+                //LOGDEBUG << "sma[0].str:" << sma[0].str() << endl;
+                //LOGDEBUG << "s content : " << s << endl;
+                calledFunc.push_back(abi.methodName);
+                sort(calledFunc.begin(), calledFunc.end());
+                calledFunc.erase(unique(calledFunc.begin(), calledFunc.end()), calledFunc.end());
+                // Let the payable call the export method instead of calling the generated inline method.
+                s = regex_replace(s, funcFind, "\n" + abi.methodName + "_inline(");
+                //LOGDEBUG << "find method name called:" << abi.methodName << endl;
+                LOGDEBUG << "after repalce payable func:" << s << endl;
+              }
             }
           }
         }
-      }
-      else
-      {
-        bool notfound = true;
-        for (auto cFunc : calledFunc)
+        else
         {
-          if (cFunc == abis.methodName)
+          bool notfound = true;
+          // ???payable?????payable????????????${funcName}_inline???????payable???????Value???0???
+          for (auto cFunc : calledFunc)
+          {
+            if (cFunc == abis.methodName)
+            {
+              if (int position = s.find(search) != std::string::npos)
+              {
+                notfound = false;
+                std::string inlineTemp;
+                std::string inlineTempDetail;
+                std::string funcBody = s.substr(position + search.size() - 1);
+                std::string returnType = abis.returnType.realTypeName == "_Bool" ? "bool" : abis.returnType.realTypeName;
+
+                inlineTempDetail = "\n private: inline " +returnType + " " + abis.methodName + "_inline" + smt[2].str().substr(0, smt[2].str().length() - 1);
+                LOGDEBUG << "inlineTempDetail temp info : " << inlineTempDetail << std::endl;
+                
+                calledFuncDetail.push_back(inlineTempDetail);
+                bool check =  abis.returnType.realTypeName == "_Bool";
+                LOGDEBUG << "abis.returnType.realTypeName == _Bool : " <<  check  << "returnType "  << returnType <<  " abis.returnType.realTypeName  " << abis.returnType.realTypeName <<  "  abis.returnType.TypeName  " << abis.returnType.typeName << std::endl;
+            
+                inlineTemp = "\n  inline " + returnType + " " + contractName + "::" + abis.methodName + "_inline" + smt[2].str() + "\n" + funcBody + "\n";
+                LOGDEBUG << "inlineTemp temp info : " << inlineTemp << std::endl;
+              
+                std::string temp = s.substr(0, position + search.size() - 1);
+                temp += "u256 tempv = dipc::callValue(); \n DipcAssert( tempv == 0);\n";
+                temp += s.substr(position + search.size() - 1);
+                s = temp;
+                s = inlineTemp + s;
+                LOGDEBUG << "calledFunc temp : " << s << std::endl;
+              }
+            }
+          }
+          // ???payable???????Value???0???
+          if (notfound)
           {
             if (int position = s.find(search) != std::string::npos)
             {
-              notfound = false;
-              std::string inlineTemp;
-              std::string inlineTempDetail;
-              std::string funcBody = s.substr(position + search.size() - 1);
-              std::string returnType = abis.returnType.realTypeName == "_Bool" ? "bool" : abis.returnType.realTypeName;
-
-              inlineTempDetail = "\n private: inline " +returnType + " " + abis.methodName + "_inline" + smt[2].str().substr(0, smt[2].str().length() - 1);
-              LOGDEBUG << "inlineTempDetail temp info : " << inlineTempDetail << std::endl;
-              
-              calledFuncDetail.push_back(inlineTempDetail);
-               bool check =  abis.returnType.realTypeName == "_Bool";
-              LOGDEBUG << "abis.returnType.realTypeName == _Bool : " <<  check  << "returnType "  << returnType <<  " abis.returnType.realTypeName  " << abis.returnType.realTypeName <<  "  abis.returnType.TypeName  " << abis.returnType.typeName << std::endl;
-           
-              inlineTemp = "\n  inline " + returnType + " " + contractName + "::" + abis.methodName + "_inline" + smt[2].str() + "\n" + funcBody + "\n";
-              LOGDEBUG << "inlineTemp temp info : " << inlineTemp << std::endl;
-             
               std::string temp = s.substr(0, position + search.size() - 1);
               temp += "u256 tempv = dipc::callValue(); \n DipcAssert( tempv == 0);\n";
               temp += s.substr(position + search.size() - 1);
               s = temp;
-              s = inlineTemp + s;
-              LOGDEBUG << "calledFunc temp : " << s << std::endl;
+              LOGDEBUG << "calledFunc temp export: " << s << std::endl;
             }
           }
         }
-        if (notfound)
-        {
-          if (int position = s.find(search) != std::string::npos)
-          {
-            std::string temp = s.substr(0, position + search.size() - 1);
-            temp += "u256 tempv = dipc::callValue(); \n DipcAssert( tempv == 0);\n";
-            temp += s.substr(position + search.size() - 1);
-            s = temp;
-            LOGDEBUG << "calledFunc temp export: " << s << std::endl;
-          }
-        }
+
+        finalContract += s;
+        LOGDEBUG << "search func : "  << s.c_str() ;
+        //payableFunc.push_back(s);
+        pos1 = pos2;
       }
 
-      finalContract += s;
-      LOGDEBUG << "search func : "  << s.c_str() ;
-      //payableFunc.push_back(s);
-      pos1 = pos2;
+      LOGDEBUG << "finalContract  final content =======   : " << finalContract  << std::endl;
+      
     }
+ 
+ }catch (Exception e) {
+    std::cerr  << "Exception info "  << e.what() << std::endl;
+    return "";
+}
 
-    LOGDEBUG << "finalContract  final content =======   : " << finalContract << "abis " << abis.methodName  << std::endl;
-    
-  }
+  LOGDEBUG << "finalContract  final content  last =======   : " << finalContract << std::endl;
 
   return finalContract;
+}
+
+void CompareHeaderAndImplFileMacro(const std::string &code_text, const ABIDef &abidef, const string& contractName){
+       for(auto abi : abidef.abis){
+        string searchStr = R"(\s*)" + abi.modifier + R"(\s*)" + abi.returnType.realTypeName + R"(\s*)"+ contractName +"::"+ abi.methodName;
+        LOGDEBUG << "searchStr " << searchStr << endl;
+        regex searchFuncHead(searchStr);
+        smatch sma;
+        if (!regex_search(code_text, sma, searchFuncHead)){
+           searchStr = R"(\s*)" + abi.modifier + R"(\s*)" + abi.returnType.realTypeName + R"(\s*)" + abi.methodName;
+           if (!regex_search(code_text, sma, searchFuncHead)){
+                std::cerr <<  "ERROR: <dipc-abigen> header declare is not same with the implement file;Please make sure the function macro is same "  << std::endl;
+                throw Exception();
+           }
+        }
+      }
 }
 
 std::string InsertFuncToHeaderFile(const std::string &code_text, vector<std::string> calledFuncDetail, fs::path &randomDir, const std::string contractName, std::string outHeaderPath, bool isSaveToFile = false)
@@ -731,7 +789,7 @@ void createContractFile(fs::path &randomDir, const string &srcPath,
 
   string removedComments = RemoveCommentAndStatistics(macrostr, fs, false, false);
   LOGDEBUG << "removedComments  =======::" << removedComments << std::endl;
-  removedComments = GetAndInsertSpecial(removedComments, abidef, calledFuncDetail, contractName);
+  removedComments = GetAndInsertBeCalled(removedComments, abidef, calledFuncDetail, contractName);
   LOGDEBUG << "removedComments end  =======::" << removedComments << std::endl;
 
   // handling header file issues
@@ -747,6 +805,7 @@ void createContractFile(fs::path &randomDir, const string &srcPath,
   smatch claSma;
   LOGDEBUG << "claSma end  =======::" << std::endl;
 
+  // indicate the header file and the implementation file are in the same file
   if (regex_search(removedComments, claSma, findClass))
   {
     LOGDEBUG << "hppPath i am here :  " << hppPath ;
@@ -756,6 +815,7 @@ void createContractFile(fs::path &randomDir, const string &srcPath,
   }
   else
   {
+    CompareHeaderAndImplFileMacro(removedComments,abidef, contractName);
     regex nameReg("\\.cpp");
     hppPath = regex_replace(src, nameReg, ".hpp");
     LOGDEBUG << "hppPath  :  " << hppPath;
@@ -953,7 +1013,8 @@ int main(int argc, const char **argv)
 
     if (result != 0 || contractDef.name.empty())
     {
-      // throw Exception() << ErrStr("find macro DIPC_ABI failed");
+      LOGDEBUG << "result :" << result << "contractDef.name : " << contractDef.name ;
+      throw Exception() << ErrStr("find macro failed");
       return -1;
     }
 
@@ -1014,14 +1075,17 @@ int main(int argc, const char **argv)
     createExportsFile(abiDef, srcFilename, exports_output_opt, randomDir);
 
     string externC = generateAbiCPlusPlus(contractDef, abiDef);
-
     createContractFile(randomDir, op.getSourcePathList()[0], srcFilename,
                        externC, abidef_output_opt, abiDef, contractDef.fullName);
+
   }
   catch (Exception e)
   {
     cerr << *boost::get_error_info<ErrStr>(e) << endl;
     cerr << e.what() << endl;
+    return -1;
   }
+
+     
   return 0;
 }

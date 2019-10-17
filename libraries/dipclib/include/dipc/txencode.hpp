@@ -70,12 +70,12 @@ namespace dipc {
      * @param stream RLP stream
      * @param d int32_t type
      */
-    inline void txEncode(RLPStream &stream, int32_t d){
+    /*inline void txEncode(RLPStream &stream, int32_t d){
         d = boost::endian::endian_reverse(d);
 
         bytesConstRef ref((byte*)&d, sizeof(d));
         stream.append(ref);
-    }
+    }*/
 
     /**
      * @brief Specified type encoding

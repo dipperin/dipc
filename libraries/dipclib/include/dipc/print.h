@@ -6,6 +6,9 @@
 
 #include <stdint.h>
 
+using uint128_t = unsigned __int128;
+using int128_t =  __int128;
+
 #ifdef __cplusplus
 extern "C" {
 #endif
