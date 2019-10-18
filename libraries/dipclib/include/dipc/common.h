@@ -13,7 +13,8 @@
 
 extern "C" {
     void disable_free();
-    void hexStringSame(const uint8_t *src,  size_t srcLen, const uint8_t *dest, size_t destLen);
+    //void hexStringSameWithVM(const uint8_t *src,  size_t srcLen, const uint8_t *dest, size_t destLen);
+    void hexStringSameWithVM(const uint8_t *src,  size_t srcLen, uint8_t[47]);
 }
 
 
@@ -125,9 +126,15 @@ namespace dipc {
        
      */
     inline std::string hexStringSameWithVM(std::string const& _s){
-        std::string s(_s.size(), '0');
-        hexStringSame((const byte*)_s.data(), _s.size(), (const byte*)s[0], s.size());
-        return s;
+        byte hash[47];
+        //std::string s(_s.size()+1, '0');
+        ::hexStringSameWithVM((const byte*)_s.data(), _s.size(), hash);
+        char* p = new char[sizeof(hash)];
+        memcpy(p,hash,sizeof(hash));
+        p[sizeof(hash)] = 0;
+        std::string str(p);
+
+        return str;
     }
 
 
@@ -154,6 +161,7 @@ namespace dipc {
             hex[off++] = hexdigits[(*_it >> 4) & 0x0f];
             hex[off++] = hexdigits[*_it & 0x0f];
         }
+        //return hex;
         return   hexStringSameWithVM(hex);
     }
 
@@ -167,7 +175,8 @@ namespace dipc {
      */
     template <class T>
     inline std::string toHex(T const& _data) {
-        return toHex(_data.begin(), _data.end(), "0x");
+        //return toHex(_data.begin(), _data.end(), "0x");
+        return toHex(_data.begin(), _data.end(), "");
     }
 
     /**

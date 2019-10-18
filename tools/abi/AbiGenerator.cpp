@@ -18,6 +18,7 @@ namespace dipc {
         }
         return typeName;
     }
+                    
     void ABIGenerator::getRealName(clang::QualType &type, clang::ASTContext* astContext, std::string &typeName, std::string &realTypeName) {
         if (isa<TypedefType>(type.getTypePtr())) {
             const auto* tdDecl = type->getAs<clang::TypedefType>()->getDecl();
@@ -143,6 +144,7 @@ namespace dipc {
                     LOGDEBUG << "parame name:" << p->getNameAsString();
                     string typeName;
                     string realTypeName;
+                    //string originTypeName;
                     getRealName(qt, astContext, typeName, realTypeName);
                     if (!isBuildinType(realTypeName)) {
                         throw Exception() << ErrStr(methodName + ":" + p->getNameAsString() + ":" + realTypeName + " is not buildin type");

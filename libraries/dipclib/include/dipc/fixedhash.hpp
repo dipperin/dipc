@@ -34,11 +34,11 @@ namespace dipc {
         explicit FixedHash(unsigned _u) { toBigEndian(_u, m_data); }
 
         explicit FixedHash(const byte *h, size_t len){
-            std::cout << "this function is called!" << std::endl;
+            //std::cout << "this function is called!" << std::endl;
             memcpy(m_data.data(), h, N);
         }
         explicit FixedHash(const bytes &&b) {
-            std::cout << "this function parameter 'const bytes &&b' is called!" << std::endl;
+            //std::cout << "this function parameter 'const bytes &&b' is called!" << std::endl;
             std::copy(b.begin(), b.end(), m_data.begin());
         }
 

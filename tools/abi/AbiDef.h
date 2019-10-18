@@ -7,9 +7,12 @@ namespace dipc {
         TypdeDef() = default;
         TypdeDef(std::string typeName, std::string realTypeName)
             :typeName(typeName), realTypeName(realTypeName){}
+        TypdeDef(std::string typeName, std::string realTypeName, std::string originName)
+            :typeName(typeName), realTypeName(realTypeName), originName(originName){}
 
         std::string typeName;
         std::string realTypeName;
+        std::string originName;
     };
 
     struct ABI {

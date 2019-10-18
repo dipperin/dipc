@@ -377,7 +377,7 @@ std::string GetAndInsertBeCalled(const std::string &code_text, const ABIDef &abi
         rSearch = rPay;
       }
 
-      // ????????????????
+      // use the contents of the contract file that was replaced from the second loop
       if (finalContract != "")
       {
         codetext = finalContract;
@@ -392,7 +392,7 @@ std::string GetAndInsertBeCalled(const std::string &code_text, const ABIDef &abi
         std::string searchContext = codetext.substr(pos1);
         LOGDEBUG << "searchContext  " << searchContext << endl;          
 
-        // ??????????????????abi
+        // judge if you need to process the data of the contract file according to abi
         if (!regex_search(searchContext, smt, rSearch))
         {
           // "search" method not found directly returns codetext
@@ -436,7 +436,7 @@ std::string GetAndInsertBeCalled(const std::string &code_text, const ABIDef &abi
 
         //pos1 = pos2 + payable.length();
 
-        // ????????
+        // find the entire method starting from the pos1 position
         int cnt = 0;
         bool flg = false;
         for (size_t i = pos1; i < codetext.length(); i++)
@@ -474,11 +474,11 @@ std::string GetAndInsertBeCalled(const std::string &code_text, const ABIDef &abi
         finalContract = codetext.substr(0, pos1);
         LOGDEBUG << "finalContract  first "  << finalContract  << std::endl;
         LOGDEBUG << "codetext  first "  << codetext  << std::endl;
-        // s ???????
+        // s  : the entire method for the current lookup
         std::string s = codetext.substr(pos1, pos2 - pos1);
         LOGDEBUG << "s  first "  << s  << std::endl;
 
-        // ???payable??????????????payable?????????????????${funcName}_inline
+        // If the payable method calls a non-payable method, replace the called method with the call ${funcName}_inline
         if (isPayable)
         {
           for (auto abi : abidefTemp.abis)
@@ -506,7 +506,7 @@ std::string GetAndInsertBeCalled(const std::string &code_text, const ABIDef &abi
         else
         {
           bool notfound = true;
-          // ???payable?????payable????????????${funcName}_inline???????payable???????Value???0???
+          // If the non-payable method is called by the payable method, insert a non-payable ${funcName}_inline method. And insert the assertion in the non-payable method the transfer amount must be 0
           for (auto cFunc : calledFunc)
           {
             if (cFunc == abis.methodName)
@@ -538,7 +538,7 @@ std::string GetAndInsertBeCalled(const std::string &code_text, const ABIDef &abi
               }
             }
           }
-          // ???payable???????Value???0???
+          // Insert the assertion transfer amount  must be 0  in the non-payable method not called by the payable method
           if (notfound)
           {
             if (int position = s.find(search) != std::string::npos)
@@ -573,19 +573,24 @@ std::string GetAndInsertBeCalled(const std::string &code_text, const ABIDef &abi
 }
 
 void CompareHeaderAndImplFileMacro(const std::string &code_text, const ABIDef &abidef, const string& contractName){
+       LOGDEBUG <<  "CompareHeaderAndImplFileMacro  start "  << std::endl;
        for(auto abi : abidef.abis){
-        string searchStr = R"(\s*)" + abi.modifier + R"(\s*)" + abi.returnType.realTypeName + R"(\s*)"+ contractName +"::"+ abi.methodName;
+        std::string typeName = abi.returnType.typeName == "" ? abi.returnType.realTypeName : abi.returnType.typeName;
+        typeName =  typeName == "_Bool" ? "bool" : typeName;
+        string searchStr = R"(\s*)" + abi.modifier + R"(\s*)" + typeName + R"(\s*)"+ contractName +"::"+ abi.methodName;
+        LOGDEBUG << "searchStr "  << searchStr << " code_text " << code_text << std::endl;
         LOGDEBUG << "searchStr " << searchStr << endl;
         regex searchFuncHead(searchStr);
         smatch sma;
         if (!regex_search(code_text, sma, searchFuncHead)){
-           searchStr = R"(\s*)" + abi.modifier + R"(\s*)" + abi.returnType.realTypeName + R"(\s*)" + abi.methodName;
+           searchStr = R"(\s*)" + abi.modifier + R"(\s*)" + typeName + R"(\s*)" + abi.methodName;
            if (!regex_search(code_text, sma, searchFuncHead)){
                 std::cerr <<  "ERROR: <dipc-abigen> header declare is not same with the implement file;Please make sure the function macro is same "  << std::endl;
                 throw Exception();
            }
         }
       }
+      LOGDEBUG << "CompareHeaderAndImplFileMacro end  "  << std::endl;
 }
 
 std::string InsertFuncToHeaderFile(const std::string &code_text, vector<std::string> calledFuncDetail, fs::path &randomDir, const std::string contractName, std::string outHeaderPath, bool isSaveToFile = false)
@@ -597,7 +602,7 @@ std::string InsertFuncToHeaderFile(const std::string &code_text, vector<std::str
   regex findClass(R"(class\s*)" + contractName + R"(\s*(.|\s)*?\{)");
   smatch claSma;
   // LOGDEBUG << "claSma[0].str()  :    " << claSma[0].str();
-  // std::cout << "claSma[0].str()  :    " << claSma[0].str() << std::endl;
+  // LOGDEBUG << "claSma[0].str()  :    " << claSma[0].str() << std::endl;
   LOGDEBUG << "InsertFuncToHeaderFile new ...." << std::endl;
   auto result = regex_search(codetext, claSma, findClass);
   LOGDEBUG << "InsertFuncToHeaderFile result ...." << result << std::endl;
@@ -895,7 +900,7 @@ void prepareFile(const string &filename)
 
   string line;
 
-  auto cur = fs.tellg(); // tellg()  Used for the input stream, returning the current position of the ‘get’ pointer in the stream
+  auto cur = fs.tellg(); // tellg()  Used for the input stream, returning the current position of the ‘get�? pointer in the stream
 
   //    auto begin = fstream::pos_type(-1);
   //    auto end = fstream::pos_type(-1);

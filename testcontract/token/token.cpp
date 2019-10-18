@@ -1,6 +1,6 @@
 #include "token.hpp"
 
-EXPORT void TestToken::init(const char* tokenName, const char* sym, int128_t supply){
+EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
 
     Address callerAddr = caller();
     std::string callerStr = callerAddr.toString();
@@ -9,6 +9,7 @@ EXPORT void TestToken::init(const char* tokenName, const char* sym, int128_t sup
     *symbol = sym;
     *total_supply = supply;
     (*balance)[owner.get()] = supply;
+    (*nbalance)[callerAddr] = supply;
     DIPC_EMIT_EVENT(Tranfer, "", &owner.get()[0], supply);
 }
 
@@ -64,22 +65,22 @@ PAYABLE uint64_t TestToken::getBalance(const char* own){
     return ba;
 }
 
-// CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
-//     std::string fromStr = CharToAddress2Str(from);
-//     std::string approvedStr = CharToAddress2Str(approved);
-//     uint64_t re = allowance.get()[fromStr+approvedStr];
-//     DIPC_EMIT_EVENT(GetBalance, from, approved, re);
-//     return re;
-// }
+CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
+    std::string fromStr = CharToAddress2Str(from);
+    std::string approvedStr = CharToAddress2Str(approved);
+    uint64_t re = allowance.get()[fromStr+approvedStr];
+    DIPC_EMIT_EVENT(GetBalance, from, approved, re);
+    return re;
+}
 
-// EXPORT bool TestToken::burn(int128_t value){
-//     Address callerAddr = caller();
-//     DipcAssert(balance.get()[callerAddr.toString()] >= value);
-//     DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
-//     uint64_t abase = 100;
-//     uint64_t bbase = abase << 10;
-//     (*balance)[callerAddr.toString()] -= value;
-//     (*balance)[owner.get()] += value;
-//     DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
-//     return true;
-// }
+EXPORT bool TestToken::burn(int128_t value){
+    Address callerAddr = caller();
+    DipcAssert(balance.get()[callerAddr.toString()] >= value);
+    DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
+    (*balance)[callerAddr.toString()] -= value;
+    (*balance)[owner.get()] += value;
+    DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
+    return true;
+}
