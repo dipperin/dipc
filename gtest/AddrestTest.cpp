@@ -8,13 +8,15 @@ using namespace dipc;
 
 #include <string>
 std::string TestAddr(const char* addr){
-    Address adr = Address(addr, 22);
-    hexStringSameWithVM(addr);
-    return adr.toString();
+    // Address adr = Address(addr, 22);
+    // hexStringSameWithVM(addr);
+    // return adr.toString();
+    return "";
 }
 
 std::string TestCharToAddrToStr(const char* addr){
-    return CharToAddress2Str(addr);
+    //return CharToAddress2Str(addr);
+    return "";
 }
 
 TEST(GTEST,RESULT){
