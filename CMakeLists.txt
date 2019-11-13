@@ -65,7 +65,7 @@ message("the CMAKE_BINARY_DIR is:${CMAKE_BINARY_DIR}")
 #    include_directories("${gtest_SOURCE_DIR}/include")
 # endif()
 
-add_subdirectory(thirdparty/gtest)
+add_subdirectory(third/gtest/googletest)
 
 set(CDT_ROOT_DIR ${CMAKE_BINARY_DIR})
 configure_file(${CMAKE_SOURCE_DIR}/CMakeModules/dipc.cdt-config.cmake ${CMAKE_BINARY_DIR}/lib/cmake/dipc.cdt/dipc.cdt-config.cmake @ONLY)

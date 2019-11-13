@@ -492,6 +492,11 @@ std::string GetAndInsertBeCalled(const std::string &code_text, const ABIDef &abi
               {
                 //LOGDEBUG << "sma[0].str:" << sma[0].str() << endl;
                 //LOGDEBUG << "s content : " << s << endl;
+      
+                if (abi.methodName == "init"){
+                   std::cerr << "ERROR!!! ERROR!!! can't call init method in normal method\n";
+                   exit(1);
+                }
                 calledFunc.push_back(abi.methodName);
                 sort(calledFunc.begin(), calledFunc.end());
                 calledFunc.erase(unique(calledFunc.begin(), calledFunc.end()), calledFunc.end());
@@ -586,7 +591,7 @@ void CompareHeaderAndImplFileMacro(const std::string &code_text, const ABIDef &a
            searchStr = R"(\s*)" + abi.modifier + R"(\s*)" + typeName + R"(\s*)" + abi.methodName;
            if (!regex_search(code_text, sma, searchFuncHead)){
                 std::cerr <<  "ERROR: <dipc-abigen> header declare is not same with the implement file;Please make sure the function macro is same "  << std::endl;
-                throw Exception();
+                exit(1);
            }
         }
       }

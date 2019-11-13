@@ -23,7 +23,7 @@ extern "C" {
     void sha3(const uint8_t *src, size_t srcLen, uint8_t *dest, size_t destLen);
     int64_t getCallerNonce();
 	int64_t callTransfer(const uint8_t* to, size_t toLen, uint8_t amount[32]);
-
+    void getSignerAddress(const uint8_t* sha3Data, size_t sha3DataLen, const uint8_t *signature, size_t signatureLen, uint8_t addr[22]);
 }
 
 namespace dipc {
@@ -164,7 +164,7 @@ namespace dipc {
     }
 
     /**
-     * @brief Send given amount of Wei to Address
+     * @brief Send given amount of WU to Address
      * 
      * @param to Destination address
      * @param amount Amount
@@ -175,6 +175,27 @@ namespace dipc {
         toBigEndian(amount, bs);
         return ::callTransfer(to.data(), to.size(), bs.data());
     }
+
+    /**
+     * @brief  From the signature and sha3Data recover the signer
+     * 
+     * @param signature signed data
+     * @param sha3Data  message crypto by the sha2 function
+     * @return Address the singer address
+     */
+    inline Address getSignerAddress(const h256 sha3Data, std::string signature){
+        byte addr[22];
+        ::getSignerAddress((const byte*)sha3Data.data(), sha3Data.size(), (const byte*) signature.data(), signature.size(), addr );
+        return Address(addr, sizeof(addr));
+    }
+    /**
+     *  @brief Get the current Block header timestamp
+     *  @return the current Block header timestamp unixnano value
+     */
+    inline int64_t timestamp(){
+        return ::timestamp();
+    }
+
 }
 
 

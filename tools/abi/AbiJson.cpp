@@ -17,8 +17,8 @@ namespace dipc {
     static const string convertBuildinType(const string &typeName) {
         regex charReg(R"(\s*char\s+\*\s*)");
         regex constCharReg(R"(\s*const\s+char\s*\*\s*)");
-        std::regex constStringReg(R"(\s*const\s+string\s*)");
-        std::regex constStdStringReg(R"(\s*const\s+std::string\s*)");
+        //std::regex constStringReg(R"(\s*const\s+string\s*)");
+        //std::regex constStdStringReg(R"(\s*const\s+std::string\s*)");
         string buildInType = typeName;
         if (typeName == "unsigned __int128" || typeName == "uint128_t") buildInType = "uint128";
         else if (typeName == "__int128"          || typeName == "int128_t")  buildInType = "int128";
@@ -32,9 +32,10 @@ namespace dipc {
         else if (typeName == "long"  || typeName == "int32_t" || typeName == "int")  buildInType = "int32";
         else if (typeName == "short"              || typeName == "int16_t")  buildInType = "int16";
         else if (typeName == "char"               || typeName == "int8_t")   buildInType = "int8";
-        else if (typeName == "float") buildInType = "float32";
-        else if (typeName == "double")   buildInType = "float64";
-        else if (typeName == "std::string" || typeName == "string" || regex_search(typeName, constStringReg) || regex_search(typeName, constStdStringReg)|| regex_search(typeName, charReg) || regex_search(typeName, constCharReg)) buildInType = "string";
+        //else if (typeName == "float") buildInType = "float32";
+        //else if (typeName == "double")   buildInType = "float64";
+        else if (regex_search(typeName, charReg) || regex_search(typeName, constCharReg)) buildInType = "string";
+       // else if (typeName == "std::string" || typeName == "string" || regex_search(typeName, constStringReg) || regex_search(typeName, constStdStringReg)|| regex_search(typeName, charReg) || regex_search(typeName, constCharReg)) buildInType = "string"; 
         else if (typeName == "bool" || typeName == "_Bool") buildInType = "bool";
         else if (typeName == "void") buildInType = "void";
         //else if (typeName == "dipc::")

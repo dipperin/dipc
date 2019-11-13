@@ -80,6 +80,10 @@ namespace dipc{
         //string action = smatch[2].str();
         string action = getName(stch[2].str());
         LOGDEBUG << "smatch[2].str : "  << stch[2].str()  <<  "; action : " << action << endl;
+        if (stch[2].str() == "") {
+            std::cerr << "ERROR!!! ERROR!!! the macro use is wrong,please check the code!!!" << std::endl ;    
+            exit(1);
+        }
         string name = findAndGetBeforeFirst(action, "::");
         if(name != ""){
             act.contractDef.name = name;

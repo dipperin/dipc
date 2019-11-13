@@ -124,17 +124,30 @@ namespace dipc {
                 LOGDEBUG << "method :" << methodName;
                 ABI abi;
                 abi.methodName = method->getNameAsString();
-                if (method->isConst() || method->isDipcConstant()){
+                auto constant = method->isConst() || method->isDipcConstant();
+                uint8_t macroNum = 0;
+                if (constant){
                     abi.isConst = true;
                     abi.isPayable = false;
                     abi.modifier = "CONSTANT";
-                } else if (method->isDipcPayable()){
+                    macroNum++;
+                } 
+                if (method->isDipcPayable()){
                     abi.isPayable = true;
                     abi.modifier = "PAYABLE";
-                } else if (method->isDipcExport()){
+                    macroNum++;
+                } 
+                if (method->isDipcExport()){
                     abi.isPayable = false;
                     abi.modifier = "EXPORT";
+                    macroNum++;
                 }
+                LOGDEBUG << "abi.methodName : " << abi.methodName << "; abi.isConst : " << (method->isConst() || method ->isDipcConstant())   << "; abi.isPayable :" << method->isDipcPayable() << "; abi.isExport :" << method->isDipcExport() ;
+                if (macroNum > 1) {
+                    std::cerr << "ERROR!!! ERROR!!!  one method can't have more than one Macro!!!" ;
+                    exit(1);
+                }
+
                 clang::QualType returnType = method->getReturnType();
                 getRealName(returnType, astContext, abi.returnType.typeName, abi.returnType.realTypeName);
 
