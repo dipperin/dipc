@@ -1,6 +1,6 @@
 #include "token.hpp"
 
-EXPORT void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
+PAYABLE void TestToken::init(const char* tokenName, const char* sym, uint64_t supply){
 
     Address callerAddr = caller();
     std::string callerStr = callerAddr.toString();
@@ -57,7 +57,7 @@ EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t v
 
 
 
-PAYABLE uint64_t TestToken::getBalance(const char* own){
+CONSTANT uint64_t TestToken::getBalance(const char* own){
     
     std::string ownerStr = CharToAddress2Str(own);
     uint64_t ba =  balance.get()[ownerStr];

@@ -144,7 +144,7 @@ namespace dipc {
                 }
                 LOGDEBUG << "abi.methodName : " << abi.methodName << "; abi.isConst : " << (method->isConst() || method ->isDipcConstant())   << "; abi.isPayable :" << method->isDipcPayable() << "; abi.isExport :" << method->isDipcExport() ;
                 if (macroNum > 1) {
-                    std::cerr << "ERROR!!! ERROR!!!  one method can't have more than one Macro!!!" ;
+                    std::cerr << "ERROR!!! ERROR!!!  one method can't have more than one Macro!!!\n" ;
                     exit(1);
                 }
 

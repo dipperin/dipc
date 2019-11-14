@@ -1,7 +1,7 @@
 #include "buildins.hpp"
 #include "dipc/compiler_builtins.h"
 
-void buildins::init() {}
+EXPORT void buildins::init() {}
 
 unsigned __int128 operator"" _ULLL(const char *lit)
 {
@@ -59,7 +59,7 @@ __int128 operator"" _LLL(const char *lit)
         return ret;
 }
 
-void buildins::arithmeticTest()
+EXPORT void buildins::arithmeticTest()
 {
         {
                 __int128 res = 0;

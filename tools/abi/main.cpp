@@ -351,6 +351,11 @@ std::string GetAndInsertBeCalled(const std::string &code_text, const ABIDef &abi
 
     ABIDef abidefTemp = abidef;
     std::string codetext = code_text;
+
+    regex hadImpl(contractName + "::"  + abidef.abis[0].methodName);
+    smatch  hadImplSma;
+    auto hadImplResult =   regex_search(code_text, hadImplSma, hadImpl);
+
     vector<std::string> payableFunc;
     vector<std::string> calledFunc;
 
@@ -531,7 +536,11 @@ std::string GetAndInsertBeCalled(const std::string &code_text, const ABIDef &abi
                 bool check =  abis.returnType.realTypeName == "_Bool";
                 LOGDEBUG << "abis.returnType.realTypeName == _Bool : " <<  check  << "returnType "  << returnType <<  " abis.returnType.realTypeName  " << abis.returnType.realTypeName <<  "  abis.returnType.TypeName  " << abis.returnType.typeName << std::endl;
             
-                inlineTemp = "\n  inline " + returnType + " " + contractName + "::" + abis.methodName + "_inline" + smt[2].str() + "\n" + funcBody + "\n";
+                if(hadImplResult){
+                    inlineTemp = "\n  inline " + returnType + " " + contractName + "::" + abis.methodName + "_inline" + smt[2].str() + "\n" + funcBody + "\n";
+                }else {
+                    inlineTemp = "\n  inline " + returnType + " " + abis.methodName + "_inline" + smt[2].str() + "\n" + funcBody + "\n";
+                }
                 LOGDEBUG << "inlineTemp temp info : " << inlineTemp << std::endl;
               
                 std::string temp = s.substr(0, position + search.size() - 1);
@@ -598,7 +607,7 @@ void CompareHeaderAndImplFileMacro(const std::string &code_text, const ABIDef &a
       LOGDEBUG << "CompareHeaderAndImplFileMacro end  "  << std::endl;
 }
 
-std::string InsertFuncToHeaderFile(const std::string &code_text, vector<std::string> calledFuncDetail, fs::path &randomDir, const std::string contractName, std::string outHeaderPath, bool isSaveToFile = false)
+std::string InsertFuncToHeaderFile(const std::string &code_text, vector<std::string> calledFuncDetail, const ABIDef &abidef , fs::path &randomDir, const std::string contractName, std::string outHeaderPath, bool isSaveToFile = false)
 {
   std::string codetext = code_text;
   std::string tempCName = contractName;
@@ -653,11 +662,15 @@ std::string InsertFuncToHeaderFile(const std::string &code_text, vector<std::str
       std::string tempText = codetext.substr(0, pos2 - 1);
       LOGDEBUG << "tempText   :  " << tempText << std::endl;
 
-      for (auto cfd : calledFuncDetail)
-      {
-        LOGDEBUG << "calledFuncDetail  cfd : " << cfd << std::endl;
-        tempText += "\n " + cfd + ";";
+      regex hadImpl(contractName + "::"  + abidef.abis[0].methodName);
+      if(regex_search(codetext, claSma, hadImpl)){
+          for (auto cfd : calledFuncDetail)
+          {
+              LOGDEBUG << "calledFuncDetail  cfd : " << cfd << std::endl;
+              tempText += "\n " + cfd + ";";
+          }
       }
+  
       tempText += codetext.substr(pos2 - 1);
       if (isSaveToFile)
       {
@@ -821,7 +834,7 @@ void createContractFile(fs::path &randomDir, const string &srcPath,
     LOGDEBUG << "hppPath i am here :  " << hppPath ;
     LOGDEBUG << "hppPath i am here :  " << hppPath << std::endl;
     //headerStr = removedComments;
-    removedComments = InsertFuncToHeaderFile(removedComments, calledFuncDetail, randomDir, contractName, "", false);
+    removedComments = InsertFuncToHeaderFile(removedComments, calledFuncDetail, abidef, randomDir, contractName, "", false);
   }
   else
   {
@@ -849,7 +862,7 @@ void createContractFile(fs::path &randomDir, const string &srcPath,
         LOGDEBUG << "fu ======== : " << fu;
     } 
 
-    InsertFuncToHeaderFile(headerStr, calledFuncDetail, randomDir, contractName, hppOutPath, true);
+    InsertFuncToHeaderFile(headerStr, calledFuncDetail, abidef, randomDir, contractName, hppOutPath, true);
     std::string fileTempName = filename.substr(0, filename.find_last_of(".")) + "temp.hpp";
     regex replaceInclude(R"(#include\s+\")" + regex_replace(filename, nameReg, ".hpp"));
     removedComments = regex_replace(removedComments, replaceInclude, R"(#include ")" + fileTempName);
