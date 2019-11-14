@@ -1,0 +1,2730 @@
+2019-11-11_19:34:21.277735: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1010] dipc-abi  verbose  true
+
+2019-11-11_19:34:21.278542: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1011] dipc-abi argv  start ....
+
+2019-11-11_19:34:21.278556: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1013]   /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/dipc-abigen
+2019-11-11_19:34:21.278566: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1013]   -extra-arg=-std=c++17
+2019-11-11_19:34:21.278576: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1013]   -extra-arg=--target=wasm32
+2019-11-11_19:34:21.278586: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1013]   -extra-arg=-w
+2019-11-11_19:34:21.278595: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1013]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/PaymentChannel
+2019-11-11_19:34:21.278605: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1013]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libcxx
+2019-11-11_19:34:21.278615: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1013]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libc
+2019-11-11_19:34:21.278624: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1013]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/rt
+2019-11-11_19:34:21.278634: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1013]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/native/softfloat/include
+2019-11-11_19:34:21.278643: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1013]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include
+2019-11-11_19:34:21.278651: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1013]   PaymentChannel.cpp
+2019-11-11_19:34:21.278659: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1013]   -abigen_output=./PaymentChannel.cpp.abi.json
+2019-11-11_19:34:21.278665: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1013]   -exports_output=/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp.exports
+2019-11-11_19:34:21.278680: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1013]   -abidef_output=
+2019-11-11_19:34:21.278693: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1013]   -log_path=./
+2019-11-11_19:34:21.278704: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1013]   -log_level=debug
+2019-11-11_19:34:21.278714: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1013]   -verbose
+2019-11-11_19:34:21.278723: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1013]   --
+2019-11-11_19:34:21.278733: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1013]   -w
+2019-11-11_19:34:21.278748: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1015]   dipc-abi argv end 
+
+2019-11-11_19:34:21.278759: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1021] start run
+2019-11-11_19:34:21.278773: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:97] start create_find_macro_factory
+2019-11-11_19:34:21.975067: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:149] get macro:PAYABLE
+2019-11-11_19:34:21.975361: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/PaymentChannel/PaymentChannel.hpp
+
+2019-11-11_19:34:21.975376: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:PAYABLE; long str :PAYABLE; longstr :PAYABLE void init(char* _recipient, uint64_t duration, uint64_t _balance);
+    //PAYABLE void init(std::string _recipient, uint64_t duration, uint64_t _balance);
+    
+    EXPORT void close(uint64_t amount, char* signature);
+    EXPORT void extend(uint64_t newExpiration);
+    EXPORT void claimTimeout();
+};
+2019-11-11_19:34:21.975919: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:82] smatch[2].str : init(; action : init
+
+2019-11-11_19:34:21.975950: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:149] get macro:EXPORT
+2019-11-11_19:34:21.975959: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/PaymentChannel/PaymentChannel.hpp
+
+2019-11-11_19:34:21.975966: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:EXPORT; long str :EXPORT; longstr :EXPORT void close(uint64_t amount, char* signature);
+    EXPORT void extend(uint64_t newExpiration);
+    EXPORT void claimTimeout();
+};
+2019-11-11_19:34:21.975992: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:82] smatch[2].str : close(; action : close
+
+2019-11-11_19:34:21.976062: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:149] get macro:EXPORT
+2019-11-11_19:34:21.976076: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/PaymentChannel/PaymentChannel.hpp
+
+2019-11-11_19:34:21.976083: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:EXPORT; long str :EXPORT; longstr :EXPORT void extend(uint64_t newExpiration);
+    EXPORT void claimTimeout();
+};
+2019-11-11_19:34:21.976118: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:82] smatch[2].str : extend(; action : extend
+
+2019-11-11_19:34:21.976133: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:149] get macro:EXPORT
+2019-11-11_19:34:21.976140: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/PaymentChannel/PaymentChannel.hpp
+
+2019-11-11_19:34:21.976146: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:EXPORT; long str :EXPORT; longstr :EXPORT void claimTimeout();
+};
+2019-11-11_19:34:21.976163: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:82] smatch[2].str : claimTimeout(; action : claimTimeout
+
+2019-11-11_19:34:21.976176: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:149] get macro:PAYABLE
+2019-11-11_19:34:21.976182: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/PaymentChannel/PaymentChannel.cpp
+
+2019-11-11_19:34:21.976188: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:PAYABLE; long str :PAYABLE; longstr :PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+//PAYABLE void PaymentChannel::init(std::string _recipient, uint64_t duration, uint64_t _balance){
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    // joint contractAddr, amount, toAddress, use sha3()  encrypt
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+2019-11-11_19:34:21.976275: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:82] smatch[2].str : PaymentChannel::init(; action : PaymentChannel::init
+
+2019-11-11_19:34:21.976283: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:131] Export macrostr:PAYABLE  contract:void  actions_str:init
+
+2019-11-11_19:34:21.976328: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:149] get macro:EXPORT
+2019-11-11_19:34:21.976340: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/PaymentChannel/PaymentChannel.cpp
+
+2019-11-11_19:34:21.976349: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:EXPORT; long str :EXPORT; longstr :EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    // joint contractAddr, amount, toAddress, use sha3()  encrypt
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+2019-11-11_19:34:21.976395: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:82] smatch[2].str : PaymentChannel::close(; action : PaymentChannel::close
+
+2019-11-11_19:34:21.976418: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:131] Export macrostr:EXPORT  contract:void  actions_str:close
+
+2019-11-11_19:34:21.976496: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:149] get macro:EXPORT
+2019-11-11_19:34:21.976513: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/PaymentChannel/PaymentChannel.cpp
+
+2019-11-11_19:34:21.976520: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:EXPORT; long str :EXPORT; longstr :EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+2019-11-11_19:34:21.976564: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:82] smatch[2].str : PaymentChannel::extend(; action : PaymentChannel::extend
+
+2019-11-11_19:34:21.976580: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:131] Export macrostr:EXPORT  contract:void  actions_str:extend
+
+2019-11-11_19:34:21.976621: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:149] get macro:EXPORT
+2019-11-11_19:34:21.976631: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/PaymentChannel/PaymentChannel.cpp
+
+2019-11-11_19:34:21.976638: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:EXPORT; long str :EXPORT; longstr :EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+2019-11-11_19:34:21.976665: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:82] smatch[2].str : PaymentChannel::claimTimeout(; action : PaymentChannel::claimTimeout
+
+2019-11-11_19:34:21.976678: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:131] Export macrostr:EXPORT  contract:void  actions_str:claimTimeout
+
+2019-11-11_19:34:21.981869: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1031] result:0contract fullname:[PaymentChannel]
+2019-11-11_19:34:24.219183: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:109] contract != Token
+2019-11-11_19:34:24.219211: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:111] decl name:[PaymentChannel] contract:[PaymentChannel]
+2019-11-11_19:34:24.219220: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:119] funcEntire : void init(char* _recipient, uint64_t duration, uint64_t _balance; funcEnd : );
+    //PAYABLE void init(std::string _recipient, uint64_t duration, uint64_t _balance);
+    
+    EXPORT void close(uint64_t amount, char* signature);
+    EXPORT void extend(uint64_t newExpiration);
+    EXPORT void claimTimeout();
+};
+2019-11-11_19:34:24.219228: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:124] method :init
+2019-11-11_19:34:24.219235: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:145] abi.methodName : init; abi.isConst : false; abi.isPayable :true; abi.isExport :false
+2019-11-11_19:34:24.219255: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:47] typeName:  realTypeName:void
+2019-11-11_19:34:24.219263: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:157] parame name:_recipient
+2019-11-11_19:34:24.219276: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:47] typeName:  realTypeName:char *
+2019-11-11_19:34:24.219317: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:157] parame name:duration
+2019-11-11_19:34:24.219324: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:26] xxx:uint64_t
+2019-11-11_19:34:24.219329: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:28] set typeName
+2019-11-11_19:34:24.219342: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:47] typeName:uint64_t  realTypeName:unsigned long long
+2019-11-11_19:34:24.219365: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:157] parame name:_balance
+2019-11-11_19:34:24.219370: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:26] xxx:uint64_t
+2019-11-11_19:34:24.219376: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:28] set typeName
+2019-11-11_19:34:24.219387: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:47] typeName:uint64_t  realTypeName:unsigned long long
+2019-11-11_19:34:24.219414: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:119] funcEntire : void close(uint64_t amount, char* signature; funcEnd : );
+    EXPORT void extend(uint64_t newExpiration);
+    EXPORT void claimTimeout();
+};
+2019-11-11_19:34:24.219422: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:124] method :close
+2019-11-11_19:34:24.219428: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:145] abi.methodName : close; abi.isConst : false; abi.isPayable :false; abi.isExport :true
+2019-11-11_19:34:24.219439: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:47] typeName:  realTypeName:void
+2019-11-11_19:34:24.219445: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:157] parame name:amount
+2019-11-11_19:34:24.219451: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:26] xxx:uint64_t
+2019-11-11_19:34:24.219456: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:28] set typeName
+2019-11-11_19:34:24.219468: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:47] typeName:uint64_t  realTypeName:unsigned long long
+2019-11-11_19:34:24.219491: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:157] parame name:signature
+2019-11-11_19:34:24.219502: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:47] typeName:  realTypeName:char *
+2019-11-11_19:34:24.219527: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:119] funcEntire : void extend(uint64_t newExpiration; funcEnd : );
+    EXPORT void claimTimeout();
+};
+2019-11-11_19:34:24.219533: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:124] method :extend
+2019-11-11_19:34:24.219539: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:145] abi.methodName : extend; abi.isConst : false; abi.isPayable :false; abi.isExport :true
+2019-11-11_19:34:24.219549: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:47] typeName:  realTypeName:void
+2019-11-11_19:34:24.219555: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:157] parame name:newExpiration
+2019-11-11_19:34:24.219560: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:26] xxx:uint64_t
+2019-11-11_19:34:24.219565: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:28] set typeName
+2019-11-11_19:34:24.219582: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:47] typeName:uint64_t  realTypeName:unsigned long long
+2019-11-11_19:34:24.219606: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:119] funcEntire : void claimTimeout(; funcEnd : );
+};
+2019-11-11_19:34:24.219612: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:124] method :claimTimeout
+2019-11-11_19:34:24.219618: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:145] abi.methodName : claimTimeout; abi.isConst : false; abi.isPayable :false; abi.isExport :true
+2019-11-11_19:34:24.219628: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:47] typeName:  realTypeName:void
+2019-11-11_19:34:24.219634: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:119] funcEntire : ; funcEnd : PaymentChannel : public Contract {
+private: 
+   //String<senderc> sender;
+   AddressStore<senderc> sender;
+   String<recipientc> recipient;
+   Uint64<balancec> balance; 
+   Uint64<expirationc> expiration;
+   Bool<closec> closed;
+public:
+    PAYABLE void init(char* _recipient, uint64_t duration, uint64_t _balance);
+    //PAYABLE void init(std::string _recipient, uint64_t duration, uint64_t _balance);
+    
+    EXPORT void close(uint64_t amount, char* signature);
+    EXPORT void extend(uint64_t newExpiration);
+    EXPORT void claimTimeout();
+};
+2019-11-11_19:34:24.219641: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:119] funcEntire : ; funcEnd : PaymentChannel : public Contract {
+private: 
+   //String<senderc> sender;
+   AddressStore<senderc> sender;
+   String<recipientc> recipient;
+   Uint64<balancec> balance; 
+   Uint64<expirationc> expiration;
+   Bool<closec> closed;
+public:
+    PAYABLE void init(char* _recipient, uint64_t duration, uint64_t _balance);
+    //PAYABLE void init(std::string _recipient, uint64_t duration, uint64_t _balance);
+    
+    EXPORT void close(uint64_t amount, char* signature);
+    EXPORT void extend(uint64_t newExpiration);
+    EXPORT void claimTimeout();
+};
+2019-11-11_19:34:24.219647: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:119] funcEntire : ; funcEnd : PaymentChannel : public Contract {
+private: 
+   //String<senderc> sender;
+   AddressStore<senderc> sender;
+   String<recipientc> recipient;
+   Uint64<balancec> balance; 
+   Uint64<expirationc> expiration;
+   Bool<closec> closed;
+public:
+    PAYABLE void init(char* _recipient, uint64_t duration, uint64_t _balance);
+    //PAYABLE void init(std::string _recipient, uint64_t duration, uint64_t _balance);
+    
+    EXPORT void close(uint64_t amount, char* signature);
+    EXPORT void extend(uint64_t newExpiration);
+    EXPORT void claimTimeout();
+};
+2019-11-11_19:34:24.219653: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:119] funcEntire : ; funcEnd : PaymentChannel : public Contract {
+private: 
+   //String<senderc> sender;
+   AddressStore<senderc> sender;
+   String<recipientc> recipient;
+   Uint64<balancec> balance; 
+   Uint64<expirationc> expiration;
+   Bool<closec> closed;
+public:
+    PAYABLE void init(char* _recipient, uint64_t duration, uint64_t _balance);
+    //PAYABLE void init(std::string _recipient, uint64_t duration, uint64_t _balance);
+    
+    EXPORT void close(uint64_t amount, char* signature);
+    EXPORT void extend(uint64_t newExpiration);
+    EXPORT void claimTimeout();
+};
+2019-11-11_19:34:24.219659: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:169] abis size:4
+2019-11-11_19:34:24.487930: <info> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1048] find method successfind abi size:4
+2019-11-11_19:34:24.487954: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1053] methodName:init args:(
+2019-11-11_19:34:24.487974: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1060] name:_recipient, typeName: realTypeName:char *
+2019-11-11_19:34:24.487982: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1060] name:duration, typeName:uint64_t realTypeName:unsigned long long
+2019-11-11_19:34:24.487988: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1060] name:_balance, typeName:uint64_t realTypeName:unsigned long long
+2019-11-11_19:34:24.487994: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1064] )
+2019-11-11_19:34:24.488000: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1065] return typeName: realTypeName:void
+2019-11-11_19:34:24.488006: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1053] methodName:close args:(
+2019-11-11_19:34:24.488011: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1060] name:amount, typeName:uint64_t realTypeName:unsigned long long
+2019-11-11_19:34:24.488017: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1060] name:signature, typeName: realTypeName:char *
+2019-11-11_19:34:24.488023: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1064] )
+2019-11-11_19:34:24.488028: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1065] return typeName: realTypeName:void
+2019-11-11_19:34:24.488033: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1053] methodName:extend args:(
+2019-11-11_19:34:24.488039: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1060] name:newExpiration, typeName:uint64_t realTypeName:unsigned long long
+2019-11-11_19:34:24.488044: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1064] )
+2019-11-11_19:34:24.488049: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1065] return typeName: realTypeName:void
+2019-11-11_19:34:24.488055: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1053] methodName:claimTimeout args:(
+2019-11-11_19:34:24.488060: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1064] )
+2019-11-11_19:34:24.488065: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1065] return typeName: realTypeName:void
+2019-11-11_19:34:24.488070: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1078] start create abi json
+2019-11-11_19:34:24.488104: <error> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:699] random:[/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/83452c730c049dgf518i] fileName:PaymentChannel.cpp.abi.json
+2019-11-11_19:34:24.488112: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:701] tmpFile:[/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/83452c730c049dgf518i/PaymentChannel.cpp.abi.json]
+2019-11-11_19:34:24.488503: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:712] copy ::/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/83452c730c049dgf518i/PaymentChannel.cpp.abi.json to ::./PaymentChannel.cpp.abi.json
+2019-11-11_19:34:24.488726: <error> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:733] random:[/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/83452c730c049dgf518i] fileName:PaymentChannel.cpp.exports
+2019-11-11_19:34:24.488737: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:735] tmpFile:[/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/83452c730c049dgf518i/PaymentChannel.cpp.exports]
+2019-11-11_19:34:24.488978: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:750] copy ::/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/83452c730c049dgf518i/PaymentChannel.cpp.exports to ::/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp.exports
+2019-11-11_19:34:24.489355: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:797] macrostr  =======::#include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+//PAYABLE void PaymentChannel::init(std::string _recipient, uint64_t duration, uint64_t _balance){
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    // joint contractAddr, amount, toAddress, use sha3()  encrypt
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.489368: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:798] headerStr  =======::
+
+2019-11-11_19:34:24.489392: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:801] removedComments  =======::#include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.489409: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:367] abis.ispayable :true
+
+2019-11-11_19:34:24.489435: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:390] finalContract  this height   codetext height #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.489443: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:393] searchContext  #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.489499: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:417] log out out payable : PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    
+
+2019-11-11_19:34:24.489508: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:423] name : init   pos1  0
+
+2019-11-11_19:34:24.489515: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:435] pos2  31   pos1  31
+
+2019-11-11_19:34:24.489522: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:466] pos2 after 408   pos1  31
+
+2019-11-11_19:34:24.489533: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:475] finalContract  first #include "PaymentChannel.hpp"
+
+
+
+2019-11-11_19:34:24.489539: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:476] codetext  first #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.489546: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:479] s  first PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+2019-11-11_19:34:24.490295: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:561] search func : PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+2019-11-11_19:34:24.490309: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:390] finalContract  this height  #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+} codetext height #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.490325: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:393] searchContext  
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.490693: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:408] finalContract  this new  #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+} codetext new #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.490705: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:566] finalContract  final content =======   : #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.490714: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:367] abis.ispayable :false
+
+2019-11-11_19:34:24.490729: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:390] finalContract  this height  #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+} codetext height #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.490740: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:393] searchContext  #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.494338: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:417] log out out  Export :
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    
+
+2019-11-11_19:34:24.494360: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:423] name : close   pos1  0
+
+2019-11-11_19:34:24.494371: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:435] pos2  408   pos1  408
+
+2019-11-11_19:34:24.494384: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:466] pos2 after 1072   pos1  408
+
+2019-11-11_19:34:24.494396: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:475] finalContract  first #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+2019-11-11_19:34:24.494404: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:476] codetext  first #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.494417: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:479] s  first 
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+2019-11-11_19:34:24.494426: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:555] calledFunc temp export: 
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+2019-11-11_19:34:24.494433: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:561] search func : 
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+2019-11-11_19:34:24.494443: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:390] finalContract  this height  #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+} codetext height #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.494451: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:393] searchContext  
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.498680: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:408] finalContract  this new  #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+} codetext new #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.498723: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:566] finalContract  final content =======   : #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.498757: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:367] abis.ispayable :false
+
+2019-11-11_19:34:24.498795: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:390] finalContract  this height  #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+} codetext height #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.498926: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:393] searchContext  #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.511701: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:417] log out out  Export :
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    
+
+2019-11-11_19:34:24.511726: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:423] name : extend   pos1  0
+
+2019-11-11_19:34:24.511755: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:435] pos2  1131   pos1  1131
+
+2019-11-11_19:34:24.511771: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:466] pos2 after 1373   pos1  1131
+
+2019-11-11_19:34:24.511780: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:475] finalContract  first #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+2019-11-11_19:34:24.511787: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:476] codetext  first #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.511795: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:479] s  first 
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+2019-11-11_19:34:24.511803: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:555] calledFunc temp export: 
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+2019-11-11_19:34:24.511810: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:561] search func : 
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+2019-11-11_19:34:24.511817: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:390] finalContract  this height  #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+} codetext height #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.511825: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:393] searchContext  
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.513369: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:408] finalContract  this new  #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+} codetext new #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.513380: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:566] finalContract  final content =======   : #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.513387: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:367] abis.ispayable :false
+
+2019-11-11_19:34:24.513406: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:390] finalContract  this height  #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+} codetext height #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.513415: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:393] searchContext  #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.530146: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:417] log out out  Export :
+
+EXPORT void PaymentChannel::claimTimeout(){
+    
+
+2019-11-11_19:34:24.530169: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:423] name : claimTimeout   pos1  0
+
+2019-11-11_19:34:24.530177: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:435] pos2  1432   pos1  1432
+
+2019-11-11_19:34:24.530200: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:466] pos2 after 1631   pos1  1432
+
+2019-11-11_19:34:24.530264: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:475] finalContract  first #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+2019-11-11_19:34:24.530276: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:476] codetext  first #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.530283: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:479] s  first 
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.530291: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:555] calledFunc temp export: 
+
+EXPORT void PaymentChannel::claimTimeout(){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.530299: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:561] search func : 
+
+EXPORT void PaymentChannel::claimTimeout(){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+2019-11-11_19:34:24.530306: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:390] finalContract  this height  #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+} codetext height #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.530313: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:393] searchContext  
+
+2019-11-11_19:34:24.530321: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:408] finalContract  this new  #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+} codetext new #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.530328: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:566] finalContract  final content =======   : #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.530341: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:575] finalContract  final content  last =======   : #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.530355: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:803] removedComments end  =======::#include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.530654: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:807] str ============
+2019-11-11_19:34:24.530667: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:808] str ============class\s*PaymentChannel\s*\{
+2019-11-11_19:34:24.530679: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:813] findClass end  =======::
+
+2019-11-11_19:34:24.530691: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:816] claSma end  =======::
+
+2019-11-11_19:34:24.531434: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:581] CompareHeaderAndImplFileMacro  start 
+
+2019-11-11_19:34:24.531447: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:586] searchStr \s*PAYABLE\s*void\s*PaymentChannel::init code_text #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.531455: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:587] searchStr \s*PAYABLE\s*void\s*PaymentChannel::init
+
+2019-11-11_19:34:24.531496: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:586] searchStr \s*EXPORT\s*void\s*PaymentChannel::close code_text #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.531504: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:587] searchStr \s*EXPORT\s*void\s*PaymentChannel::close
+
+2019-11-11_19:34:24.531853: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:586] searchStr \s*EXPORT\s*void\s*PaymentChannel::extend code_text #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.531868: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:587] searchStr \s*EXPORT\s*void\s*PaymentChannel::extend
+
+2019-11-11_19:34:24.532510: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:586] searchStr \s*EXPORT\s*void\s*PaymentChannel::claimTimeout code_text #include "PaymentChannel.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.532518: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:587] searchStr \s*EXPORT\s*void\s*PaymentChannel::claimTimeout
+
+2019-11-11_19:34:24.533322: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:598] CompareHeaderAndImplFileMacro end  
+
+2019-11-11_19:34:24.533341: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:831] hppPath  :  PaymentChannel.hpp
+2019-11-11_19:34:24.533384: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:835] hppOutPath  :  /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChanneltemp.hpp
+2019-11-11_19:34:24.533410: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:843] abaabaab ======== : 
+2019-11-11_19:34:24.533417: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:844] contractName ======== : PaymentChannel
+2019-11-11_19:34:24.533423: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:846] randomDir ======== : /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/83452c730c049dgf518i
+2019-11-11_19:34:24.533432: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:847] hppOutPath ======== : /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChanneltemp.hpp
+2019-11-11_19:34:24.533441: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:605] InsertFuncToHeaderFile start....
+
+2019-11-11_19:34:24.533452: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:611] InsertFuncToHeaderFile new ....
+
+2019-11-11_19:34:24.533538: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:613] InsertFuncToHeaderFile result ....true
+
+2019-11-11_19:34:24.533547: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:620] claSma[0].str()  :    class PaymentChannel : public Contract {
+
+2019-11-11_19:34:24.533555: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:622] pos2  :    194
+
+2019-11-11_19:34:24.533562: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:654] tempText   :  #include <dipc/dipc.hpp>
+using namespace dipc;
+
+char senderc[] = "sender";
+char recipientc[] = "recipient";
+char expirationc[] = "expiration";
+char balancec[] = "bal";
+char closec[] = "close";
+
+class PaymentChannel : public Contract {
+private: 
+   //String<senderc> sender;
+   AddressStore<senderc> sender;
+   String<recipientc> recipient;
+   Uint64<balancec> balance; 
+   Uint64<expirationc> expiration;
+   Bool<closec> closed;
+public:
+    PAYABLE void init(char* _recipient, uint64_t duration, uint64_t _balance);
+    //PAYABLE void init(std::string _recipient, uint64_t duration, uint64_t _balance);
+    
+    EXPORT void close(uint64_t amount, char* signature);
+    EXPORT void extend(uint64_t newExpiration);
+    EXPORT void claimTimeout();
+
+
+2019-11-11_19:34:24.533800: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:670] tempText  end :  #include <dipc/dipc.hpp>
+using namespace dipc;
+
+char senderc[] = "sender";
+char recipientc[] = "recipient";
+char expirationc[] = "expiration";
+char balancec[] = "bal";
+char closec[] = "close";
+
+class PaymentChannel : public Contract {
+private: 
+   //String<senderc> sender;
+   AddressStore<senderc> sender;
+   String<recipientc> recipient;
+   Uint64<balancec> balance; 
+   Uint64<expirationc> expiration;
+   Bool<closec> closed;
+public:
+    PAYABLE void init(char* _recipient, uint64_t duration, uint64_t _balance);
+    //PAYABLE void init(std::string _recipient, uint64_t duration, uint64_t _balance);
+    
+    EXPORT void close(uint64_t amount, char* signature);
+    EXPORT void extend(uint64_t newExpiration);
+    EXPORT void claimTimeout();
+};
+
+2019-11-11_19:34:24.534174: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:856] headerStr removedComments  ======== : #include "PaymentChanneltemp.hpp"
+
+PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t _balance){
+
+    *sender = caller();
+    *recipient = _recipient;
+    print("_recipient");
+    print(_recipient);
+    print("recipient");
+    prints_l(&recipient.get()[0], recipient.get().size());
+    *expiration = duration;
+    *balance = _balance;
+    DipcAssert(dipc::callValue() == _balance);
+}
+
+EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    Address callerAddr = caller();
+    DipcAssert(callerAddr.toString() == recipient.get());
+    std::string sign = signature;
+    
+    Address contractAddr = dipc::address();
+    std::string data = contractAddr.toString() + std::to_string(amount) + callerAddr.toString();
+    h256 sha3Data = dipc::sha3(data);
+    DipcAssert(dipc::getSignerAddress(sha3Data,sign).toString() == sender.get().toString());
+    callTransfer(callerAddr, amount);
+    DipcAssert(balance.get() -amount > 0);
+    callTransfer(sender.get(), balance.get() - amount);
+    *closed = true;
+}
+
+EXPORT void PaymentChannel::extend(uint64_t newExpiration) {
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(caller().toString() == sender.get().toString());
+    DipcAssert(newExpiration > expiration.get());
+    *expiration = newExpiration;
+}
+
+EXPORT void PaymentChannel::claimTimeout(){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+DipcAssert(!closed.get());
+    DipcAssert(dipc::timestamp() > expiration.get());
+    callTransfer(sender.get(), balance.get());
+    *closed = true;
+}
+
+2019-11-11_19:34:24.534356: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:895] swap src::PaymentChannel.cpp tmp::/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/83452c730c049dgf518i/PaymentChannel.cpp
+2019-11-11_19:34:24.534368: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:899] std::string(res.c_str()) + "/" + abidef_filename      /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp
+
