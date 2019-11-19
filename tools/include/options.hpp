@@ -48,6 +48,7 @@ static llvm::cl::list<std::string> input_filename_opt(
     llvm::cl::cat(LD_CAT), llvm::cl::OneOrMore);
 static llvm::cl::opt<bool> verbose("verbose",
                                       llvm::cl::desc("Generate log file , default = true"),
+                                      //llvm::cl::cat(LD_CAT), llvm::cl::init(true));
                                       llvm::cl::cat(LD_CAT), llvm::cl::init(true));
 static llvm::cl::opt<std::string> logPath(
     "log_path", llvm::cl::desc("log path, default = /tmp/[randomdir]/dipc-[tool name].log"),

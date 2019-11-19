@@ -45,6 +45,7 @@ int main(int argc, const char** argv) {
   auto opts = CreateOptions();
 
   fs::path randomDir("");
+  std::cout << "verbose  value "  <<  verbose  << std::endl;
   dipc::toInitLog(kCompilerName, verbose, logPath, logLevel, randomDir);
   
 

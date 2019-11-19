@@ -586,8 +586,40 @@ std::string GetAndInsertBeCalled(const std::string &code_text, const ABIDef &abi
   return finalContract;
 }
 
-void CompareHeaderAndImplFileMacro(const std::string &code_text, const ABIDef &abidef, const string& contractName){
+void CompareHeaderAndImplFileMacro(const std::string &code_text, const ABIDef &abidef, const string& contractName, bool isImplWithHeader){
        LOGDEBUG <<  "CompareHeaderAndImplFileMacro  start "  << std::endl;
+      std::string codeText = code_text;
+
+      if (isImplWithHeader){
+          int count = 0;
+          bool flag = false;
+          size_t pos = 0;
+          for(size_t i = 0; i < codeText.size(); i++){
+            char c = codeText[i];
+            switch (c) {
+              case '{':
+                  if (count == 0){
+                    flag = true;
+                  }
+                  count++;
+                  break;
+              case '}':
+                  count--;
+                  break;
+              default:
+                  break;
+            }
+            if(count == 0 && flag){
+                pos = i + 1;
+                break;
+            }
+          }
+          codeText = code_text.substr(pos);
+      }
+      
+
+      LOGDEBUG << "get codeText content "  << codeText << std::endl;
+
        for(auto abi : abidef.abis){
         std::string typeName = abi.returnType.typeName == "" ? abi.returnType.realTypeName : abi.returnType.typeName;
         typeName =  typeName == "_Bool" ? "bool" : typeName;
@@ -596,9 +628,9 @@ void CompareHeaderAndImplFileMacro(const std::string &code_text, const ABIDef &a
         LOGDEBUG << "searchStr " << searchStr << endl;
         regex searchFuncHead(searchStr);
         smatch sma;
-        if (!regex_search(code_text, sma, searchFuncHead)){
+        if (!regex_search(codeText, sma, searchFuncHead)){
            searchStr = R"(\s*)" + abi.modifier + R"(\s*)" + typeName + R"(\s*)" + abi.methodName;
-           if (!regex_search(code_text, sma, searchFuncHead)){
+           if (!regex_search(codeText, sma, searchFuncHead)){
                 std::cerr <<  "ERROR: <dipc-abigen> header declare is not same with the implement file;Please make sure the function macro is same "  << std::endl;
                 exit(1);
            }
@@ -783,6 +815,8 @@ void createContractFile(fs::path &randomDir, const string &srcPath,
     abidef_filename = std::string(fn.str());
     abidef_filename_temp = std::string(fn.str()) + "temp";
   }
+
+  LOGDEBUG << "abidef_output " << abidef_output << " abidef_filename "  << abidef_filename << std::endl;
   fs::path tmpFile = randomDir / abidef_filename;
   std::ofstream tmpStream(tmpFile.string().c_str());
   if (!tmpStream.is_open())
@@ -838,10 +872,11 @@ void createContractFile(fs::path &randomDir, const string &srcPath,
     LOGDEBUG << "hppPath i am here :  " << hppPath << std::endl;
     //headerStr = removedComments;
     removedComments = InsertFuncToHeaderFile(removedComments, calledFuncDetail, abidef, filename, randomDir, contractName, "", false);
+    CompareHeaderAndImplFileMacro(removedComments,abidef, contractName, true);
   }
   else
   {
-    CompareHeaderAndImplFileMacro(removedComments,abidef, contractName);
+    CompareHeaderAndImplFileMacro(removedComments,abidef, contractName, false);
     regex nameReg("\\.cpp");
     hppPath = regex_replace(src, nameReg, ".hpp");
     LOGDEBUG << "hppPath  :  " << hppPath;
@@ -1021,6 +1056,8 @@ int main(int argc, const char **argv)
 //         throw Exception() << ErrStr("create dir failed:")
 //                             << ErrStr(strerror(errno));
 //         }
+
+    std::cout << "verbose  value "  <<  verbose  << std::endl;
     toInitLog("dipc-abi", verbose,logPath,logLevel,randomDir);
 
     LOGDEBUG << "dipc-abi  verbose  "  << verbose << std::endl;

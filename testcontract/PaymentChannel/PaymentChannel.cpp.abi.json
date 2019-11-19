@@ -57,5 +57,28 @@
         "constant": "false",
         "payable": "false",
         "type": "function"
+    },
+    {
+        "name": "getPaymentChannelStatus",
+        "inputs": [],
+        "outputs": [],
+        "constant": "true",
+        "payable": "false",
+        "type": "function"
+    },
+    {
+        "name": "PaymentChannelStatus",
+        "inputs": [
+            {
+                "type": "string"
+            },
+            {
+                "type": "uint64"
+            },
+            {
+                "type": "uint64"
+            }
+        ],
+        "type": "event"
     }
 ]

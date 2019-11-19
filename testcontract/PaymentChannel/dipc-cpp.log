@@ -1,95 +1,96 @@
-2019-11-11_19:34:21.224881: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:53] the dipc-abigen opts is:
+2019-11-15_10:04:47.383947: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:53] the dipc-abigen opts is:
 
-2019-11-11_19:34:21.225721: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -extra-arg=-std=c++17
+2019-11-15_10:04:47.384824: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -extra-arg=-std=c++17
 
-2019-11-11_19:34:21.225738: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -extra-arg=--target=wasm32
+2019-11-15_10:04:47.384839: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -extra-arg=--target=wasm32
 
-2019-11-11_19:34:21.225749: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -extra-arg=-w
+2019-11-15_10:04:47.384848: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -extra-arg=-w
 
-2019-11-11_19:34:21.225758: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/PaymentChannel
+2019-11-15_10:04:47.384857: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/PaymentChannel
 
-2019-11-11_19:34:21.225768: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libcxx
+2019-11-15_10:04:47.384866: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libcxx
 
-2019-11-11_19:34:21.225777: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libc
+2019-11-15_10:04:47.384875: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libc
 
-2019-11-11_19:34:21.225787: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/rt
+2019-11-15_10:04:47.384889: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/rt
 
-2019-11-11_19:34:21.225796: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/native/softfloat/include
+2019-11-15_10:04:47.384898: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/native/softfloat/include
 
-2019-11-11_19:34:21.225806: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include
+2019-11-15_10:04:47.384907: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include
 
-2019-11-11_19:34:21.225815: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] PaymentChannel.cpp
+2019-11-15_10:04:47.384915: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] PaymentChannel.cpp
 
-2019-11-11_19:34:21.225824: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -abigen_output=./PaymentChannel.cpp.abi.json
+2019-11-15_10:04:47.384923: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -abigen_output=./PaymentChannel.cpp.abi.json
 
-2019-11-11_19:34:21.225833: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -exports_output=/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp.exports
+2019-11-15_10:04:47.384930: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -exports_output=/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp.exports
 
-2019-11-11_19:34:21.225843: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -abidef_output=
+2019-11-15_10:04:47.384938: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -abidef_output=
 
-2019-11-11_19:34:21.225851: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -log_path=./
+2019-11-15_10:04:47.384946: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -log_path=./
 
-2019-11-11_19:34:21.225860: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -log_level=debug
+2019-11-15_10:04:47.384953: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -log_level=debug
 
-2019-11-11_19:34:21.225869: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -verbose
+2019-11-15_10:04:47.384960: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -verbose
 
-2019-11-11_19:34:21.225878: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] --
+2019-11-15_10:04:47.384968: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] --
 
-2019-11-11_19:34:21.225887: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -w
+2019-11-15_10:04:47.384976: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] -w
 
-2019-11-11_19:34:21.226854: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/cpp/../include/dipc/utils.hpp:39] /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/dipc-abigen -extra-arg=-std=c++17 -extra-arg=--target=wasm32 -extra-arg=-w -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/PaymentChannel -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libcxx -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libc -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/rt -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/native/softfloat/include -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include PaymentChannel.cpp -abigen_output=./PaymentChannel.cpp.abi.json -exports_output=/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp.exports -abidef_output= -log_path=./ -log_level=debug -verbose -- -w 
+2019-11-15_10:04:47.385058: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/cpp/../include/dipc/utils.hpp:39] /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/dipc-abigen -extra-arg=-std=c++17 -extra-arg=--target=wasm32 -extra-arg=-w -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/PaymentChannel -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libcxx -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libc -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/rt -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/native/softfloat/include -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include PaymentChannel.cpp -abigen_output=./PaymentChannel.cpp.abi.json -exports_output=/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp.exports -abidef_output= -log_path=./ -log_level=debug -verbose -- -w 
 
-2019-11-11_19:34:24.540765: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:89] clang  new_opts start  
+2019-11-15_10:04:50.067482: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:89] clang  new_opts start  
 
-2019-11-11_19:34:24.540792: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -o /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp.o     
-2019-11-11_19:34:24.540800: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp     
-2019-11-11_19:34:24.540808: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -std=c++17     
-2019-11-11_19:34:24.540831: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -emit-llvm     
-2019-11-11_19:34:24.540840: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -O3     
-2019-11-11_19:34:24.540846: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] --target=wasm32     
-2019-11-11_19:34:24.540853: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -ffreestanding     
-2019-11-11_19:34:24.540863: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -nostdlib     
-2019-11-11_19:34:24.540871: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -fno-builtin     
-2019-11-11_19:34:24.540878: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -fno-threadsafe-statics     
-2019-11-11_19:34:24.540885: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -fno-exceptions     
-2019-11-11_19:34:24.540893: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -fno-rtti     
-2019-11-11_19:34:24.540900: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -fmodules-ts     
-2019-11-11_19:34:24.540907: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -DBOOST_DISABLE_ASSERTS     
-2019-11-11_19:34:24.540915: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -DBOOST_EXCEPTION_DISABLE     
-2019-11-11_19:34:24.540923: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -DRAPIDJSON_64BIT=1     
-2019-11-11_19:34:24.540931: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/PaymentChannel     
-2019-11-11_19:34:24.540938: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libcxx     
-2019-11-11_19:34:24.540947: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libc     
-2019-11-11_19:34:24.540955: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/rt     
-2019-11-11_19:34:24.540964: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/native/softfloat/include     
-2019-11-11_19:34:24.540972: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include     
-2019-11-11_19:34:24.540982: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] --sysroot=/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../     
-2019-11-11_19:34:24.540999: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -c     
-2019-11-11_19:34:24.541009: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:93] 
+2019-11-15_10:04:50.067516: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -o /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp.o     
+2019-11-15_10:04:50.067522: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp     
+2019-11-15_10:04:50.067528: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -std=c++17     
+2019-11-15_10:04:50.067533: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -emit-llvm     
+2019-11-15_10:04:50.067539: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -O3     
+2019-11-15_10:04:50.067544: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] --target=wasm32     
+2019-11-15_10:04:50.067549: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -ffreestanding     
+2019-11-15_10:04:50.067554: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -nostdlib     
+2019-11-15_10:04:50.067559: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -fno-builtin     
+2019-11-15_10:04:50.067564: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -fno-threadsafe-statics     
+2019-11-15_10:04:50.067569: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -fno-exceptions     
+2019-11-15_10:04:50.067574: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -fno-rtti     
+2019-11-15_10:04:50.067579: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -fmodules-ts     
+2019-11-15_10:04:50.067584: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -DBOOST_DISABLE_ASSERTS     
+2019-11-15_10:04:50.067589: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -DBOOST_EXCEPTION_DISABLE     
+2019-11-15_10:04:50.067595: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -DRAPIDJSON_64BIT=1     
+2019-11-15_10:04:50.067614: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/PaymentChannel     
+2019-11-15_10:04:50.067622: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libcxx     
+2019-11-15_10:04:50.067628: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libc     
+2019-11-15_10:04:50.067633: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/rt     
+2019-11-15_10:04:50.067638: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/native/softfloat/include     
+2019-11-15_10:04:50.067644: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include     
+2019-11-15_10:04:50.067664: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] --sysroot=/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../     
+2019-11-15_10:04:50.067674: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:91] -c     
+2019-11-15_10:04:50.067694: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:93] 
 
-2019-11-11_19:34:24.541063: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/cpp/../include/dipc/utils.hpp:39] /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/clang-7 -o /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp.o /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp -std=c++17 -emit-llvm -O3 --target=wasm32 -ffreestanding -nostdlib -fno-builtin -fno-threadsafe-statics -fno-exceptions -fno-rtti -fmodules-ts -DBOOST_DISABLE_ASSERTS -DBOOST_EXCEPTION_DISABLE -DRAPIDJSON_64BIT=1 -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/PaymentChannel -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libcxx -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libc -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/rt -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/native/softfloat/include -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include --sysroot=/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../ -c 
+2019-11-15_10:04:50.067747: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/cpp/../include/dipc/utils.hpp:39] /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/clang-7 -o /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp.o /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp -std=c++17 -emit-llvm -O3 --target=wasm32 -ffreestanding -nostdlib -fno-builtin -fno-threadsafe-statics -fno-exceptions -fno-rtti -fmodules-ts -DBOOST_DISABLE_ASSERTS -DBOOST_EXCEPTION_DISABLE -DRAPIDJSON_64BIT=1 -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/PaymentChannel -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libcxx -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libc -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/rt -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/native/softfloat/include -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include --sysroot=/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../ -c 
 
-2019-11-11_19:34:27.442778: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:126]   exports_filename  /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp.exports
+2019-11-15_10:04:53.183723: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:126]   exports_filename  /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp.exports
 
-2019-11-11_19:34:27.443225: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:127]   abi_filename  ./PaymentChannel.cpp.abi.json
+2019-11-15_10:04:53.183748: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:127]   abi_filename  ./PaymentChannel.cpp.abi.json
 
-2019-11-11_19:34:27.443240: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:128]   abidef_output  
+2019-11-15_10:04:53.183755: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:128]   abidef_output  
 
-2019-11-11_19:34:27.443250: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:129]   output_filename  PaymentChannel.wasm
+2019-11-15_10:04:53.183762: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:129]   output_filename  PaymentChannel.wasm
 
-2019-11-11_19:34:27.443261: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:130] exports_filename   /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp.exports
+2019-11-15_10:04:53.183768: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:130] exports_filename   /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp.exports
 
-2019-11-11_19:34:27.443271: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:131] ld  new_opts start  
+2019-11-15_10:04:53.183773: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:131] ld  new_opts start  
 
-2019-11-11_19:34:27.443281: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:133]  /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp.o      
-2019-11-11_19:34:27.443292: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:133] -o PaymentChannel.wasm     
-2019-11-11_19:34:27.443301: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:133]  --export init      
-2019-11-11_19:34:27.443310: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:133]  --export close      
-2019-11-11_19:34:27.443318: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:133]  --export extend      
-2019-11-11_19:34:27.443327: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:133]  --export claimTimeout      
-2019-11-11_19:34:27.443336: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:133]  -log_path=./     
-2019-11-11_19:34:27.443342: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:133]  -log_level=debug     
-2019-11-11_19:34:27.443348: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:133]  -verbose     
-2019-11-11_19:34:27.443353: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:135] 
+2019-11-15_10:04:53.183779: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:133]  /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp.o      
+2019-11-15_10:04:53.183784: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:133] -o PaymentChannel.wasm     
+2019-11-15_10:04:53.183790: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:133]  --export init      
+2019-11-15_10:04:53.183795: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:133]  --export close      
+2019-11-15_10:04:53.183801: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:133]  --export extend      
+2019-11-15_10:04:53.183806: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:133]  --export claimTimeout      
+2019-11-15_10:04:53.183811: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:133]  --export getPaymentChannelStatus      
+2019-11-15_10:04:53.183816: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:133]  -log_path=./     
+2019-11-15_10:04:53.183821: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:133]  -log_level=debug     
+2019-11-15_10:04:53.183831: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:133]  -verbose     
+2019-11-15_10:04:53.183837: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:135] 
 
-2019-11-11_19:34:27.443398: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/cpp/../include/dipc/utils.hpp:39] /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/dipc-ld  /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp.o  -o PaymentChannel.wasm  --export init   --export close   --export extend   --export claimTimeout   -log_path=./  -log_level=debug  -verbose 
+2019-11-15_10:04:53.183904: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/cpp/../include/dipc/utils.hpp:39] /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/dipc-ld  /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//PaymentChannel.cpp.o  -o PaymentChannel.wasm  --export init   --export close   --export extend   --export claimTimeout   --export getPaymentChannelStatus   -log_path=./  -log_level=debug  -verbose 
 

@@ -52,6 +52,8 @@ namespace dipc {
 
 
 
-    void initLog(const std::string &logPath, const std::string &logLevel, std::string& logName);
+    void initLog(const std::string &logPath, const std::string &logLevel, const std::string& logName, bool verbose);
     void toInitLog(std::string project_name, bool verbose, std::string &logPath, std::string &logLevel, fs::path randomDir);
 }
+
+
