@@ -16,7 +16,7 @@ namespace dipc {
             code += returnType + " ";
             code += method.methodName + "(";
             for (int i = 0; i < method.args.size(); ++i) {
-                code += method.types[i].realTypeName + " ";
+                code += (method.types[i].realTypeName == "_Bool" ? "bool" : method.types[i].realTypeName)+ " ";
                 code += method.args[i];
                 if (i != method.args.size()-1) {
                     code += ",";

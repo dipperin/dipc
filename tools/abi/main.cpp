@@ -25,6 +25,7 @@
 #include "clang/Lex/Preprocessor.h"
 #include "clang/Sema/Sema.h"
 #include "clang/Tooling/CommonOptionsParser.h"
+#include "clang/ASTMatchers/ASTMatchFinder.h"
 #include "clang/Tooling/Tooling.h"
 #include "llvm/Support/FileSystem.h"
 #include "llvm/Support/Path.h"
@@ -38,6 +39,7 @@
 #include "Log.h"
 #include "StringUtil.h"
 #include "Template.h"
+#include "ClassImplCheck.h"
 
 using namespace std;
 namespace cl = llvm::cl;
@@ -99,6 +101,31 @@ std::unique_ptr<tooling::FrontendActionFactory> CreateFindMacroFactory(
       new FrontendMacroActionFactory(contractDef, actions));
 }
 
+
+//  ClassImplCheck check;
+//     MatchFinder finder;
+//     finder.addMatcher(recordMatcher, &check);
+//     Tool.run(tooling::newFrontendActionFactory(&finder).get());
+
+
+
+// think again
+// std::unique_ptr<tooling::FrontendActionFactory> createClassCheckImplFactory(
+//   ContractDef &contractDef){
+//     struct FrontendClassAcctionFactory : public tooling::FrontendActionFactory{
+//         ContractDef &contractDef;
+//         FrontendClassAcctionFactory(ContractDef &contractDef) : contractDef(contractDef){}
+
+//         clang::FrontendAction *create() override{
+//           return new Find;
+//         }
+    
+//     };
+
+//     return std::unique_ptr<tooling::FrontendActionFactory>(new FrontendClassAcctionFactory(contractDef));
+// }
+
+
 std::unique_ptr<tooling::FrontendActionFactory> createFactory(
     const string &contract, const vector<string> &actions, ABIDef &abiDef)
 {
@@ -121,6 +148,8 @@ std::unique_ptr<tooling::FrontendActionFactory> createFactory(
   return std::unique_ptr<tooling::FrontendActionFactory>(
       new ABIFrontendActionFactory(contract, actions, abiDef));
 }
+
+
 
 enum State
 {
@@ -744,7 +773,7 @@ void createJsonAbi(const ABIDef &abiDef, const ContractDef &contractDef,
   }
   fs::path tmpFile = randomDir / fileName;
 
-  LOGERROR << "random:[" << randomDir.string() << "] fileName:" << fileName;
+  LOGDEBUG << "random:[" << randomDir.string() << "] fileName:" << fileName;
 
   LOGDEBUG << "tmpFile:[" << tmpFile.string() << "]";
 
@@ -778,7 +807,7 @@ void createExportsFile(const ABIDef &abiDef, const string &srcFile,
   }
   fs::path tmpFile = randomDir / fileName;
 
-  LOGERROR << "random:[" << randomDir.string() << "] fileName:" << fileName;
+  LOGDEBUG << "random:[" << randomDir.string() << "] fileName:" << fileName;
 
   LOGDEBUG << "tmpFile:[" << tmpFile.string() << "]";
 
@@ -1057,8 +1086,16 @@ int main(int argc, const char **argv)
 //                             << ErrStr(strerror(errno));
 //         }
 
+  //  if (!fs::create_directories(randomDir))
+  //  {
+  //     throw Exception() << ErrStr("create dir failed:")
+  //                         << ErrStr(strerror(errno));
+  //   }
+      
+
     std::cout << "verbose  value "  <<  verbose  << std::endl;
     toInitLog("dipc-abi", verbose,logPath,logLevel,randomDir);
+
 
     LOGDEBUG << "dipc-abi  verbose  "  << verbose << std::endl;
     LOGDEBUG << "dipc-abi argv  start ...."  << std::endl;
@@ -1098,7 +1135,21 @@ int main(int argc, const char **argv)
       return -1;
     }
 
-    LOGINFO << "find method success"
+  
+    DeclarationMatcher recordMatcher = cxxRecordDecl(anyOf( cxxRecordDecl(isDerivedFrom(cxxRecordDecl(hasName("Contract")))).bind("contract"),cxxRecordDecl(hasName("Contract")).bind("parent")));
+
+
+    ClassImplCheck check(contractDef);
+    MatchFinder finder;
+    finder.addMatcher(recordMatcher, &check);
+    Tool.run(tooling::newFrontendActionFactory(&finder).get());
+
+    if(!isImplContract){
+      std::cerr <<   " ERROR!!! ERROR!!! "  <<contractDef.fullName << " must implement Contract " << std::endl;
+      exit(1);
+    }
+
+    LOGDEBUG << "find method success"
             << "find abi size:" << abiDef.abis.size();
     bool foundInit = false;
     for (size_t i = 0; i < abiDef.abis.size(); ++i)

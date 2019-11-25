@@ -57,7 +57,7 @@ static llvm::cl::opt<std::string> logPath(
 static llvm::cl::opt<std::string> logLevel("log_level",
                                      llvm::cl::desc("log level, default = debug"),
                                      llvm::cl::cat(LD_CAT),
-                                     llvm::cl::init("debug"));
+                                     llvm::cl::init("info"));
 #ifndef ONLY_LD
 static llvm::cl::opt<bool> c_opt(
     "c", llvm::cl::desc("Only run preprocess, compile, and assemble steps"),
@@ -135,6 +135,11 @@ static Options CreateOptions() {
   GetLdOptDefaults(opts.ld_opts);
 #endif
 
+if(verbose){
+   #define VERBOSE    
+}
+
+
 #ifndef ONLY_LD
   opts.abigen = false;
   if (abigen_opt) {
@@ -171,9 +176,9 @@ static Options CreateOptions() {
 
   opts.ld_log_opts.emplace_back("-log_path="+logPath);
   opts.ld_log_opts.emplace_back("-log_level="+logLevel);
-  if(verbose){
-      opts.ld_log_opts.emplace_back("-verbose");
-  }
+  // if(verbose){
+  //opts.ld_log_opts.emplace_back("-verbose="+verbose);
+  // }
 
 #ifdef ONLY_LD
   opts.ld_opts.emplace_back("-L" + dipc::cdt::utils::where() + "/../lib");
@@ -232,6 +237,7 @@ static Options CreateOptions() {
     opts.abigen_opts.emplace_back("-log_path="+logPath);
     opts.abigen_opts.emplace_back("-log_level="+logLevel);
     if(verbose){
+        //#define VERBOSE
         opts.abigen_opts.emplace_back("-verbose");
     }
 

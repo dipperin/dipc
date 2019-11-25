@@ -117,6 +117,17 @@ namespace dipc {
     }
 
     /**
+     * @brief  Specify event type field serialization
+     * 
+     * @param stream RLP stream
+     * @param result bool type
+     */
+    inline void event(RLPStream &stream, bool result) {
+        uint8_t num = result ? 1 : 0;
+        stream << num;
+    }
+
+    /**
      * @brief Specify event type field serialization
      * 
      * @param stream RLP stream

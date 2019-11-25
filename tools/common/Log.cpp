@@ -11,6 +11,7 @@
 #include "boost/filesystem.hpp"
 #include "boost/random.hpp"
 #include "StringUtil.h"
+#include "boost/log/sinks/text_file_backend.hpp"
 
 #include "Log.h"
 using namespace std;
@@ -19,6 +20,7 @@ namespace logging = boost::log;
 namespace keywords = boost::log::keywords;
 namespace attrs    = boost::log::attributes;
 namespace expr     = boost::log::expressions;
+namespace sinks = boost::log::sinks;
 
 namespace dipc{
 
@@ -46,12 +48,14 @@ namespace dipc{
     }
 
     void initLog(const string &logPath, const string &logLevel, const string& logName, bool verbose) {
-        string logfile = logPath + "/" + logName;
-        logging::core::get()->add_global_attribute("File", attrs::mutable_constant<std::string>(""));
-        logging::core::get()->add_global_attribute("Line", attrs::mutable_constant<int>(0));
-        logging::core::get()->set_filter(logging::trivial::severity>=getLevel(logLevel));
+        
+        if(verbose){
+            string logfile = logPath + "/" + logName;
+            logging::core::get()->add_global_attribute("File", attrs::mutable_constant<std::string>(""));
+            logging::core::get()->add_global_attribute("Line", attrs::mutable_constant<int>(0));
+            logging::core::get()->set_filter(logging::trivial::severity>=getLevel(logLevel));
 
-        //if(verbose){
+
             logging::add_file_log (
                 keywords::file_name = logfile,
                 keywords::format = (
@@ -63,43 +67,68 @@ namespace dipc{
                                 << expr::smessage
                 )
             );
-        //}
-        
-        //logging::add_console_log();
-    
+            logging::add_common_attributes();
+            lg = make_shared<logging::sources::severity_logger< logging::trivial::severity_level>>();
+           
+        }else {
+            std::cout  << "init log without log file " << std::endl;
+            logging::core::get()->add_global_attribute("File", attrs::mutable_constant<std::string>(""));
+            logging::core::get()->add_global_attribute("Line", attrs::mutable_constant<int>(0));
+            //logging::core::get()->set
+            //logging::add_common_attributes();
+            logging::core::get()->set_filter(logging::trivial::severity>=getLevel(logLevel));
+            lg = make_shared<logging::sources::severity_logger< logging::trivial::severity_level>>();
+        }
 
-        //logging::a
-        logging::add_common_attributes();
-        lg = make_shared<logging::sources::severity_logger< logging::trivial::severity_level>>();
     }
 
+
+    // void init_term()
+    // {
+
+    //     typedef sinks::synchronous_sink<sinks::text_ostream_backend> text_sink;
+    //     boost::shared_ptr<text_sink> sink = boost::make_shared<text_sink>();
+    //     // create sink to stdout
+    //     boost::shared_ptr<text_sink> sink = boost::make_shared<text_sink>();
+    //     sink->locked_backend()->add_stream(
+    //         boost::shared_ptr<std::ostream>(&out, boost::empty_deleter()));
+
+    //     // flush
+    //     sink->locked_backend()->auto_flush(true);
+
+    //     // format sink
+    //     sink->set_formatter
+    //     (
+    //         /// TODO add your desired formatting
+    //     );
+
+    //     // filter
+    //     // TODO add any filters
+
+    //     // register sink
+    //     bl::core::get()->add_sink(sink);
+    // }
 
 
 
     void toInitLog(std::string project_name, bool verbose, std::string& logPath, std::string& logLevel, fs::path randomDir){
+        if (randomDir.string() == ""){
+            llvm::SmallString<64> res;
+            llvm::sys::path::system_temp_directory(true, res);
+            std::string randomPath = randomString(20)
+                            .c_str() + project_name;
+            randomDir = fs::path(std::string(res.c_str())) /
+                        randomPath;
+        }
+            
+        if (!fs::create_directories(randomDir))
+        {
+        throw Exception() << ErrStr("create dir failed:")
+                            << ErrStr(strerror(errno));
+        }
+       
         if (verbose)
         {
-            if (randomDir.string() == ""){
-                llvm::SmallString<64> res;
-                llvm::sys::path::system_temp_directory(true, res);
-                std::string randomPath = randomString(20)
-                                .c_str() + project_name;
-                randomDir = fs::path(std::string(res.c_str())) /
-                            randomPath;
-            }
-            
-            //std::cout << "randomDir.string()  " << " logDir    " << randomDir.string() << std::endl;
-            //std::cout << "existLogPath logDir    " << existLogPath << std::endl;
-            // if(randomDir.string() == existLogPath){
-            //     return;
-            // }
-            if (!fs::create_directories(randomDir))
-            {
-            throw Exception() << ErrStr("create dir failed:")
-                                << ErrStr(strerror(errno));
-            }
-
-       
             if (logPath.empty())
             {
                 logPath = randomDir.string();
@@ -108,6 +137,13 @@ namespace dipc{
             std::string logName = project_name + ".log";
             initLog(logPath, logLevel, logName, verbose);
         } else {
+
+            // if (!fs::create_directories(randomDir))
+            // {
+            // throw Exception() << ErrStr("create dir failed:")
+            //                     << ErrStr(strerror(errno));
+            // }
+            std::cout  << "to init log without log file " << std::endl;
             initLog("", logLevel, "", verbose);
         }
     }

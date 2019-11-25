@@ -1,7 +1,12 @@
 [
     {
         "name": "init",
-        "inputs": [],
+        "inputs": [
+            {
+                "name": "insert",
+                "type": "bool"
+            }
+        ],
         "outputs": [],
         "constant": "false",
         "payable": "false",
@@ -19,5 +24,17 @@
         "constant": "false",
         "payable": "false",
         "type": "function"
+    },
+    {
+        "name": "booltest",
+        "inputs": [
+            {
+                "type": "bool"
+            },
+            {
+                "type": "string"
+            }
+        ],
+        "type": "event"
     }
 ]
