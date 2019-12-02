@@ -13,13 +13,13 @@ extern "C" {
    i <<=64;
 } */
 void __ashlti3(__int128& ret, uint64_t low, uint64_t high, uint32_t shift) {
-   #if 1
+   //#if 1
    uint128_t i = high;
    i <<= 64;
    i |= low;
    i <<= shift;
    ret = i;
-   #endif
+   //#endif
 }
 
 void __ashrti3(__int128& ret, uint64_t low, uint64_t high, uint32_t shift) {

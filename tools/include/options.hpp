@@ -183,6 +183,7 @@ if(verbose){
 #ifdef ONLY_LD
   opts.ld_opts.emplace_back("-L" + dipc::cdt::utils::where() + "/../lib");
   opts.ld_opts.emplace_back("-lrt");
+  //opts.ld_opts.emplace_back("-lrt");
   opts.ld_opts.emplace_back("-lsf");
   //opts.ld_opts.emplace_back("-L/usr/local/Cellar/cryptopp/8.1.0/lib");
 #endif

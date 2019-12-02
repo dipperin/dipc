@@ -24,7 +24,14 @@ extern "C" {
    double ___floatuntidf(unsigned __int128);
    //for test
    //void __testInt128(__int128& ret);
-   //void __ashlti3(__int128& ret, uint64_t low, uint64_t high, uint32_t shift);
+   void __ashrti3(__int128& ret, uint64_t low, uint64_t high, uint32_t shift);
+   void __ashlti3(__int128& ret, uint64_t low, uint64_t high, uint32_t shift);
+   void __lshlti3(__int128& ret, uint64_t low, uint64_t high, uint32_t shift);
+   void __lshrti3(__int128& ret, uint64_t low, uint64_t high, uint32_t shift);
+   void __divti3(__int128& ret, uint64_t la, uint64_t ha, uint64_t lb, uint64_t hb);
+   void __modti3(__int128& ret, uint64_t la, uint64_t ha, uint64_t lb, uint64_t hb);
+   void __multi3(__int128& ret, uint64_t la, uint64_t ha, uint64_t lb, uint64_t hb);
+   void __udivti3(unsigned __int128& ret, uint64_t la, uint64_t ha, uint64_t lb, uint64_t hb);
 #ifdef __cplusplus
 }
 #endif

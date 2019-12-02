@@ -79,7 +79,7 @@ public:
 
 
     virtual void run(const MatchFinder::MatchResult& result){
-            std::cout << "step in classImplCheck"  << std::endl;
+            //std::cout << "step in classImplCheck"  << std::endl;
 
             CXXRecordDecl const * recordDeclGet =  result.Nodes.getNodeAs<CXXRecordDecl>("contract");
            

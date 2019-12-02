@@ -34,7 +34,7 @@ int main(int argc, const char** argv) {
                                     kLdName + " (WebAssembly linker)");
   auto opts = CreateOptions();
   fs::path randomDir("");
-  std::cout << "verbose  value "  <<  verbose  << std::endl;
+  //std::cout << "verbose  value "  <<  verbose  << std::endl;
   dipc::toInitLog(kLdName, verbose, logPath, logLevel, randomDir);
 
   if (!opts.export_file.empty()) {
