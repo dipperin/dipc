@@ -18,5 +18,5 @@
 
 #define CONSTANT [[dipc::constant]]
 #define PAYABLE [[dipc::payable]]
-#define EXPORT
+#define EXPORT [[dipc::export]]
 

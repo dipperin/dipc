@@ -13,6 +13,7 @@
 #include <tuple>
 #include <deque>
 #include "dipc/storage.hpp"
+#include "fixedhash.hpp"
 
 namespace dipc {
 
@@ -130,6 +131,9 @@ namespace dipc {
     using Int8 = class StorageType<name, int8_t>;
 
     template <const char *name>
+    using Bool = class StorageType<name, bool>;
+
+    template <const char *name>
     using Uint16 = class StorageType<name, uint16_t>;
 
     template <const char *name>
@@ -167,6 +171,9 @@ namespace dipc {
 
     template <const char *name, typename K, typename V>
     using Map = class StorageType<name, std::map<K,V>>;
+
+    template <const char* name>
+    using AddressStore = class StorageType<name, Address>; 
 
     template <const char *name,  typename T, size_t N>
     using Array = class StorageType<name, std::array<T,N>>;

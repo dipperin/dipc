@@ -37,7 +37,9 @@ static bool exec_subprogram(const std::string prog,
   if (auto path = llvm::sys::findProgramByName(prog.c_str(), {find_path})) {
     //std::cout << (*path + " " + args.str()).c_str() << std::endl;
     LOGDEBUG << (*path + " " + args.str()).c_str() << std::endl;
-    std::system((*path + " " + args.str()).c_str());
+    if (std::system((*path + " " + args.str()).c_str()) != 0){
+        exit(1);
+    }
   } else {
     return false;
   }
