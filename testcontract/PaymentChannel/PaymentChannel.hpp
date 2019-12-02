@@ -22,4 +22,9 @@ public:
     EXPORT void close(uint64_t amount, char* signature);
     EXPORT void extend(uint64_t newExpiration);
     EXPORT void claimTimeout();
+    //CONSTANT void getPaymentChannelStatus();
 };
+
+//DIPC_EVENT(PaymentChannelStatus, char *, uint64_t, uint64_t, bool);
+DIPC_EVENT(PaymentChannelStatus, char *, uint64_t, uint64_t);
+//DIPC_EVENT(PaymentChannelStatus, uint64_t, uint64_t);

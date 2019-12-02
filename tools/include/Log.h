@@ -35,13 +35,23 @@ namespace dipc {
 //          (boost::log::keywords::severity = (boost::log::trivial::level)) \
 //    )
 
+#ifndef VERBOSE
 #define LOGLEVEL(level) \
-   BOOST_LOG_STREAM_WITH_PARAMS( \
-      (*lg.get()), \
-         (set_get_attrib("File", std::string(__FILE__))) \
-         (set_get_attrib("Line", __LINE__)) \
-         (boost::log::keywords::severity = (boost::log::trivial::level)) \
-   )
+BOOST_LOG_STREAM_WITH_PARAMS( \
+   (*lg.get()), \
+      (set_get_attrib("File", std::string(__FILE__))) \
+      (set_get_attrib("Line", __LINE__)) \
+      (boost::log::keywords::severity = (boost::log::trivial::level)) \
+)
+#else
+#define LOGLEVEL(level) \
+BOOST_LOG_STREAM_WITH_PARAMS( \
+   (*lg.get()), \
+      (boost::log::keywords::severity = (boost::log::trivial::level)) \
+)
+
+#endif
+
 
 #define LOGTRACE LOGLEVEL(trace)
 #define LOGDEBUG LOGLEVEL(debug)
@@ -52,6 +62,8 @@ namespace dipc {
 
 
 
-    void initLog(const std::string &logPath, const std::string &logLevel, std::string& logName);
+    void initLog(const std::string &logPath, const std::string &logLevel, const std::string& logName, bool verbose);
     void toInitLog(std::string project_name, bool verbose, std::string &logPath, std::string &logLevel, fs::path randomDir);
 }
+
+

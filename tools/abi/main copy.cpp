@@ -25,7 +25,6 @@
 #include "clang/Lex/Preprocessor.h"
 #include "clang/Sema/Sema.h"
 #include "clang/Tooling/CommonOptionsParser.h"
-#include "clang/ASTMatchers/ASTMatchFinder.h"
 #include "clang/Tooling/Tooling.h"
 #include "llvm/Support/FileSystem.h"
 #include "llvm/Support/Path.h"
@@ -39,7 +38,6 @@
 #include "Log.h"
 #include "StringUtil.h"
 #include "Template.h"
-#include "ClassImplCheck.h"
 
 using namespace std;
 namespace cl = llvm::cl;
@@ -101,31 +99,6 @@ std::unique_ptr<tooling::FrontendActionFactory> CreateFindMacroFactory(
       new FrontendMacroActionFactory(contractDef, actions));
 }
 
-
-//  ClassImplCheck check;
-//     MatchFinder finder;
-//     finder.addMatcher(recordMatcher, &check);
-//     Tool.run(tooling::newFrontendActionFactory(&finder).get());
-
-
-
-// think again
-// std::unique_ptr<tooling::FrontendActionFactory> createClassCheckImplFactory(
-//   ContractDef &contractDef){
-//     struct FrontendClassAcctionFactory : public tooling::FrontendActionFactory{
-//         ContractDef &contractDef;
-//         FrontendClassAcctionFactory(ContractDef &contractDef) : contractDef(contractDef){}
-
-//         clang::FrontendAction *create() override{
-//           return new Find;
-//         }
-    
-//     };
-
-//     return std::unique_ptr<tooling::FrontendActionFactory>(new FrontendClassAcctionFactory(contractDef));
-// }
-
-
 std::unique_ptr<tooling::FrontendActionFactory> createFactory(
     const string &contract, const vector<string> &actions, ABIDef &abiDef)
 {
@@ -148,8 +121,6 @@ std::unique_ptr<tooling::FrontendActionFactory> createFactory(
   return std::unique_ptr<tooling::FrontendActionFactory>(
       new ABIFrontendActionFactory(contract, actions, abiDef));
 }
-
-
 
 enum State
 {
@@ -615,39 +586,10 @@ std::string GetAndInsertBeCalled(const std::string &code_text, const ABIDef &abi
   return finalContract;
 }
 
-void CompareHeaderAndImplFileMacro(const std::string &code_text, const ABIDef &abidef, const string& contractName, bool isImplWithHeader){
+void CompareHeaderAndImplFileMacro(const std::string &code_text, const ABIDef &abidef, const string& contractName){
        LOGDEBUG <<  "CompareHeaderAndImplFileMacro  start "  << std::endl;
-      std::string codeText = code_text;
 
-      if (isImplWithHeader){
-          int count = 0;
-          bool flag = false;
-          size_t pos = 0;
-          for(size_t i = 0; i < codeText.size(); i++){
-            char c = codeText[i];
-            switch (c) {
-              case '{':
-                  if (count == 0){
-                    flag = true;
-                  }
-                  count++;
-                  break;
-              case '}':
-                  count--;
-                  break;
-              default:
-                  break;
-            }
-            if(count == 0 && flag){
-                pos = i + 1;
-                break;
-            }
-          }
-          codeText = code_text.substr(pos);
-      }
-      
-
-      LOGDEBUG << "get codeText content "  << codeText << std::endl;
+      std::string codeText = "";
 
        for(auto abi : abidef.abis){
         std::string typeName = abi.returnType.typeName == "" ? abi.returnType.realTypeName : abi.returnType.typeName;
@@ -657,9 +599,9 @@ void CompareHeaderAndImplFileMacro(const std::string &code_text, const ABIDef &a
         LOGDEBUG << "searchStr " << searchStr << endl;
         regex searchFuncHead(searchStr);
         smatch sma;
-        if (!regex_search(codeText, sma, searchFuncHead)){
+        if (!regex_search(code_text, sma, searchFuncHead)){
            searchStr = R"(\s*)" + abi.modifier + R"(\s*)" + typeName + R"(\s*)" + abi.methodName;
-           if (!regex_search(codeText, sma, searchFuncHead)){
+           if (!regex_search(code_text, sma, searchFuncHead)){
                 std::cerr <<  "ERROR: <dipc-abigen> header declare is not same with the implement file;Please make sure the function macro is same "  << std::endl;
                 exit(1);
            }
@@ -773,7 +715,7 @@ void createJsonAbi(const ABIDef &abiDef, const ContractDef &contractDef,
   }
   fs::path tmpFile = randomDir / fileName;
 
-  LOGDEBUG << "random:[" << randomDir.string() << "] fileName:" << fileName;
+  LOGERROR << "random:[" << randomDir.string() << "] fileName:" << fileName;
 
   LOGDEBUG << "tmpFile:[" << tmpFile.string() << "]";
 
@@ -807,7 +749,7 @@ void createExportsFile(const ABIDef &abiDef, const string &srcFile,
   }
   fs::path tmpFile = randomDir / fileName;
 
-  LOGDEBUG << "random:[" << randomDir.string() << "] fileName:" << fileName;
+  LOGERROR << "random:[" << randomDir.string() << "] fileName:" << fileName;
 
   LOGDEBUG << "tmpFile:[" << tmpFile.string() << "]";
 
@@ -901,11 +843,10 @@ void createContractFile(fs::path &randomDir, const string &srcPath,
     LOGDEBUG << "hppPath i am here :  " << hppPath << std::endl;
     //headerStr = removedComments;
     removedComments = InsertFuncToHeaderFile(removedComments, calledFuncDetail, abidef, filename, randomDir, contractName, "", false);
-    CompareHeaderAndImplFileMacro(removedComments,abidef, contractName, true);
   }
   else
   {
-    CompareHeaderAndImplFileMacro(removedComments,abidef, contractName, false);
+    CompareHeaderAndImplFileMacro(removedComments,abidef, contractName);
     regex nameReg("\\.cpp");
     hppPath = regex_replace(src, nameReg, ".hpp");
     LOGDEBUG << "hppPath  :  " << hppPath;
@@ -1085,17 +1026,7 @@ int main(int argc, const char **argv)
 //         throw Exception() << ErrStr("create dir failed:")
 //                             << ErrStr(strerror(errno));
 //         }
-
-  //  if (!fs::create_directories(randomDir))
-  //  {
-  //     throw Exception() << ErrStr("create dir failed:")
-  //                         << ErrStr(strerror(errno));
-  //   }
-      
-
-    //std::cout << "verbose  value "  <<  verbose  << std::endl;
     toInitLog("dipc-abi", verbose,logPath,logLevel,randomDir);
-
 
     LOGDEBUG << "dipc-abi  verbose  "  << verbose << std::endl;
     LOGDEBUG << "dipc-abi argv  start ...."  << std::endl;
@@ -1135,21 +1066,7 @@ int main(int argc, const char **argv)
       return -1;
     }
 
-  
-    DeclarationMatcher recordMatcher = cxxRecordDecl(anyOf( cxxRecordDecl(isDerivedFrom(cxxRecordDecl(hasName("Contract")))).bind("contract"),cxxRecordDecl(hasName("Contract")).bind("parent")));
-
-
-    ClassImplCheck check(contractDef);
-    MatchFinder finder;
-    finder.addMatcher(recordMatcher, &check);
-    Tool.run(tooling::newFrontendActionFactory(&finder).get());
-
-    if(!isImplContract){
-      std::cerr <<   " ERROR!!! ERROR!!! "  <<contractDef.fullName << " must implement Contract " << std::endl;
-      exit(1);
-    }
-
-    LOGDEBUG << "find method success"
+    LOGINFO << "find method success"
             << "find abi size:" << abiDef.abis.size();
     bool foundInit = false;
     for (size_t i = 0; i < abiDef.abis.size(); ++i)

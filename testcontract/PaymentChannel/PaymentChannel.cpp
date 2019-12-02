@@ -11,6 +11,7 @@ PAYABLE void PaymentChannel::init(char* _recipient, uint64_t duration, uint64_t 
     *expiration = duration;
     *balance = _balance;
     DipcAssert(dipc::callValue() == _balance);
+    DIPC_EMIT_EVENT(PaymentChannelStatus, recipient.get().data(), expiration.get(), balance.get());
 }
 
 EXPORT void PaymentChannel::close(uint64_t amount, char* signature){
@@ -42,3 +43,9 @@ EXPORT void PaymentChannel::claimTimeout(){
     callTransfer(sender.get(), balance.get());
     *closed = true;
 }
+
+// CONSTANT void PaymentChannel::getPaymentChannelStatus(){
+
+//     //DIPC_EMIT_EVENT(PaymentChannelStatus, expiration.get(), balance.get());
+//     //DIPC_EMIT_EVENT(PaymentChannelStatus, 123456, expiration.get(), balance.get(), closed.get());
+// }

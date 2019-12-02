@@ -45,12 +45,17 @@ int main(int argc, const char** argv) {
   auto opts = CreateOptions();
 
   fs::path randomDir("");
+  //std::cout << "verbose  value "  <<  verbose  << std::endl;
   dipc::toInitLog(kCompilerName, verbose, logPath, logLevel, randomDir);
   
 
   if (opts.abigen) {
     //print dipc-abi opts
+    //std::cout<<"the dipc-abigen opts is:"<<std::endl;
+
     LOGDEBUG<<"the dipc-abigen opts is:"<<std::endl;
+    //std::cout<<"the dipc-abigen opts is started :"<<std::endl;
+
     std::vector<std::string>::iterator i;
     for(i=opts.abigen_opts.begin();i!=opts.abigen_opts.end();i++){
       LOGDEBUG<< *i <<std::endl;
@@ -108,6 +113,8 @@ int main(int argc, const char** argv) {
     for (const auto& output : outputs) {
       new_opts.insert(new_opts.begin(), std::string(" ") + output + " ");
     }
+    std::string verboseValue = verbose==true?"true":"false";
+    new_opts.insert(new_opts.begin(), "-verbose="+verboseValue);
 
     if (opts.abigen) {
       std::fstream fs(opts.exports_filename);

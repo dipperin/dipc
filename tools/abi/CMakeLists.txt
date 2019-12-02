@@ -19,6 +19,9 @@ add_executable(dipc-abigen ${SOURCES})
 target_include_directories(dipc-abigen PUBLIC  ${CMAKE_CURRENT_SOURCE_DIR}/../include)
 target_include_directories(dipc-abigen PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/../../libraries/rapidjson/include)
 
+message("LLVM_LIBRARY_DIRS is ${LLVM_LIBRARY_DIRS}")
+
+
 target_link_libraries(dipc-abigen
   ${CMAKE_BINARY_DIR}/common/libcommon.a
 
@@ -35,6 +38,7 @@ target_link_libraries(dipc-abigen
   ${LLVM_LIBRARY_DIRS}/libclangSema.a
   ${LLVM_LIBRARY_DIRS}/libclangAnalysis.a
   ${LLVM_LIBRARY_DIRS}/libclangAST.a
+  ${LLVM_LIBRARY_DIRS}/libclangASTMatchers.a
   ${LLVM_LIBRARY_DIRS}/libclangBasic.a
   ${LLVM_LIBRARY_DIRS}/libclangEdit.a
   ${LLVM_LIBRARY_DIRS}/libclangLex.a

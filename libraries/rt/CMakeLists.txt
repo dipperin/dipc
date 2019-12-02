@@ -1,17 +1,26 @@
 cmake_minimum_required(VERSION 3.5)
 
 set(CMAKE_CXX_STANDARD 14)
+set(LLVM_CONFIG_PATH ${BINARY_DIR}/dipc-llvm/tools/llvm-config)
 
 set(C_DEFINES, "-D__wasm__ -DQUAD_PRECISION")
 
-set( CMAKE_C_FLAGS " -Wall ${CMAKE_C_FLAGS} ${C_DEFINES} -allow-sse  -msse -msse2 -msse4" )
-set( CMAKE_CXX_FLAGS " -Wall ${CMAKE_CXX_FLAGS} ${C_DEFINES} -allow-sse -msse -msse2 -msse4")
+# set( CMAKE_C_FLAGS " -Wall ${CMAKE_C_FLAGS} ${C_DEFINES} -allow-sse  -msse -msse2 -msse4" )
+# set( CMAKE_CXX_FLAGS " -Wall ${CMAKE_CXX_FLAGS} ${C_DEFINES} -allow-sse -msse -msse2 -msse4")
+set( CMAKE_C_FLAGS " -Wall ${CMAKE_C_FLAGS} ${C_DEFINES} -allow-sse  " )
+set( CMAKE_CXX_FLAGS " -Wall ${CMAKE_CXX_FLAGS} ${C_DEFINES} -allow-sse ")
+
+
+
+
 # set( CMAKE_CXX_FLAGS " -Wall   -O3  -O3 -Wall   -allow-sse -std=c++14")
 # set( CMAKE_C_FLAGS " -Wall   -O3  -O3 -Wall   -allow-sse")
 
 #set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I ${CMAKE_CURRENT_SOURCE_DIR}/../libc++/libcxx/include")
 #set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I ${CMAKE_CURRENT_SOURCE_DIR}/../libc/musl/include")
-set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I ${CMAKE_CURRENT_SOURCE_DIR}/../dipclib/include")
+
+#set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I ${CMAKE_CURRENT_SOURCE_DIR}/../dipclib/include")
+
 #set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -I ${CMAKE_CURRENT_SOURCE_DIR}/../boost/include ")  #-nostdinc
 
 

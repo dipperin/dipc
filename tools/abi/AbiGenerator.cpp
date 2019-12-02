@@ -146,6 +146,9 @@ namespace dipc {
                 if (macroNum > 1) {
                     std::cerr << "ERROR!!! ERROR!!!  one method can't have more than one Macro!!!\n" ;
                     exit(1);
+                } else if(macroNum == 0){
+                    std::cerr << "ERROR!!! ERROR!!! can't find same macro in header and impl!!!\n";
+                    exit(1);
                 }
 
                 clang::QualType returnType = method->getReturnType();

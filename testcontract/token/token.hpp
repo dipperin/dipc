@@ -12,7 +12,9 @@ char ow[] = "own";
 char sy[] = "symbol";
 char newbl[] = "nbalance";
 char stopc[] = "stop";
-class TestToken : public Contract {
+//class TestToken : public Contract {
+class TestToken : public Contract{
+
 public: 
     PAYABLE void init(const char* tokenName,const char* symbol, uint64_t supply);
     PAYABLE void transfer(const char* to, uint64_t value);

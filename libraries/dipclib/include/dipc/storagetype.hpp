@@ -148,8 +148,8 @@ namespace dipc {
     template <const char *name>
     using Uint64 = class StorageType<name, uint64_t>;
     
-    // template <const char *name>
-    // using Uint256 = class StroageType<name, u256>;
+    template <const char *name>
+    using Uint256 = class StorageType<name, u256>;
 
     template <const char *name>
     using Int64 = class StorageType<name, int64_t>;
