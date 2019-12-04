@@ -73,10 +73,12 @@ CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* app
     return re;
 }
 
-EXPORT bool TestToken::burn(uint64_t value){
+EXPORT bool TestToken::burn(int128_t value){
     Address callerAddr = caller();
     DipcAssert(balance.get()[callerAddr.toString()] >= value);
     DipcAssert(balance.get()[owner.get()] + value >= balance.get()[owner.get()]);
+    uint64_t abase = 100;
+    uint64_t bbase = abase << 10;
     (*balance)[callerAddr.toString()] -= value;
     (*balance)[owner.get()] += value;
     DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);

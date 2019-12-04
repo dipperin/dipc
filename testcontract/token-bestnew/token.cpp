@@ -21,7 +21,7 @@ PAYABLE void TestToken::transfer(const char* to, uint64_t value){
     bool result = (balance.get()[callStr] >= value);
     DipcAssert(result);
 
-    std::string toStr = CharToAddress2Str(to);
+    std::string toStr = to;
     DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
 
     (*balance)[callStr] = balance.get()[callStr] -  value;
@@ -31,7 +31,7 @@ PAYABLE void TestToken::transfer(const char* to, uint64_t value){
 
 EXPORT void TestToken::approve(const char* spender, uint64_t value){
     Address callerAddr = caller();
-    std::string spenderStr = CharToAddress2Str(spender);
+    std::string spenderStr = spender;
    
     uint64_t total = allowance.get()[callerAddr.toString()+spenderStr] + value;
     (*allowance)[callerAddr.toString()+spenderStr] = total;
@@ -42,8 +42,8 @@ EXPORT void TestToken::approve(const char* spender, uint64_t value){
 
 EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t value){
     Address callerAddr = caller();
-    std::string fromStr = CharToAddress2Str(from);
-    std::string toStr = CharToAddress2Str(to);
+    std::string fromStr = from;
+    std::string toStr = to;
 
     DipcAssert(balance.get()[fromStr] >= value);
     DipcAssert(balance.get()[toStr] + value >= balance.get()[toStr]);
@@ -58,16 +58,15 @@ EXPORT void TestToken::transferFrom(const char* from, const char* to, uint64_t v
 
 
 CONSTANT uint64_t TestToken::getBalance(const char* own){
-    
-    std::string ownerStr = CharToAddress2Str(own);
+    std::string ownerStr = own;
     uint64_t ba =  balance.get()[ownerStr];
     DIPC_EMIT_EVENT(GetBalance, "", own, ba);
     return ba;
 }
 
 CONSTANT uint64_t TestToken::getApproveBalance(const char* from, const char* approved){
-    std::string fromStr = CharToAddress2Str(from);
-    std::string approvedStr = CharToAddress2Str(approved);
+    std::string fromStr = from;
+    std::string approvedStr = approved;
     uint64_t re = allowance.get()[fromStr+approvedStr];
     DIPC_EMIT_EVENT(GetBalance, from, approved, re);
     return re;

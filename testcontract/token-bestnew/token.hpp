@@ -12,7 +12,7 @@ char ow[] = "own";
 char sy[] = "symbol";
 char newbl[] = "nbalance";
 char stopc[] = "stop";
-//class TestToken : public Contract {
+
 class TestToken : public Contract{
 
 public: 

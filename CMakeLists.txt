@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.5)
 
 set(VERSION_MAJOR 1)
 set(VERSION_MINOR 1)
+
 set(VERSION_PATCH 0)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
