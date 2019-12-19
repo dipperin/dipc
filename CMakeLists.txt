@@ -66,3 +66,4 @@ endif()
 
 
 add_subdirectory(gtest)
+find_package(RapidJSON)

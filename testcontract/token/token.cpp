@@ -82,3 +82,8 @@ EXPORT bool TestToken::burn(uint64_t value){
     DIPC_EMIT_EVENT(Tranfer, &(callerAddr.toString()[0]), &(owner.get()[0]), value);
     return true;
 }
+
+
+PAYABLE std::string TestToken::testReturn(){
+    return "test";
+}

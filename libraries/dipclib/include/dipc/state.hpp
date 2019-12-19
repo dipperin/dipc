@@ -18,6 +18,7 @@ extern "C" {
     void origin(uint8_t hash[22]);
     void caller(uint8_t hash[22]);
     void callValue(uint8_t val[32]);
+    uint64_t callValueUDIP();
     void address(uint8_t hash[22]);
     //void address2(uint8_t hash[47]);
     void sha3(const uint8_t *src, size_t srcLen, uint8_t *dest, size_t destLen);
@@ -111,6 +112,10 @@ namespace dipc {
         byte val[32];
         ::callValue(val);
         return fromBigEndian<u256>(val);
+    }
+
+    inline uint64_t callValueUDIP(){
+        return ::callValueUDIP();
     }
 
     /**

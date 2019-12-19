@@ -23,6 +23,7 @@ public:
     CONSTANT uint64_t getBalance(const char* own);
     CONSTANT uint64_t getApproveBalance(const char* from, const char* approved);
     EXPORT bool burn(uint64_t _value);
+    PAYABLE std::string testReturn();
 
     void stop(){
         isOwner();

@@ -131,7 +131,7 @@ namespace dipc {
         ::hexStringSameWithVM((const byte*)_s.data(), _s.size(), hash);
         char* p = new char[sizeof(hash)];
         memcpy(p,hash,sizeof(hash));
-        p[sizeof(hash)] = 0;
+        p[sizeof(hash)-1] = '\0';
         std::string str(p);
 
         return str;
@@ -179,6 +179,8 @@ namespace dipc {
         return toHex(_data.begin(), _data.end(), "");
     }
 
+
+
     /**
      * @brief Calculate the number of bytes required for storage `_i`.
      * @param _i Integer to be calculated.
@@ -202,6 +204,7 @@ namespace dipc {
     inline void toBigEndian(T _val, Out& o_out)
     {
         static_assert(std::is_same<bigint, T>::value || !std::numeric_limits<T>::is_signed, "only unsigned types or bigint supported"); //bigint does not carry sign bit on shift
+        //for (auto i = sizeof(o_out); i != 0; _val >>= 8, i--)
         for (auto i = o_out.size(); i != 0; _val >>= 8, i--)
         {
             T v = _val & (T)0xff;
@@ -221,5 +224,55 @@ namespace dipc {
         for (auto i: _bytes)
             ret = (T)((ret << 8) | (byte)(typename std::make_unsigned<decltype(i)>::type)i);
         return ret;
+    }
+
+    inline uint64_t changeU256ToUint64WithChangeRate(u256 callValue, uint64_t changeRate){
+        byte cRate[8];
+        cRate[0] = (byte)(changeRate);
+        cRate[1] = (byte)(changeRate >> 8);
+        cRate[2] = (byte)(changeRate >> 16);
+        cRate[3] = (byte)(changeRate >> 24);
+        cRate[4] = (byte)(changeRate >> 32);
+        cRate[5] = (byte)(changeRate >> 40);
+        cRate[6] = (byte)(changeRate >> 48);
+        cRate[7] = (byte)(changeRate >> 56);
+
+        u256 cr = fromBigEndian<u256>(cRate);
+        callValue = callValue * cr / (10 ^ 18);
+        bytes result(8);
+        //uint64_t result;
+        toBigEndian(callValue, result);
+        //byte r1 =  (byte)result.pop_back();
+        //return 0;
+        return (uint64_t)( result[0] | result[1] << 8 | result[2] << 16 | result[3] << 24 | result[4] << 32
+         | result[5] << 40 | result[6] << 48 | result[7] << 56);
+    }
+
+    inline u256 changeUint64ToU256WithChangeRate(uint64_t balance, uint64_t changeRate){
+        byte cRate[8];
+        cRate[0] = (byte)(changeRate);
+        cRate[1] = (byte)(changeRate >> 8);
+        cRate[2] = (byte)(changeRate >> 16);
+        cRate[3] = (byte)(changeRate >> 24);
+        cRate[4] = (byte)(changeRate >> 32);
+        cRate[5] = (byte)(changeRate >> 40);
+        cRate[6] = (byte)(changeRate >> 48);
+        cRate[7] = (byte)(changeRate >> 56);
+
+        byte bal[8];
+        bal[0] = (byte)(balance);
+        bal[1] = (byte)(balance >> 8);
+        bal[2] = (byte)(balance >> 16);
+        bal[3] = (byte)(balance >> 24);
+        bal[4] = (byte)(balance >> 32);
+        bal[5] = (byte)(balance >> 40);
+        bal[6] = (byte)(balance >> 48);
+        bal[7] = (byte)(balance >> 56);
+
+
+
+        u256 cr = fromBigEndian<u256>(cRate);
+        u256 ba = fromBigEndian<u256>(bal);
+        return ba * (10 ^ 18) / cr ;
     }
 }

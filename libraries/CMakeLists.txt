@@ -3,6 +3,7 @@ message("cmake run libraries.cmake~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 cmake_minimum_required(VERSION 3.5)
 
 add_subdirectory(rt)
+add_subdirectory(rapidjson)
 
 message("the CMAKE_C_FLAGS is: ${CMAKE_C_FLAGS}")
 message("the CMAKE_CXX_FLAGS is: ${CMAKE_CXX_FLAGS}")
@@ -18,3 +19,4 @@ file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/rapidjson/include/ DESTINATION ${BINARY_DI
 add_subdirectory(libc)
 add_subdirectory(libc++)
 add_subdirectory(native)
+

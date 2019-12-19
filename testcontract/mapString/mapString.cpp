@@ -1,8 +1,8 @@
 #include "mapString.hpp"
 
-void mapString::init() {}
+EXPORT void mapString::init() {}
 
-void mapString::setBalance(char* key, int value) {
+EXPORT void mapString::setBalance(char* key, int value) {
 	std::string strKey;
 	strKey = key;
 	(*balance)[strKey] = value;
