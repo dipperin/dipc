@@ -652,12 +652,16 @@ void CompareHeaderAndImplFileMacro(const std::string &code_text, const ABIDef &a
        for(auto abi : abidef.abis){
         std::string typeName = abi.returnType.typeName == "" ? abi.returnType.realTypeName : abi.returnType.typeName;
         typeName =  typeName == "_Bool" ? "bool" : typeName;
+        if(typeName == "char *" || typeName == "char*"){
+             typeName = "char\\*";
+          }
         string searchStr = R"(\s*)" + abi.modifier + R"(\s*)" + typeName + R"(\s*)"+ contractName +"::"+ abi.methodName;
         LOGDEBUG << "searchStr "  << searchStr << " code_text " << code_text << std::endl;
         LOGDEBUG << "searchStr " << searchStr << endl;
         regex searchFuncHead(searchStr);
         smatch sma;
         if (!regex_search(codeText, sma, searchFuncHead)){
+          
            searchStr = R"(\s*)" + abi.modifier + R"(\s*)" + typeName + R"(\s*)" + abi.methodName;
            if (!regex_search(codeText, sma, searchFuncHead)){
                 std::cerr <<  "ERROR: <dipc-abigen> header declare is not same with the implement file;Please make sure the function macro is same "  << std::endl;

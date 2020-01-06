@@ -9,12 +9,13 @@
         *owner = caller().toString();
         *changeRate = 10000;
         *userCanWithdraw = false;
+        *printInfo = true;
         uint64_t tokenBalance = getTotalBalance();
         //DipcAssert(depositValue == callValue());
         *ownerTotalToken = tokenBalance;
         *totalToken = ownerTotalToken.get();
-        //print("tokenBalance");
-        //print(tokenBalance);
+        print("tokenBalance");
+        print(tokenBalance);
         DIPC_EMIT_EVENT(initEvent, "ownerTotalToken" ,tokenBalance);
     }
     
@@ -53,9 +54,9 @@
         // changeU256ToUint64WithChangeRate(callValue(), changeRate.get());
         PortfolioInfo info(_portfolioName, _portfolioDesc, &callerAddr[0]);
         std::string portfolioStr = info.toJson();
-        //print("createPortfolio");
-        //print(portfolioStr);
-        //print(info.getPortfolioResult());
+        print("createPortfolio");
+        print(portfolioStr);
+        print(info.getPortfolioResult());
 
         (*portfolioStorge)[_portfolioName] = portfolioStr;
         DipcAssert(totalToken.get() + tokenBalance > totalToken);
@@ -102,9 +103,9 @@
         }
         struct Order order{_orderId, _orderType, _stockCode, _stockPrice, _stockAmount, _endTime, 0};
         std::string pInfo = portfolioStorge.get()[_portfolioName];
-        //print("identity start");
-        //print(pInfo);
-        //print(tokenBalance);
+        print("identity start");
+        print(pInfo);
+        print(tokenBalance);
         if(pInfo == "") {
             DIPC_EMIT_EVENT(ErrEvent, "Current portfolio  doesn't exist: ", _portfolioName);
             return;
@@ -116,18 +117,20 @@
             return;
         }
         info.addOrder(order);
+        print("orders info check");
+        print(info.getOrder(&order.orderId[0]).orderId);
         pInfo = info.toJson();
 
         uint64_t currentBalance = portfolioBalance.get()[_portfolioName] ;
         uint64_t finalBalance = currentBalance + tokenBalance - spent;
-        DipcAssert(totalToken.get() + tokenBalance > totalToken);
+        DipcAssert(totalToken.get() + tokenBalance >= totalToken.get());
         //DipcAssert(finalBalance > currentBalance);
-        DipcAssert(ownerTotalToken.get() < ownerTotalToken.get() + spent);
+        DipcAssert(ownerTotalToken.get() <= ownerTotalToken.get() + spent);
         (*portfolioStorge)[_portfolioName] = &pInfo[0];
-        //print("identity ten");
-        //print(pInfo);
-        //print(finalBalance);
-        //print(spent);
+        print("identity ten");
+        print(pInfo);
+        print(finalBalance);
+        print(spent);
 
 
         (*portfolioBalance)[_portfolioName] = finalBalance;
@@ -137,45 +140,48 @@
     }
 
     /**
-     * @brief 
-     * 
-     * 
+     * @brief dealOrder is used  only by owner to deal order
+     * @param _portfolioName: the portfolio name to be deal
+     * @param _orderId:  the order id to be deal
      * 
      */
     EXPORT void PortfolioManage::dealOrder(char* _portfolioName, char* _orderId){
         isOwner();
         std::string pInfo = portfolioStorge.get()[_portfolioName];
-        //print("dealOrder  pInfo");
-        //print(pInfo);
+        print("dealOrder  pInfo");
+        print(pInfo);
         PortfolioInfo info;
         info.parseJson(pInfo);
-        //print("dealOrder  start");
+        print("dealOrder  start");
 
-        //print(info.toJson());
+        print(info.toJson());
          Order ord = info.getOrder(_orderId);
-         //print("dealOrder");
-         //print(ord.toJson());
+         print("dealOrder");
+         print(ord.toJson());
         if(ord.orderId != "" && ord.orderStatus == 0){
             //DipcAssert(info.getOwnerAddress() == caller().toString());
             uint64_t timenow = dipc::timestamp();
             if(ord.endTime > timenow){
-                ord.orderStatus = 1;
+                //ord.orderStatus = 1;
+                info.setOrderStatus(_orderId, 1);
             }else {
-                ord.orderStatus = 3;
+                //ord.orderStatus = 3;
+                info.setOrderStatus(_orderId, 3);
+
             }
         } else {
-          // print("dealOrder  return ");
+          print("dealOrder  return ");
 
             return;
         }
-        // print("dealOrder  one ");
+        print("dealOrder  one ");
 
         uint64_t sellValue = 0;
         if(ord.orderType == 0){
             sellValue = ord.stockAmount * ord.stockPrice;
         }
         uint64_t currentBalance =  portfolioBalance.get()[_portfolioName];
-        // print("dealOrder  two");
+        print("dealOrder  two");
 
         DipcAssert(currentBalance + sellValue >= currentBalance);
         DipcAssert((ownerTotalToken.get() - sellValue) <= ownerTotalToken.get());
@@ -185,41 +191,42 @@
         (*portfolioBalance)[_portfolioName] = currentBalance + sellValue;
         *ownerTotalToken = ownerTotalToken.get() - sellValue;
         (*portfolioStorge)[_portfolioName] = &info.toJson()[0];
-        //print("dealOrder  three");
-        //print(info.toJson());
-        //print(currentBalance + sellValue);
-        //print(ownerTotalToken.get());
+        print("dealOrder  three");
+        print(info.toJson());
+        print(currentBalance + sellValue);
+        print(ownerTotalToken.get());
 
         DIPC_EMIT_EVENT(dealPortfolio, "orderId", _orderId, "orderInfo", &ord.toJson()[0]);
     }
     /**
-     * @brief 
-     * 
-     * 
-     * 
+     * @brief  revocationOrder is used to revocation order
+     * @param _portfolioName: the portfolio name to be revocation
+     * @param _orderId:  the order id to be revocation
      */
     EXPORT void PortfolioManage::revocationOrder(char* _portfolioName, char* _orderId){
         std::string pInfo = portfolioStorge.get()[_portfolioName];
-        //print("pInfo");
-        //print(pInfo);
+        print("pInfo");
+        print(pInfo);
         PortfolioInfo info;
         info.parseJson(pInfo);
         Order ord = info.getOrder(_orderId);
-        //print("ordInfo");
-        //print(ord.toJson());
+        print("ordInfo");
+        print(ord.toJson());
         if(ord.orderId != "" && ord.orderStatus == 0){
             std::string callerStr = caller().toString();
-            //print("revocationOrder start");
-            //print(info.getOwnerAddress());
-            //print(callerStr);
+            print("revocationOrder start");
+            print(info.getOwnerAddress());
+            print(callerStr);
             DipcAssert(info.getOwnerAddress() == caller().toString());
-            //print("revocationOrder end");
+            print("revocationOrder end");
 
             uint64_t timenow = dipc::timestamp();
             if(ord.endTime > timenow){
-                ord.orderStatus = 2;
+                info.setOrderStatus(_orderId, 2);
+                //ord.orderStatus = 2;
             }else {
-                ord.orderStatus = 3;
+                info.setOrderStatus(_orderId, 3);
+                //ord.orderStatus = 3;
             }
         } else {
             return;
@@ -229,58 +236,69 @@
             lockToken = ord.stockPrice * ord.stockAmount;
         }
         uint64_t currentBalance =  portfolioBalance.get()[_portfolioName];
-        //print("revocationOrder can see");
-        //print(currentBalance);
-        // print(ownerTotalToken.get());
-        // print(lockToken);
+        print("revocationOrder can see");
+        print(currentBalance);
+        print(ownerTotalToken.get());
+        print(lockToken);
 
         DipcAssert(currentBalance + lockToken >= currentBalance);
         DipcAssert(ownerTotalToken.get() - lockToken <= ownerTotalToken.get());
 
-        //print("revocationOrder can see  two");
+        print("revocationOrder can see  two");
         (*portfolioBalance)[_portfolioName] = currentBalance + lockToken;
         *ownerTotalToken = ownerTotalToken.get() - lockToken;
         (*portfolioStorge)[_portfolioName] = &info.toJson()[0];
         DIPC_EMIT_EVENT(revocationPortfolio, "orderId", _orderId, "orderInfo", &ord.toJson()[0]);
     }
     /**
-     * @brief 
-     * @param _withdrawBalance:  the unit is token
-     * 
-     * 
+     * @brief withdrawPortfolio: is used by user to withdraw balance from portfolio 
+     * @param _portfolioName 
+     * @param _withdrawBalance:  the withdraw balance, unit is 0.001DIP
      */
     EXPORT void PortfolioManage::withdrawPortfolio(char* _portfolioName, uint64_t _withdrawBalance){
          if(!userCanWithdraw.get()){
              return;
          }
+         std::string pInfo = portfolioStorge.get()[_portfolioName];
+         print("withdrawPortfolio pInfo");
+         print(pInfo);
+         PortfolioInfo info;
+         info.parseJson(pInfo);
+         uint64_t withdrawToken = _withdrawBalance * changeRate.get() / 1000;
          uint64_t currentBalance =  portfolioBalance.get()[_portfolioName];
-         DipcAssert(currentBalance - _withdrawBalance < currentBalance);
-         auto coinBalance = changeUint64ToU256WithChangeRate(currentBalance, changeRate.get());
-         (*portfolioBalance)[_portfolioName] = currentBalance - _withdrawBalance;
-         callTransfer(caller(), coinBalance);
+         DipcAssert(currentBalance -  withdrawToken < currentBalance);
+         DipcAssert(caller().toString() == info.getOwnerAddress());
+         //auto coinBalance = changeUint64ToU256WithChangeRate(currentBalance, changeRate.get());
+         print("withdrawPortfolio info");
+         print(currentBalance - withdrawToken);
+         (*portfolioBalance)[_portfolioName] = currentBalance - withdrawToken;
+         callTransferUDIP(caller(), _withdrawBalance);
+         DIPC_EMIT_EVENT(withdrawPortfolio, "portfolioName", _portfolioName, "left balance ", currentBalance - withdrawToken);
     }
     /**
-     * @brief owner deposit to the contract address to get more token
-     * @param _depositValue: the value num transfer to the contract address
+     * @brief owner withdraw from the contract address to get DIP
+     * @param _balance: the value num transfer to the owner address,the unit is 0.001DIP
      */
     EXPORT void PortfolioManage::withdrawPool(uint64_t _balance){
         isOwner();
         Address ownerAddr = Address(owner.get()); 
-        callTransfer(ownerAddr, _balance);
-        *ownerTotalToken = ownerTotalToken.get() - _balance * changeRate.get();
-        *totalToken = totalToken.get() - _balance * changeRate.get();
+        callTransferUDIP(ownerAddr, _balance);
+        *ownerTotalToken = ownerTotalToken.get() - _balance * changeRate.get() / 1000;
+        *totalToken = totalToken.get() - _balance * changeRate.get() / 1000;
+        print("withdrawPool info");
+        print(ownerTotalToken.get());
         DIPC_EMIT_EVENT(tokenCount, "ownerTotalToken", ownerTotalToken.get(), "totalToken", totalToken.get());
     }
     /**
      * @brief owner deposit to the contract address to get more token
-     * @param _depositValue: the value num transfer to the contract address
      */
-    PAYABLE void PortfolioManage::depositPool(uint64_t _depositValue){
+    PAYABLE void PortfolioManage::depositPool(){
         isOwner();
-        //DipcAssert(_depositValue == dipc::callValue());
-        uint64_t tokenBalance = changeU256ToUint64WithChangeRate(callValue(), changeRate.get()); 
+        uint64_t tokenBalance = getTotalBalance();
         *ownerTotalToken = ownerTotalToken.get() + tokenBalance;
         *totalToken = totalToken.get() + tokenBalance;
+        print("depositPool info");
+        print(ownerTotalToken.get());
         DIPC_EMIT_EVENT(tokenCount, "ownerTotalToken", ownerTotalToken.get(), "totalToken", totalToken.get());
     }
      /**
@@ -294,10 +312,10 @@
      /**
      * @brief query the token balance of the portfolio
      * @param _portfolioName : the portfolio name
-     * @return the balance of the portfolio, the unit is token
+     * @return the balance of the portfolio, the unit is 0.001DIP
      */
     CONSTANT uint64_t PortfolioManage::queryPortfolioBalance(char* _portfolioName){
-        return portfolioBalance.get()[_portfolioName];
+        return portfolioBalance.get()[_portfolioName] * 1000 / changeRate.get() ;
     }
 
     /**

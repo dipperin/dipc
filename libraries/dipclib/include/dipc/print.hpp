@@ -29,6 +29,17 @@ namespace dipc {
     }
 
     /**
+     * 
+     * 
+     */
+    inline void printWithContral(const char* ptr, bool isPrint){
+        if(isPrint){
+            prints(ptr);
+        }
+    }
+
+
+    /**
      * Prints 8-128 bit signed integer
      *
      * @brief Prints 8-128 bit signed integer

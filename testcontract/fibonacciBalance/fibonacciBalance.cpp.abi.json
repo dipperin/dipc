@@ -1,7 +1,12 @@
 [
     {
         "name": "init",
-        "inputs": [],
+        "inputs": [
+            {
+                "name": "test",
+                "type": "string"
+            }
+        ],
         "outputs": [],
         "constant": "false",
         "payable": "false",

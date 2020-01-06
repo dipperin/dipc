@@ -13,6 +13,8 @@ set(CMAKE_CXX_FLAGS " ${CMAKE_CXX_FLAGS} -std=c++14 -Oz -Wall --target=wasm32")
 
 message("lib dir ${CMAKE_CURRENT_SOURCE_DIR}  binary dir  ${BINARY_DIR}" )
 file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/dipclib/include/ DESTINATION ${BINARY_DIR}/include/)
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/CJsonObject/ DESTINATION ${BINARY_DIR}/include/)
+
 file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/boost/include/ DESTINATION ${BINARY_DIR}/include/)
 file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/rapidjson/include/ DESTINATION ${BINARY_DIR}/include/)
 

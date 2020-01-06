@@ -1,6 +1,6 @@
 #include "fibonacciBalance.hpp"
 
-EXPORT void fibonacciBalance::init() {}
+EXPORT void fibonacciBalance::init(char * test) {}
 
 EXPORT void fibonacciBalance::setStart(uint64_t _start) {
   *start = _start;

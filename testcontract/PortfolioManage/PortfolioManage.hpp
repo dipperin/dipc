@@ -38,7 +38,7 @@ struct Order {
         //uint64_t orderRecordNum;
         //static uint64_t ordersLen;
         //std::map<char*, Order> orders;
-        std::map<std::string, Order> orders;
+        std::map<std::string, struct Order> orders;
         //Order orders[10];
         public:
         //PortfolioInfo(char* _portfolioName, char* _portfolioDesc, char* _portfolioOwnerAddr, uint64_t _portfolioBalance):portfolioName(_portfolioName),portfolioDesc(_portfolioDesc), portfolioOwnerAddr(_portfolioOwnerAddr), portfolioBalance(_portfolioBalance){
@@ -120,12 +120,17 @@ struct Order {
             //print(portfolioResult);
             return result;
         }
-        void addOrder(Order order){
-            orders.insert(std::pair<std::string, Order>(order.orderId, order));
+        void addOrder(Order &order){
+            auto localOrder = order;
+            print("addOrder  start");
+            print(order.orderId);
+            //orders.insert(std::pair<std::string, Order>(order.orderId, localOrder));
+            orders[order.orderId] = order;
         }
         void parseJson(std::string info){
             rapidjson::Document doc;
             print("parseJson start ");
+            print(info);
             if(!doc.Parse(info.data()).HasParseError()){
    
                 if(doc.HasMember("portfolioName") && doc["portfolioName"].IsString())
@@ -157,7 +162,7 @@ struct Order {
                     {
                     print("start to parse orders  two ");
 
-                        Order orderPar;
+                        struct Order orderPar;
                         const rapidjson::Value& ord = ors[i];
                         if(ord.HasMember("orderId") && ord["orderId"].IsString())
                         {
@@ -188,6 +193,8 @@ struct Order {
                         {
                             orderPar.orderStatus = ord["orderStatus"].GetUint();
                         }
+                        print("orderPar");
+                        print(orderPar.orderId);
                         addOrder(orderPar);
                         //orders.insert(std::pair<std::string, Order>(orderPar.orderId, orderPar));
                     }
@@ -203,6 +210,9 @@ struct Order {
             return orders[orderId];
         }
 
+        void setOrderStatus(char* orderId, uint16_t orderStatus){
+            orders[orderId].orderStatus = orderStatus;
+        }
         std::string getOwnerAddress(){
         //char* getOwnerAddress(){
             return portfolioOwnerAddr;
@@ -225,6 +235,7 @@ char userCanWithdrawc[] = "userWithdraw";
 char totalTokenc[] = "totalToken";
 char portfolioMapc[] = "portfolioMap";
 char portfolioBalancec[] = "portfolioBalance";
+char printInfoc[] = "printInfo";
 class PortfolioManage : public Contract {
 private:
     String<ownc> owner;
@@ -235,9 +246,18 @@ private:
     //Map<portfolioMapc, char * , std::string> portfolioStorge;
     Map<portfolioMapc, std::string , std::string> portfolioStorge;
     Map<portfolioBalancec, std::string , uint64_t> portfolioBalance; 
+    Bool<printInfoc> printInfo;
     void isOwner(){
+        print("start find owner");
         std::string callerStr = caller().toString();
+        print(callerStr);
+        printWithContral(&callerStr[0], printInfo.get());
+        std::string ownerStr = owner.get();
+        print(ownerStr);
+        printWithContral(&ownerStr[0], printInfo.get());
+        
         DipcAssert(callerStr == owner.get());
+        printWithContral("isOwn", printInfo.get());
     }
     
     inline uint64_t getTotalBalance(){
@@ -260,7 +280,7 @@ public:
     EXPORT void revocationOrder(char* _portfolioName, char* _orderId);
     EXPORT void withdrawPortfolio(char* _portfolioName, uint64_t _withdrawBalance);
     EXPORT void withdrawPool(uint64_t _balance);
-    PAYABLE void depositPool(uint64_t _depositValue);
+    PAYABLE void depositPool();
     CONSTANT uint64_t queryTotalToken();
     CONSTANT uint64_t queryPortfolioBalance(char* _portfolioName);
     CONSTANT bool queryPortfolioNameIfUsed(char* _portfolioName);
@@ -271,6 +291,7 @@ DIPC_EVENT(tokenCount, const char* ,uint64_t, const char*, uint64_t);
 DIPC_EVENT(portfolioInfo, const char*, const char* ,const char* , uint64_t);
 DIPC_EVENT(createOrder, const char*, const char*, const char*, const char*, const char*, uint64_t);
 DIPC_EVENT(depositPortfolio, const char*, const char*, const char*, uint64_t);
+DIPC_EVENT(withdrawPortfolio, const char*, const char*, const char*, uint64_t);
 DIPC_EVENT(revocationPortfolio, const char*, const char*, const char*, const char*);
 DIPC_EVENT(dealPortfolio, const char*, const char*, const char*, const char*);
 DIPC_EVENT(ErrEvent, const char*, const char*);

@@ -14,7 +14,7 @@ namespace dipc {
         regex r(R"(char\s*\[\d+\])");
         smatch smatch;
         if (regex_search(typeName, smatch, r)) {
-           return "char *";
+           return "char*";
         }
         return typeName;
     }

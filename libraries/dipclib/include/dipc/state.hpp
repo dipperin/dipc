@@ -24,6 +24,7 @@ extern "C" {
     void sha3(const uint8_t *src, size_t srcLen, uint8_t *dest, size_t destLen);
     int64_t getCallerNonce();
 	int64_t callTransfer(const uint8_t* to, size_t toLen, uint8_t amount[32]);
+    int64_t callTransferUDIP(const uint8_t* to, size_t toLen, int64_t balance);
     void getSignerAddress(const uint8_t* sha3Data, size_t sha3DataLen, const uint8_t *signature, size_t signatureLen, uint8_t addr[22]);
 }
 
@@ -179,6 +180,17 @@ namespace dipc {
         bytes bs(32);
         toBigEndian(amount, bs);
         return ::callTransfer(to.data(), to.size(), bs.data());
+    }
+
+        /**
+     * @brief Send given amount of WU to Address
+     * 
+     * @param to Destination address
+     * @param amount Amount
+     * @return int64_t 0 success non-zero failure
+     */
+    inline int64_t callTransferUDIP(const Address& to, uint64_t amount) {
+        return ::callTransferUDIP(to.data(),to.size(), amount);
     }
 
     /**
