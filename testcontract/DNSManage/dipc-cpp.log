@@ -1,0 +1,95 @@
+2020-01-06_20:35:04.816710: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:56] the dipc-abigen opts is:
+
+2020-01-06_20:35:04.817242: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:61] -extra-arg=-std=c++17
+
+2020-01-06_20:35:04.817255: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:61] -extra-arg=--target=wasm32
+
+2020-01-06_20:35:04.817262: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:61] -extra-arg=-w
+
+2020-01-06_20:35:04.817268: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:61] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/DNSManage
+
+2020-01-06_20:35:04.817274: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:61] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libcxx
+
+2020-01-06_20:35:04.817279: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:61] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libc
+
+2020-01-06_20:35:04.817285: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:61] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/rt
+
+2020-01-06_20:35:04.817291: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:61] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/native/softfloat/include
+
+2020-01-06_20:35:04.817296: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:61] -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include
+
+2020-01-06_20:35:04.817302: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:61] DNSManage.cpp
+
+2020-01-06_20:35:04.817307: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:61] -abigen_output=./DNSManage.cpp.abi.json
+
+2020-01-06_20:35:04.817313: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:61] -exports_output=/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//DNSManage.cpp.exports
+
+2020-01-06_20:35:04.817318: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:61] -abidef_output=
+
+2020-01-06_20:35:04.817323: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:61] -log_path=./
+
+2020-01-06_20:35:04.817329: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:61] -log_level=debug
+
+2020-01-06_20:35:04.817334: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:61] -verbose
+
+2020-01-06_20:35:04.817339: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:61] --
+
+2020-01-06_20:35:04.817344: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:61] -w
+
+2020-01-06_20:35:04.818512: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/cpp/../include/dipc/utils.hpp:39] /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/dipc-abigen -extra-arg=-std=c++17 -extra-arg=--target=wasm32 -extra-arg=-w -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/DNSManage -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libcxx -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libc -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/rt -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/native/softfloat/include -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include DNSManage.cpp -abigen_output=./DNSManage.cpp.abi.json -exports_output=/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//DNSManage.cpp.exports -abidef_output= -log_path=./ -log_level=debug -verbose -- -w 
+
+2020-01-06_20:35:09.976138: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:94] clang  new_opts start  
+
+2020-01-06_20:35:09.976159: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] -o /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//DNSManage.cpp.o     
+2020-01-06_20:35:09.976165: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//DNSManage.cpp     
+2020-01-06_20:35:09.976172: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] -std=c++17     
+2020-01-06_20:35:09.976177: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] -emit-llvm     
+2020-01-06_20:35:09.976182: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] -O3     
+2020-01-06_20:35:09.976187: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] --target=wasm32     
+2020-01-06_20:35:09.976192: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] -ffreestanding     
+2020-01-06_20:35:09.976197: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] -nostdlib     
+2020-01-06_20:35:09.976202: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] -fno-builtin     
+2020-01-06_20:35:09.976207: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] -fno-threadsafe-statics     
+2020-01-06_20:35:09.976212: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] -fno-exceptions     
+2020-01-06_20:35:09.976217: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] -fno-rtti     
+2020-01-06_20:35:09.976222: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] -fmodules-ts     
+2020-01-06_20:35:09.976227: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] -DBOOST_DISABLE_ASSERTS     
+2020-01-06_20:35:09.976232: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] -DBOOST_EXCEPTION_DISABLE     
+2020-01-06_20:35:09.976237: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] -DRAPIDJSON_64BIT=1     
+2020-01-06_20:35:09.976242: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/DNSManage     
+2020-01-06_20:35:09.976247: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libcxx     
+2020-01-06_20:35:09.976252: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libc     
+2020-01-06_20:35:09.976256: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/rt     
+2020-01-06_20:35:09.976261: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/native/softfloat/include     
+2020-01-06_20:35:09.976266: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include     
+2020-01-06_20:35:09.976272: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] --sysroot=/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../     
+2020-01-06_20:35:09.976283: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:96] -c     
+2020-01-06_20:35:09.976288: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:98] 
+
+2020-01-06_20:35:09.977013: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/cpp/../include/dipc/utils.hpp:39] /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/clang-7 -o /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//DNSManage.cpp.o /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//DNSManage.cpp -std=c++17 -emit-llvm -O3 --target=wasm32 -ffreestanding -nostdlib -fno-builtin -fno-threadsafe-statics -fno-exceptions -fno-rtti -fmodules-ts -DBOOST_DISABLE_ASSERTS -DBOOST_EXCEPTION_DISABLE -DRAPIDJSON_64BIT=1 -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/DNSManage -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libcxx -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libc -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/rt -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/native/softfloat/include -I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include --sysroot=/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../ -c 
+
+2020-01-06_20:35:12.686399: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:133]   exports_filename  /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//DNSManage.cpp.exports
+
+2020-01-06_20:35:12.686422: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:134]   abi_filename  ./DNSManage.cpp.abi.json
+
+2020-01-06_20:35:12.686429: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:135]   abidef_output  
+
+2020-01-06_20:35:12.686435: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:136]   output_filename  DNSManage.wasm
+
+2020-01-06_20:35:12.686442: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:137] exports_filename   /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//DNSManage.cpp.exports
+
+2020-01-06_20:35:12.686448: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:138] ld  new_opts start  
+
+2020-01-06_20:35:12.686456: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:140] -verbose=true     
+2020-01-06_20:35:12.686462: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:140]  /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//DNSManage.cpp.o      
+2020-01-06_20:35:12.686468: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:140] -o DNSManage.wasm     
+2020-01-06_20:35:12.686474: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:140]  --export init      
+2020-01-06_20:35:12.686479: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:140]  --export registerPassword      
+2020-01-06_20:35:12.686485: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:140]  --export queryPasswordByAddr      
+2020-01-06_20:35:12.686490: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:140]  --export queryAddrByPassword      
+2020-01-06_20:35:12.686496: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:140]  -log_path=./     
+2020-01-06_20:35:12.686501: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:140]  -log_level=debug     
+2020-01-06_20:35:12.686507: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-cpp.cpp:142] 
+
+2020-01-06_20:35:12.686580: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/cpp/../include/dipc/utils.hpp:39] /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/dipc-ld -verbose=true  /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//DNSManage.cpp.o  -o DNSManage.wasm  --export init   --export registerPassword   --export queryPasswordByAddr   --export queryAddrByPassword   -log_path=./  -log_level=debug 
+

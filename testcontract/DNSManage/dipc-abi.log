@@ -1,0 +1,3092 @@
+2020-01-06_20:35:05.065812: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1104] dipc-abi  verbose  true
+
+2020-01-06_20:35:05.066674: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1105] dipc-abi argv  start ....
+
+2020-01-06_20:35:05.066686: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1107]   /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/dipc-abigen
+2020-01-06_20:35:05.066692: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1107]   -extra-arg=-std=c++17
+2020-01-06_20:35:05.066698: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1107]   -extra-arg=--target=wasm32
+2020-01-06_20:35:05.066704: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1107]   -extra-arg=-w
+2020-01-06_20:35:05.066709: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1107]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/DNSManage
+2020-01-06_20:35:05.066715: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1107]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libcxx
+2020-01-06_20:35:05.066720: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1107]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/libc
+2020-01-06_20:35:05.066726: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1107]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/rt
+2020-01-06_20:35:05.066732: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1107]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include/native/softfloat/include
+2020-01-06_20:35:05.066738: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1107]   -extra-arg=-I/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/bin/../include
+2020-01-06_20:35:05.066743: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1107]   DNSManage.cpp
+2020-01-06_20:35:05.066749: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1107]   -abigen_output=./DNSManage.cpp.abi.json
+2020-01-06_20:35:05.066754: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1107]   -exports_output=/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//DNSManage.cpp.exports
+2020-01-06_20:35:05.066760: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1107]   -abidef_output=
+2020-01-06_20:35:05.066765: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1107]   -log_path=./
+2020-01-06_20:35:05.066770: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1107]   -log_level=debug
+2020-01-06_20:35:05.066776: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1107]   -verbose
+2020-01-06_20:35:05.066781: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1107]   --
+2020-01-06_20:35:05.066786: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1107]   -w
+2020-01-06_20:35:05.066791: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1109]   dipc-abi argv end 
+
+2020-01-06_20:35:05.066797: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1115] start run
+2020-01-06_20:35:05.066805: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:99] start create_find_macro_factory
+2020-01-06_20:35:06.112311: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:149] get macro:PAYABLE
+2020-01-06_20:35:06.114053: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/DNSManage/DNSManage.hpp
+
+2020-01-06_20:35:06.114065: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:PAYABLE; long str :PAYABLE; longstr :PAYABLE void init();
+   EXPORT void registerPassword(char* passwordName);
+   CONSTANT char* queryPasswordByAddr(char* _addr);
+   CONSTANT char* queryAddrByPassword(char* _password);
+};
+
+
+DIPC_EVENT(depositingValue,uint64_t);
+DIPC_EVENT(ErrEvent, const char*, const char*);
+DIPC_EVENT(registerPasswordEvent, const char*, const char*);
+
+
+
+
+2020-01-06_20:35:06.114988: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:82] smatch[2].str : init(; action : init
+
+2020-01-06_20:35:06.115013: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:149] get macro:EXPORT
+2020-01-06_20:35:06.115021: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/DNSManage/DNSManage.hpp
+
+2020-01-06_20:35:06.115027: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:EXPORT; long str :EXPORT; longstr :EXPORT void registerPassword(char* passwordName);
+   CONSTANT char* queryPasswordByAddr(char* _addr);
+   CONSTANT char* queryAddrByPassword(char* _password);
+};
+
+
+DIPC_EVENT(depositingValue,uint64_t);
+DIPC_EVENT(ErrEvent, const char*, const char*);
+DIPC_EVENT(registerPasswordEvent, const char*, const char*);
+
+
+
+
+2020-01-06_20:35:06.115058: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:82] smatch[2].str : registerPassword(; action : registerPassword
+
+2020-01-06_20:35:06.115070: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:149] get macro:CONSTANT
+2020-01-06_20:35:06.115077: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/DNSManage/DNSManage.hpp
+
+2020-01-06_20:35:06.115082: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:CONSTANT; long str :CONSTANT; longstr :CONSTANT char* queryPasswordByAddr(char* _addr);
+   CONSTANT char* queryAddrByPassword(char* _password);
+};
+
+
+DIPC_EVENT(depositingValue,uint64_t);
+DIPC_EVENT(ErrEvent, const char*, const char*);
+DIPC_EVENT(registerPasswordEvent, const char*, const char*);
+
+
+
+
+2020-01-06_20:35:06.115106: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:82] smatch[2].str : queryPasswordByAddr(; action : queryPasswordByAddr
+
+2020-01-06_20:35:06.115117: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:149] get macro:CONSTANT
+2020-01-06_20:35:06.115122: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/DNSManage/DNSManage.hpp
+
+2020-01-06_20:35:06.115128: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:CONSTANT; long str :CONSTANT; longstr :CONSTANT char* queryAddrByPassword(char* _password);
+};
+
+
+DIPC_EVENT(depositingValue,uint64_t);
+DIPC_EVENT(ErrEvent, const char*, const char*);
+DIPC_EVENT(registerPasswordEvent, const char*, const char*);
+
+
+
+
+2020-01-06_20:35:06.115151: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:82] smatch[2].str : queryAddrByPassword(; action : queryAddrByPassword
+
+2020-01-06_20:35:06.115163: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:143] get EVENT:DIPC_EVENT
+2020-01-06_20:35:06.115927: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:143] get EVENT:DIPC_EVENT
+2020-01-06_20:35:06.116072: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:143] get EVENT:DIPC_EVENT
+2020-01-06_20:35:06.116193: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:149] get macro:PAYABLE
+2020-01-06_20:35:06.116201: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/DNSManage/DNSManage.cpp
+
+2020-01-06_20:35:06.116208: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:PAYABLE; long str :PAYABLE; longstr :PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+/**
+ * @brief registerPassword method used to register a password
+ * @param passwordName: password name
+ */ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+/**
+ * @brief queryPasswordByAddr method used to query password of a addr
+ * @param addr: account address
+ */ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    // print("queryPasswordByAddr");
+    // print(addrStore.get()[_addr]);
+    // char* result = &addrStore.get()[_addr][0];
+    // print("queryPasswordByAddr result");
+    // print(result);
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+/**
+ * @brief queryAddrByPassword method used to query addr of a password
+ * @param _passwordName: password name of some account address
+ */ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+2020-01-06_20:35:06.116229: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:82] smatch[2].str : PasswordManage::init(; action : PasswordManage::init
+
+2020-01-06_20:35:06.116236: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:131] Export macrostr:PAYABLE  contract:void  actions_str:init
+
+2020-01-06_20:35:06.116248: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:149] get macro:EXPORT
+2020-01-06_20:35:06.116254: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/DNSManage/DNSManage.cpp
+
+2020-01-06_20:35:06.116260: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:EXPORT; long str :EXPORT; longstr :EXPORT void PasswordManage::registerPassword(char* passwordName){
+    std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+/**
+ * @brief queryPasswordByAddr method used to query password of a addr
+ * @param addr: account address
+ */ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    // print("queryPasswordByAddr");
+    // print(addrStore.get()[_addr]);
+    // char* result = &addrStore.get()[_addr][0];
+    // print("queryPasswordByAddr result");
+    // print(result);
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+/**
+ * @brief queryAddrByPassword method used to query addr of a password
+ * @param _passwordName: password name of some account address
+ */ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+2020-01-06_20:35:06.116288: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:82] smatch[2].str : PasswordManage::registerPassword(; action : PasswordManage::registerPassword
+
+2020-01-06_20:35:06.116295: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:131] Export macrostr:EXPORT  contract:void  actions_str:registerPassword
+
+2020-01-06_20:35:06.116316: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:149] get macro:CONSTANT
+2020-01-06_20:35:06.116323: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/DNSManage/DNSManage.cpp
+
+2020-01-06_20:35:06.116328: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:CONSTANT; long str :CONSTANT; longstr :CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    // print("queryPasswordByAddr");
+    // print(addrStore.get()[_addr]);
+    // char* result = &addrStore.get()[_addr][0];
+    // print("queryPasswordByAddr result");
+    // print(result);
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+/**
+ * @brief queryAddrByPassword method used to query addr of a password
+ * @param _passwordName: password name of some account address
+ */ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+2020-01-06_20:35:06.116354: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:82] smatch[2].str : PasswordManage::queryPasswordByAddr(; action : PasswordManage::queryPasswordByAddr
+
+2020-01-06_20:35:06.116362: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:131] Export macrostr:CONSTANT  contract:char*  actions_str:queryPasswordByAddr
+
+2020-01-06_20:35:06.116379: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:149] get macro:CONSTANT
+2020-01-06_20:35:06.116385: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:67] file_name : /Users/konggan/workspace/chain/dipperin/github-dipc/dipc/testcontract/DNSManage/DNSManage.cpp
+
+2020-01-06_20:35:06.116390: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:68] Export macrostr:CONSTANT; long str :CONSTANT; longstr :CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+2020-01-06_20:35:06.116417: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:82] smatch[2].str : PasswordManage::queryAddrByPassword(; action : PasswordManage::queryAddrByPassword
+
+2020-01-06_20:35:06.116425: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiMacro.cpp:131] Export macrostr:CONSTANT  contract:char*  actions_str:queryAddrByPassword
+
+2020-01-06_20:35:06.122191: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1125] result:0contract fullname:[PasswordManage]
+2020-01-06_20:35:07.757590: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:109] contract != Token
+2020-01-06_20:35:07.757609: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:111] decl name:[PasswordManage] contract:[PasswordManage]
+2020-01-06_20:35:07.757621: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:119] funcEntire : void isOwner(){
+        std::string callerStr = caller().toString();
+        std::string ownerStr = owner.get();
+        DipcAssert(callerStr == owner.get());
+    ; funcEnd : }
+
+public:
+   PAYABLE void init();
+   EXPORT void registerPassword(char* passwordName);
+   CONSTANT char* queryPasswordByAddr(char* _addr);
+   CONSTANT char* queryAddrByPassword(char* _password);
+};
+
+
+DIPC_EVENT(depositingValue,uint64_t);
+DIPC_EVENT(ErrEvent, const char*, const char*);
+DIPC_EVENT(registerPasswordEvent, const char*, const char*);
+
+
+
+
+2020-01-06_20:35:07.757634: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:119] funcEntire : void init(; funcEnd : );
+   EXPORT void registerPassword(char* passwordName);
+   CONSTANT char* queryPasswordByAddr(char* _addr);
+   CONSTANT char* queryAddrByPassword(char* _password);
+};
+
+
+DIPC_EVENT(depositingValue,uint64_t);
+DIPC_EVENT(ErrEvent, const char*, const char*);
+DIPC_EVENT(registerPasswordEvent, const char*, const char*);
+
+
+
+
+2020-01-06_20:35:07.757640: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:124] method :init
+2020-01-06_20:35:07.757646: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:145] abi.methodName : init; abi.isConst : false; abi.isPayable :true; abi.isExport :false
+2020-01-06_20:35:07.757666: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:47] typeName:  realTypeName:void
+2020-01-06_20:35:07.757674: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:119] funcEntire : void registerPassword(char* passwordName; funcEnd : );
+   CONSTANT char* queryPasswordByAddr(char* _addr);
+   CONSTANT char* queryAddrByPassword(char* _password);
+};
+
+
+DIPC_EVENT(depositingValue,uint64_t);
+DIPC_EVENT(ErrEvent, const char*, const char*);
+DIPC_EVENT(registerPasswordEvent, const char*, const char*);
+
+
+
+
+2020-01-06_20:35:07.757680: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:124] method :registerPassword
+2020-01-06_20:35:07.757686: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:145] abi.methodName : registerPassword; abi.isConst : false; abi.isPayable :false; abi.isExport :true
+2020-01-06_20:35:07.757696: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:47] typeName:  realTypeName:void
+2020-01-06_20:35:07.757702: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:160] parame name:passwordName
+2020-01-06_20:35:07.757714: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:47] typeName:  realTypeName:char *
+2020-01-06_20:35:07.757743: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:119] funcEntire : char* queryPasswordByAddr(char* _addr; funcEnd : );
+   CONSTANT char* queryAddrByPassword(char* _password);
+};
+
+
+DIPC_EVENT(depositingValue,uint64_t);
+DIPC_EVENT(ErrEvent, const char*, const char*);
+DIPC_EVENT(registerPasswordEvent, const char*, const char*);
+
+
+
+
+2020-01-06_20:35:07.757751: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:124] method :queryPasswordByAddr
+2020-01-06_20:35:07.757756: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:145] abi.methodName : queryPasswordByAddr; abi.isConst : true; abi.isPayable :false; abi.isExport :false
+2020-01-06_20:35:07.757768: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:47] typeName:  realTypeName:char *
+2020-01-06_20:35:07.757773: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:160] parame name:_addr
+2020-01-06_20:35:07.757783: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:47] typeName:  realTypeName:char *
+2020-01-06_20:35:07.757807: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:119] funcEntire : char* queryAddrByPassword(char* _password; funcEnd : );
+};
+
+
+DIPC_EVENT(depositingValue,uint64_t);
+DIPC_EVENT(ErrEvent, const char*, const char*);
+DIPC_EVENT(registerPasswordEvent, const char*, const char*);
+
+
+
+
+2020-01-06_20:35:07.757814: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:124] method :queryAddrByPassword
+2020-01-06_20:35:07.757819: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:145] abi.methodName : queryAddrByPassword; abi.isConst : true; abi.isPayable :false; abi.isExport :false
+2020-01-06_20:35:07.757830: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:47] typeName:  realTypeName:char *
+2020-01-06_20:35:07.757836: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:160] parame name:_password
+2020-01-06_20:35:07.757846: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:47] typeName:  realTypeName:char *
+2020-01-06_20:35:07.757869: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:119] funcEntire : ; funcEnd : PasswordManage : public Contract {
+private:
+    Map<passwordStorec, std::string, std::string> passwordStore;
+    Map<addrStorec, std::string, std::string> addrStore; 
+    String<ownerc> owner;
+
+    void isOwner(){
+        std::string callerStr = caller().toString();
+        std::string ownerStr = owner.get();
+        DipcAssert(callerStr == owner.get());
+    }
+
+public:
+   PAYABLE void init();
+   EXPORT void registerPassword(char* passwordName);
+   CONSTANT char* queryPasswordByAddr(char* _addr);
+   CONSTANT char* queryAddrByPassword(char* _password);
+};
+
+
+DIPC_EVENT(depositingValue,uint64_t);
+DIPC_EVENT(ErrEvent, const char*, const char*);
+DIPC_EVENT(registerPasswordEvent, const char*, const char*);
+
+
+
+
+2020-01-06_20:35:07.757876: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:119] funcEntire : ; funcEnd : PasswordManage : public Contract {
+private:
+    Map<passwordStorec, std::string, std::string> passwordStore;
+    Map<addrStorec, std::string, std::string> addrStore; 
+    String<ownerc> owner;
+
+    void isOwner(){
+        std::string callerStr = caller().toString();
+        std::string ownerStr = owner.get();
+        DipcAssert(callerStr == owner.get());
+    }
+
+public:
+   PAYABLE void init();
+   EXPORT void registerPassword(char* passwordName);
+   CONSTANT char* queryPasswordByAddr(char* _addr);
+   CONSTANT char* queryAddrByPassword(char* _password);
+};
+
+
+DIPC_EVENT(depositingValue,uint64_t);
+DIPC_EVENT(ErrEvent, const char*, const char*);
+DIPC_EVENT(registerPasswordEvent, const char*, const char*);
+
+
+
+
+2020-01-06_20:35:07.757882: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:119] funcEntire : ; funcEnd : PasswordManage : public Contract {
+private:
+    Map<passwordStorec, std::string, std::string> passwordStore;
+    Map<addrStorec, std::string, std::string> addrStore; 
+    String<ownerc> owner;
+
+    void isOwner(){
+        std::string callerStr = caller().toString();
+        std::string ownerStr = owner.get();
+        DipcAssert(callerStr == owner.get());
+    }
+
+public:
+   PAYABLE void init();
+   EXPORT void registerPassword(char* passwordName);
+   CONSTANT char* queryPasswordByAddr(char* _addr);
+   CONSTANT char* queryAddrByPassword(char* _password);
+};
+
+
+DIPC_EVENT(depositingValue,uint64_t);
+DIPC_EVENT(ErrEvent, const char*, const char*);
+DIPC_EVENT(registerPasswordEvent, const char*, const char*);
+
+
+
+
+2020-01-06_20:35:07.757893: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:119] funcEntire : ; funcEnd : PasswordManage : public Contract {
+private:
+    Map<passwordStorec, std::string, std::string> passwordStore;
+    Map<addrStorec, std::string, std::string> addrStore; 
+    String<ownerc> owner;
+
+    void isOwner(){
+        std::string callerStr = caller().toString();
+        std::string ownerStr = owner.get();
+        DipcAssert(callerStr == owner.get());
+    }
+
+public:
+   PAYABLE void init();
+   EXPORT void registerPassword(char* passwordName);
+   CONSTANT char* queryPasswordByAddr(char* _addr);
+   CONSTANT char* queryAddrByPassword(char* _password);
+};
+
+
+DIPC_EVENT(depositingValue,uint64_t);
+DIPC_EVENT(ErrEvent, const char*, const char*);
+DIPC_EVENT(registerPasswordEvent, const char*, const char*);
+
+
+
+
+2020-01-06_20:35:07.757899: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/tools/abi/AbiGenerator.cpp:172] abis size:4
+2020-01-06_20:35:09.927949: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1156] find method successfind abi size:4
+2020-01-06_20:35:09.927969: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1161] methodName:init args:(
+2020-01-06_20:35:09.928836: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1172] )
+2020-01-06_20:35:09.928844: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1173] return typeName: realTypeName:void
+2020-01-06_20:35:09.928850: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1161] methodName:registerPassword args:(
+2020-01-06_20:35:09.928856: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1168] name:passwordName, typeName: realTypeName:char *
+2020-01-06_20:35:09.928862: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1172] )
+2020-01-06_20:35:09.928867: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1173] return typeName: realTypeName:void
+2020-01-06_20:35:09.928872: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1161] methodName:queryPasswordByAddr args:(
+2020-01-06_20:35:09.928877: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1168] name:_addr, typeName: realTypeName:char *
+2020-01-06_20:35:09.928882: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1172] )
+2020-01-06_20:35:09.928887: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1173] return typeName: realTypeName:char *
+2020-01-06_20:35:09.928892: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1161] methodName:queryAddrByPassword args:(
+2020-01-06_20:35:09.928897: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1168] name:_password, typeName: realTypeName:char *
+2020-01-06_20:35:09.928902: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1172] )
+2020-01-06_20:35:09.928907: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1173] return typeName: realTypeName:char *
+2020-01-06_20:35:09.928912: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:1186] start create abi json
+2020-01-06_20:35:09.929424: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:780] random:[/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/17g2c868ea9dbi911847] fileName:DNSManage.cpp.abi.json
+2020-01-06_20:35:09.929437: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:782] tmpFile:[/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/17g2c868ea9dbi911847/DNSManage.cpp.abi.json]
+2020-01-06_20:35:09.930364: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:793] copy ::/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/17g2c868ea9dbi911847/DNSManage.cpp.abi.json to ::./DNSManage.cpp.abi.json
+2020-01-06_20:35:09.930608: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:814] random:[/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/17g2c868ea9dbi911847] fileName:DNSManage.cpp.exports
+2020-01-06_20:35:09.930619: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:816] tmpFile:[/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/17g2c868ea9dbi911847/DNSManage.cpp.exports]
+2020-01-06_20:35:09.930863: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:831] copy ::/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/17g2c868ea9dbi911847/DNSManage.cpp.exports to ::/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//DNSManage.cpp.exports
+2020-01-06_20:35:09.931047: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:852] abidef_output  abidef_filename DNSManage.cpp
+
+2020-01-06_20:35:09.931152: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:880] macrostr  =======::#include "DNSManage.hpp"
+
+/**
+ * @brief init method used to setup own addr
+ */ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+/**
+ * @brief registerPassword method used to register a password
+ * @param passwordName: password name
+ */ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+/**
+ * @brief queryPasswordByAddr method used to query password of a addr
+ * @param addr: account address
+ */ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    // print("queryPasswordByAddr");
+    // print(addrStore.get()[_addr]);
+    // char* result = &addrStore.get()[_addr][0];
+    // print("queryPasswordByAddr result");
+    // print(result);
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+/**
+ * @brief queryAddrByPassword method used to query addr of a password
+ * @param _passwordName: password name of some account address
+ */ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.931181: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:881] headerStr  =======::
+
+2020-01-06_20:35:09.931201: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:884] removedComments  =======::#include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.931596: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:401] abis.ispayable :true
+
+2020-01-06_20:35:09.932014: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:424] finalContract  this height   codetext height #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.932055: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:427] searchContext  #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.932093: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:451] log out out payable : PAYABLE void PasswordManage::init(){
+    
+
+2020-01-06_20:35:09.932101: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:457] name : init   pos1  0
+
+2020-01-06_20:35:09.932107: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:469] pos2  28   pos1  28
+
+2020-01-06_20:35:09.932114: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:500] pos2 after 137   pos1  28
+
+2020-01-06_20:35:09.932120: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:509] finalContract  first #include "DNSManage.hpp"
+
+ 
+
+
+2020-01-06_20:35:09.932126: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:510] codetext  first #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.932132: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:513] s  first PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+
+2020-01-06_20:35:09.932336: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:599] search func : PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+2020-01-06_20:35:09.932344: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:424] finalContract  this height  #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+} codetext height #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.932351: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:427] searchContext  
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.932694: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:442] finalContract  this new  #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+} codetext new #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.932702: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:604] finalContract  final content =======   : #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.932712: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:401] abis.ispayable :false
+
+2020-01-06_20:35:09.932727: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:424] finalContract  this height  #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+} codetext height #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.932734: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:427] searchContext  #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.933698: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:451] log out out  Export :
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    
+
+2020-01-06_20:35:09.933706: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:457] name : registerPassword   pos1  0
+
+2020-01-06_20:35:09.933713: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:469] pos2  137   pos1  137
+
+2020-01-06_20:35:09.933719: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:500] pos2 after 627   pos1  137
+
+2020-01-06_20:35:09.933725: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:509] finalContract  first #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+
+2020-01-06_20:35:09.933730: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:510] codetext  first #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.933736: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:513] s  first 
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+2020-01-06_20:35:09.933743: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:593] calledFunc temp export: 
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+2020-01-06_20:35:09.933753: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:599] search func : 
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+2020-01-06_20:35:09.933760: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:424] finalContract  this height  #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+} codetext height #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.933767: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:427] searchContext  
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.942432: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:442] finalContract  this new  #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+} codetext new #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.942457: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:604] finalContract  final content =======   : #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.942466: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:401] abis.ispayable :false
+
+2020-01-06_20:35:09.942482: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:424] finalContract  this height  #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+} codetext height #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.942492: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:427] searchContext  #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.948693: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:451] log out out  Export :
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    
+
+2020-01-06_20:35:09.948703: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:457] name : queryPasswordByAddr   pos1  0
+
+2020-01-06_20:35:09.948710: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:469] pos2  686   pos1  686
+
+2020-01-06_20:35:09.948716: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:500] pos2 after 1180   pos1  686
+
+2020-01-06_20:35:09.948778: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:509] finalContract  first #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+2020-01-06_20:35:09.948785: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:510] codetext  first #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.948791: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:513] s  first 
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+2020-01-06_20:35:09.948798: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:593] calledFunc temp export: 
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+2020-01-06_20:35:09.948804: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:599] search func : 
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+2020-01-06_20:35:09.948811: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:424] finalContract  this height  #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+} codetext height #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.948818: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:427] searchContext  
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.949882: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:442] finalContract  this new  #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+} codetext new #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.949889: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:604] finalContract  final content =======   : #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.949896: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:401] abis.ispayable :false
+
+2020-01-06_20:35:09.949912: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:424] finalContract  this height  #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+} codetext height #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.949919: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:427] searchContext  #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.963865: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:451] log out out  Export :
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   
+
+2020-01-06_20:35:09.963883: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:457] name : queryAddrByPassword   pos1  0
+
+2020-01-06_20:35:09.963891: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:469] pos2  1239   pos1  1239
+
+2020-01-06_20:35:09.963898: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:500] pos2 after 1367   pos1  1239
+
+2020-01-06_20:35:09.963904: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:509] finalContract  first #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+2020-01-06_20:35:09.963911: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:510] codetext  first #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.963916: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:513] s  first 
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.963924: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:593] calledFunc temp export: 
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.963930: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:599] search func : 
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+return &(passwordStore.get()[passwordName][0]);
+}
+2020-01-06_20:35:09.963937: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:424] finalContract  this height  #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+return &(passwordStore.get()[passwordName][0]);
+} codetext height #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.963943: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:427] searchContext  
+
+2020-01-06_20:35:09.963950: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:442] finalContract  this new  #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+return &(passwordStore.get()[passwordName][0]);
+} codetext new #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.963957: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:604] finalContract  final content =======   : #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.963971: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:613] finalContract  final content  last =======   : #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.963987: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:886] removedComments end  =======::#include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.963994: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:890] str ============
+2020-01-06_20:35:09.964000: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:891] str ============class\s*PasswordManage\s*\{
+2020-01-06_20:35:09.964012: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:896] findClass end  =======::
+
+2020-01-06_20:35:09.964018: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:899] claSma end  =======::
+
+2020-01-06_20:35:09.964501: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:619] CompareHeaderAndImplFileMacro  start 
+
+2020-01-06_20:35:09.964510: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:650] get codeText content #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.964518: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:659] searchStr \s*PAYABLE\s*void\s*PasswordManage::init code_text #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.964524: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:660] searchStr \s*PAYABLE\s*void\s*PasswordManage::init
+
+2020-01-06_20:35:09.964555: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:659] searchStr \s*EXPORT\s*void\s*PasswordManage::registerPassword code_text #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.964562: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:660] searchStr \s*EXPORT\s*void\s*PasswordManage::registerPassword
+
+2020-01-06_20:35:09.964650: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:659] searchStr \s*CONSTANT\s*char\*\s*PasswordManage::queryPasswordByAddr code_text #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.964656: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:660] searchStr \s*CONSTANT\s*char\*\s*PasswordManage::queryPasswordByAddr
+
+2020-01-06_20:35:09.965038: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:659] searchStr \s*CONSTANT\s*char\*\s*PasswordManage::queryAddrByPassword code_text #include "DNSManage.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.965044: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:660] searchStr \s*CONSTANT\s*char\*\s*PasswordManage::queryAddrByPassword
+
+2020-01-06_20:35:09.965902: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:672] CompareHeaderAndImplFileMacro end  
+
+2020-01-06_20:35:09.966352: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:915] hppPath  :  DNSManage.hpp
+2020-01-06_20:35:09.966413: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:919] hppOutPath  :  /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//DNSManagetemp.hpp
+2020-01-06_20:35:09.966438: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:927] abaabaab ======== : 
+2020-01-06_20:35:09.966445: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:928] contractName ======== : PasswordManage
+2020-01-06_20:35:09.966450: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:930] randomDir ======== : /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/17g2c868ea9dbi911847
+2020-01-06_20:35:09.966459: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:931] hppOutPath ======== : /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//DNSManagetemp.hpp
+2020-01-06_20:35:09.966467: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:679] InsertFuncToHeaderFile start....
+
+2020-01-06_20:35:09.966477: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:685] InsertFuncToHeaderFile new ....
+
+2020-01-06_20:35:09.966575: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:687] InsertFuncToHeaderFile result ....true
+
+2020-01-06_20:35:09.966584: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:694] claSma[0].str()  :    class PasswordManage : public Contract {
+
+2020-01-06_20:35:09.966591: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:696] pos2  :    246
+
+2020-01-06_20:35:09.966598: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:728] tempText   :  #include "dipc/dipc.hpp"
+#include "rapidjson/stringbuffer.h"
+#include "rapidjson/writer.h"
+#include "rapidjson/document.h"
+using namespace dipc;
+
+
+char passwordStorec[] = "passwordStore";
+char addrStorec[] = "addrStore";
+char ownerc[] = "owner";
+class PasswordManage : public Contract {
+private:
+    Map<passwordStorec, std::string, std::string> passwordStore;
+    Map<addrStorec, std::string, std::string> addrStore; 
+    String<ownerc> owner;
+
+    void isOwner(){
+        std::string callerStr = caller().toString();
+        std::string ownerStr = owner.get();
+        DipcAssert(callerStr == owner.get());
+    }
+
+public:
+   PAYABLE void init();
+   EXPORT void registerPassword(char* passwordName);
+   CONSTANT char* queryPasswordByAddr(char* _addr);
+   CONSTANT char* queryAddrByPassword(char* _password);
+
+
+2020-01-06_20:35:09.966605: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:731] filename   :  DNSManage.cpp
+
+2020-01-06_20:35:09.966959: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:751] tempText  end :  #include "dipc/dipc.hpp"
+#include "rapidjson/stringbuffer.h"
+#include "rapidjson/writer.h"
+#include "rapidjson/document.h"
+using namespace dipc;
+
+
+char passwordStorec[] = "passwordStore";
+char addrStorec[] = "addrStore";
+char ownerc[] = "owner";
+class PasswordManage : public Contract {
+private:
+    Map<passwordStorec, std::string, std::string> passwordStore;
+    Map<addrStorec, std::string, std::string> addrStore; 
+    String<ownerc> owner;
+
+    void isOwner(){
+        std::string callerStr = caller().toString();
+        std::string ownerStr = owner.get();
+        DipcAssert(callerStr == owner.get());
+    }
+
+public:
+   PAYABLE void init();
+   EXPORT void registerPassword(char* passwordName);
+   CONSTANT char* queryPasswordByAddr(char* _addr);
+   CONSTANT char* queryAddrByPassword(char* _password);
+};
+
+
+DIPC_EVENT(depositingValue,uint64_t);
+DIPC_EVENT(ErrEvent, const char*, const char*);
+DIPC_EVENT(registerPasswordEvent, const char*, const char*);
+
+
+
+
+
+2020-01-06_20:35:09.967298: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:940] headerStr removedComments  ======== : #include "DNSManagetemp.hpp"
+
+ 
+PAYABLE void PasswordManage::init(){
+    std::string ownerStr = caller().toString();
+    *owner = ownerStr;
+}
+ 
+EXPORT void PasswordManage::registerPassword(char* passwordName){
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::string toAddr = caller().toString();
+    if (passwordStore.get()[passwordName] != "") {
+        DIPC_EMIT_EVENT(ErrEvent, "registerPassword  password exist", passwordName);
+        return;
+    }
+    (*passwordStore)[passwordName] = toAddr;
+    print("passwordName ---");
+    print(passwordName);
+    (*addrStore)[&toAddr[0]] = passwordName;
+    DIPC_EMIT_EVENT(registerPasswordEvent, &toAddr[0], passwordName);
+}
+
+ 
+CONSTANT char* PasswordManage::queryPasswordByAddr(char* _addr){
+    
+    
+    
+    
+    
+    u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+std::map<std::string,std::string>::iterator iter;
+    auto mapStore = passwordStore.get();
+    iter = mapStore.begin();
+    while(iter != mapStore.end()){
+        if(iter->second == _addr){
+            auto result = iter->first.c_str();
+            char *buf = new char[strlen(result)+1];
+　　         strcpy(buf, result);
+            return buf;
+        }
+        iter++;
+    }
+   return "";
+}
+
+ 
+CONSTANT char* PasswordManage::queryAddrByPassword(char* passwordName){
+   u256 tempv = dipc::callValue(); 
+ DipcAssert( tempv == 0);
+return &(passwordStore.get()[passwordName][0]);
+}
+
+2020-01-06_20:35:09.967472: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:979] swap src::DNSManage.cpp tmp::/var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T/17g2c868ea9dbi911847/DNSManage.cpp
+2020-01-06_20:35:09.967482: <debug> [/Users/konggan/workspace/chain/dipperin/github-dipc/dipc/build/tools/dipc-abigen.cpp:983] std::string(res.c_str()) + "/" + abidef_filename      /var/folders/tt/8v4bb03x685c49jk_vkvr7s80000gp/T//DNSManage.cpp
+
