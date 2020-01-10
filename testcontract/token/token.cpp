@@ -10,7 +10,7 @@ PAYABLE void TestToken::init(const char* tokenName, const char* sym, uint64_t su
     *total_supply = supply;
     (*balance)[owner.get()] = supply;
     (*nbalance)[callerAddr] = supply;
-    DIPC_EMIT_EVENT(Tranfer, "", &owner.get()[0], supply);
+    DIPC_EMIT_EVENT(Tranfer, &name.get()[0], &symbol.get()[0], &owner.get()[0], supply);
 }
 
 
@@ -83,7 +83,3 @@ EXPORT bool TestToken::burn(uint64_t value){
     return true;
 }
 
-
-PAYABLE std::string TestToken::testReturn(){
-    return "test";
-}

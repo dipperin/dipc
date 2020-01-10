@@ -23,7 +23,6 @@ public:
     CONSTANT uint64_t getBalance(const char* own);
     CONSTANT uint64_t getApproveBalance(const char* from, const char* approved);
     EXPORT bool burn(uint64_t _value);
-    PAYABLE std::string testReturn();
 
     void stop(){
         isOwner();
@@ -55,6 +54,6 @@ private:
         DipcAssert(owner.get() == callerStr);
     }
 };
-DIPC_EVENT(Tranfer, const char*, const char*, uint64_t);
+DIPC_EVENT(Tranfer, const char*, const char*, const char*, uint64_t);
 DIPC_EVENT(Approval, const char*, const char*, uint64_t);
 DIPC_EVENT(GetBalance, const char*, const char*, uint64_t);
